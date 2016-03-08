@@ -1,5 +1,6 @@
-# Table of Contents
+# Summary
 
 * [Physics with XO](README.md)
-* Prologue
+* [Prologue](prologue.md)
 * [First Chapter](chapter1.md)
+
