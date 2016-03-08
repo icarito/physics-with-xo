@@ -1,5 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* Prologue
+* [Prologue](prologue.md)
 * [First Chapter](chapter1.md)
+
