@@ -13,3 +13,5 @@ I would like to thank the colleagues who agreed to review the draft of this work
 Professor Daniel Baccino deserves special mention, not only for thoroughly reviewing the work in parallel as it was being written, but also for accompanying the construction and promotion of this project, participating on numerous occasions. The experience of working with him as a team has been very enriching for me.
 
 Guzmán Trinidad
+
+[1]: Sugar Labs  is no longer a title at Sugar Labs. 
