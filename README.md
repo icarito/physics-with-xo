@@ -1,3 +1,7 @@
-# My Awesome Book
+# Physics with XO
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+## Guzmán Trinidad
+
+### Physics Teacher graduated from the "Artigas" Teacher Institute
+
+
