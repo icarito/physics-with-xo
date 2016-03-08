@@ -8,7 +8,7 @@
 
 * [Contact Author](mailto:fisicaconxo@gmail.com)
 
-#### This repository contains the project to translate the work into English (with permission)
+#### This edition is a Work in Progress to translate the work into English (with permission)
 * [Contact Translators](mailto:equipo@somosazucar.org)
 
 
