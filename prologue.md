@@ -1,6 +1,6 @@
 # Prologue:
 
-In the month of June of the year 2009, all students of *Escuela N°224* of El Pinar (Canelones, Uruguay) were receiving their XO1 laptop from *Plan Ceibal*. Among them, the youngest of my children, providing us with a first contact with this netbook.
+In the month of June of the year 2009, all students of *Escuela N°224* at El Pinar (Canelones, Uruguay) were receiving their XO1 laptop from *Plan Ceibal*. Among them, the youngest of my children, providing us with a first contact with this netbook.
 
 Researching about its structure and operation I found out from the OLPC wiki that it had been designed with a unique ability in mind: to build and program inexpensive sensors to measure physical quantities. The next step was to find out which of the Activities included in SUGAR would allow to program the reading of these sensors: the one that seemed most appropriate was "Measure", but it did not allow programming, and the included programming environments could not read the sensors. This is how I began a long journey that began the 15th of September of 2009 writing the first research note with progress on the topic (developed at the Physics Laboratory of *Liceo Solymar N°1*), published at the ["Physics with XO" website](https://sites.google.com/site/solymar1fisica/fisica-con-xo-investigacion-) and culminating in this work.
 
