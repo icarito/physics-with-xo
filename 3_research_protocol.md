@@ -1,4 +1,4 @@
-# 3 "Physics with XO" Research Protocol as presented to the Council of Higher Education [(CES)][^1]
+# "Physics with XO" Research Protocol as presented to the Council of Higher Education [(CES)][^1]
 
 [^1]: This *Research Protocol* is offered as introduction as it was presented before the CES at the end of 2011 for the purpose of requesting a special license for writing this work, in accordance to Art. 75 of the Statute of Teaching Staff.
 
@@ -50,8 +50,5 @@ This project clearly promotes national development by offering education to our 
 
 [^3]: Seymour Papert is a pioneer of artificial intelligence, inventor of the LOGO programming language in 1968. He is considered a prominent computer scientist, mathematician and educator. He worked closely with the educational psychologist Jean Piaget.
 [^4]: Alan Kay is an american computer scientist, one of the fathers of Object Oriented Programming and creator of the Dynabook concept which defined the basis laptop and tablet computers.
-[^5]:  Interview of April 24, 2007, retrieved from http://wiki.laptop.org/go/El_Wiki_de_la_OLPC on
-20/09/2011, at 22:50. Today Walter is board member of Sugar Labs (http://www.sugarlabs.org/). (N.T: Updated from 'Executive Director').
-You can read more on his departure from OLPC at:
-http://www.olpcnews.com/people/leadership/walter_bender_resigned_from_olpc.html
+[^5]:  Interview of April 24, 2007, retrieved from http://wiki.laptop.org/go/El_Wiki_de_la_OLPC on 20/09/2011, at 22:50. Today Walter is board member of Sugar Labs (http://www.sugarlabs.org/). (N.T: Updated from 'Executive Director'). You can read more on his departure from OLPC at: http://www.olpcnews.com/people/leadership/walter_bender_resigned_from_olpc.html
 
