@@ -12,7 +12,7 @@ As can be read in the Sugar Wikipedia article: "*Sugar is developed based on the
 
 *Sugar is inspired in the work of Dr. Alan Kay of the Xerox PARC with the development of a personal computer for children called "Dynabook".*
 
-The work of Dr. Alan Kay is maybe the first to make reference to the concept of a "children's machine", the *Dynabook*, a tablet that has its first version in the XO1. We suggest reading the article "A Personal Computer For Children Of All Ages" by Alan C. Kay, Xerox Palo Alto Research Center, (Originally published in the Proceedings of the ACM National Conference, Boston Aug. 1972), transcribed in Kay (1972).
+The work of Dr. Alan Kay may be the first to make reference to the concept of a "children's machine", the *Dynabook*, a tablet that has its first version in the XO1. We suggest reading the article "A Personal Computer For Children Of All Ages" by Alan C. Kay, Xerox Palo Alto Research Center, (Originally published in the Proceedings of the ACM National Conference, Boston Aug. 1972), transcribed in Kay (1972).
 
 For a detailed description of the origins of Sugar and its development, read Bender (28/12/2011).
 
@@ -36,7 +36,7 @@ In the case of the XO1 (CL1A) the input devices are:
 * The on/off button
 * The embedded camera
 * The embedded microphone and the external microphone jack
-* Embedded magnetic sensors included to detect wether the XO is closed (in which case it can suspend or shutdown) or if the screen is rotated to enable the *ebook* mode (in which case it remains open).
+* Embedded magnetic sensors included to detect wether the XO is closed (in which case it can suspend or shutdown) or if the screen is rotated to enable the *ebook* mode (in which case it remains on).
 
 And the output devices are:
 
@@ -57,7 +57,7 @@ A green led positioned above the camera is lit when it is active.
 
 ### The screen:
 
-The screen works in two high resolution modes: a mode of high transmissive color, and a high resolution reflective mode to allow it to be readable under sunlight. This latter was thought so that children may use their netbooks outdoors in the daytime (for instance in the recess playground at their school or in a park). The design of the XO1.75, a light sensor has been included to make the automatic adjustment according to the existing light level (OLPC News XO1.75).
+The screen works in two high resolution modes: a mode of high transmissive color, and a high resolution reflective mode to allow it to be readable under sunlight. This latter was thought so that children may use their netbooks outdoors in the daytime (for instance in the recess playground at their school or in a park). In the design of the XO1.75, a light sensor has been included to make the automatic adjustment according to the existing light level (OLPC News XO1.75).
 
 ### The sound board. Technical specifications of the XO board.
 
