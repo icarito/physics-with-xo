@@ -121,6 +121,6 @@ The electronical circuit that performs this translation is known as analog to di
 
 ### Digital to Analog conversion:
 
-Opposite to the formerly described process, a digital audio signal coming from a digital file (for example, an \*.mp3) first needs to be transformed into an analog signal by means of a circuit called **digital to analog converter** (DAC for its initials) that performs the opposite function from a ADC. This is the analog audio signal that feeds the *line out* plug and of the sound board in order to produce sound in our headphones or amplified speakers.
+Opposite to the formerly described process, a digital audio signal comes from a digital file (for example, an \*.mp3) and to be able to be transformed into sound, it first needs to be transformed into an analog signal by means of a circuit called **digital to analog converter** (DAC for its initials) that performs the opposite function from a ADC. It is this analog audio signal the one that feeds the *line out* of the sound board in order to produce sound in our headphones or amplified speakers.
 
 Both the ADC and the DAC can be found (for example) in the sound board computer.
