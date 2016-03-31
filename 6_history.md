@@ -67,7 +67,7 @@ G. Ghilardi, F. Varsi (ESEEC "F.Arias", UTU)
 M. Baudín, M. Vacca, M. Jubín, E. Gómez.
 
 ### VI E.N.P.F and III E.I.E.F
-16 to 20 of September of 1996, La Paloma, Rocha
+16 to 20 of September of 1996, La Paloma, Rocha.
 
 Workshops:
 "The CASSY interface at the Physics laboratories in Secondary Schools"
@@ -77,7 +77,7 @@ Juan Pablo Forcheri - Alejandro Villamil.
 Pablo García - Lucía Terra.
 
 ### VIII E.N.P.F and IV E.I.E.F
-Colonia del Sacramento, Colonia, 21 to 25 of September, 1998
+Colonia del Sacramento, Colonia, 21 to 25 of September, 1998.
 
 Keynote:
 "Educational Robotics: Its importance in the learning of Science"
