@@ -63,7 +63,7 @@ The screen works in two high resolution modes: a mode of high transmissive color
 
 One embedded component in the hardware of any computer is the sound board (or card) which is often integrated to the main board (motherboard). It is a set of electronic components dedicated (basically) to the processing of audio signals. In order to work properly, a device *driver* needs to be installed, a software component specifically designed for it.
 
-[insert pictures here]
+[insert picture here]
 
 The signals that are exchanged with the board are electric oscillations that and may be classified as **input signals** and **output signals**. These signals enter or leave the board by hooking input devices (microphone) or output devices (headphones or amplified speakers) to it: this connection is done by means of a male audio connector (plug) attached to the connecting device and the embedded female audio connectors (socket). Currently the female connectors in the board may be identified by means of a color code: for example the external microphone socket is colored pink while the line out socket is colored green.
 
