@@ -2,7 +2,7 @@
 
 ## Software:
 
-The XO1 ("green ceibalita" N.T: nickname for the XO in Uruguay), given to each child and teacher in public schools around the country when Plan Ceibal was implemented, has the Linux operating system installed with a lightweight Fedora distribution and a graphical user interface (GUI from the english initials) called SUGAR; This interface was specially designed for children to explore, discover and be able to create working collaboratively: *"This interface is based on three very simple principles about what makes us human: (1) everyone is a teacher and a student, (2) human beings are social beings by nature, and (3) human beings are expressive by nature."*.
+The XO1 ("green ceibalita" N.T: nickname for the XO in Uruguay), given to each child and teacher in public schools around the country when Plan Ceibal was implemented, has the Linux operating system installed with a lightweight Fedora distribution and a graphical user interface (GUI from the English initials) called SUGAR; This interface was specially designed for children to explore, discover and be able to create working collaboratively: *"This interface is based on three very simple principles about what makes us human: (1) everyone is a teacher and a student, (2) human beings are social beings by nature, and (3) human beings are expressive by nature."*.
 
 ## Sugar Labs Sugar
 
