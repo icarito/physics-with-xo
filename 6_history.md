@@ -21,10 +21,10 @@ The picture on the left shows the complete system: The tape deck (from which the
 
 [insert pictures here]
 
-In the year 1994 physics equipment including a PC and the data acquisition interface "CASSY-E" from the german company "Leybold" were distributed to all secondary schools. This generalization in access to technology was followed by a great number of Physics teachers, who flocked to use it in their secondary school courses and in research. Evidence of this is the great number and variety of articles published in the "Educación en Física" journal of the APFU (spanish initials for Association of Physics Teachers of Uruguay). See APFU:
+In the year 1994 Physics equipment including a PC and the data acquisition interface "CASSY-E" from the german company "Leybold" were distributed to all secondary schools. This generalization in access to technology was followed by a great number of Physics teachers, who flocked to use it in their secondary school courses and in research. Evidence of this is the great number and variety of articles published in the "Educación en Física" journal of the APFU (spanish initials for Association of Physics Teachers of Uruguay). See APFU:
 
 1. GARCÍA, P., “Construcción de cajas de sensor para Interfases Cassy”, Vol. 2,
-N o 3, Agosto de 1996. - (Constructing sensor boxes of Cassy Interfaces)
+N o 3, Agosto de 1996. - (Constructing sensor boxes for Cassy Interfaces)
 2. GÓMEZ, E., MAYERO, M., “Registrando distintas cantidades de magnitud con
 el ordenador”, Vol. 4, N o 1, Julio de 1998. (Recording different physical magnitudes with the computer)
 3. COLLADO, O, DELGADO, A., FALCÓN, S., PRIETO, O., RAMÍREZ, S., “1.
