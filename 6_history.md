@@ -15,7 +15,7 @@ The following laboratory guides are evidence of the use of the "Dédalo" system 
 4. "Sistema masa resorte", GARCÍA, P., TERRA, L., Marzo de 1995 - ("Spring mass system")
 5. "Impulso y cantidad de movimiento", GARCÍA, P., TERRA, L., Agosto de 1995 - ("Impulse and quantity of movement")
 
-Between the years 1992 and 1994 at the Physics Laboratory of Liceo Solymar N°1, whose coordinator was teacher Juan Francisco Pannone, and thanks to the help and precise instructions of teacher Pablo García, we built a "Dédalo" that our students used during their practical physics course.
+Between the years 1992 and 1994 at the Physics Laboratory of Liceo Solymar N°1, whose coordinator was teacher Juan Francisco Pannone, and thanks to the help and precise instructions of teacher Pablo García, we built a "Dédalo" that our students used during their practical Physics course.
 
 The picture on the left shows the complete system: The tape deck (from which the program was loaded), TV (used as display), "Spectrum" microcomputer (in front of the TV) and "Dédalo" interface (to the right). The photo on the right shows the circuit board and power source of the unit.
 
