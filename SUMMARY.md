@@ -6,3 +6,4 @@
 * [Reading Guide: How to find what might interest you](4_reading_guide.md)
 * [The software and hardware of the XO. Interaction with the physical world.](5_software_and_hardware.md)
 * [History of the use of data acquisition interfaces in Secondary Public Education Physics Laboratories](6_history.md)
+* [Measure Activity (versions 31, 36 and 42)](7_measure_activity.md)
