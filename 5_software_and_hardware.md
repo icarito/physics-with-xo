@@ -2,7 +2,7 @@
 
 ## Software:
 
-The XO1 ("green ceibalita" N.T: nickname for the XO in Uruguay), given to each child and teacher in public schools around the country when Plan Ceibal was implemented, has the Linux operating system installed with a lightweight Fedora distribution and a graphical user interface (GUI from the english initials) called SUGAR; This interface was specially designed for children to explore, discover and be able to create working collaboratively: *"This interface is based on three very simple principles about what makes us human: (1) everyone is a teacher and a student, (2) human beings are social beings by nature, and (3) human beings are expressive by nature."*.
+The XO1 ("green ceibalita" N.T: nickname for the XO in Uruguay), given to each child and teacher in public schools around the country when Plan Ceibal was implemented, has the Linux operating system installed with a lightweight Fedora distribution and a graphical user interface (GUI from the English initials) called SUGAR; This interface was specially designed for children to explore, discover and be able to create working collaboratively: *"This interface is based on three very simple principles about what makes us human: (1) everyone is a teacher and a student, (2) human beings are social beings by nature, and (3) human beings are expressive by nature."*.
 
 ## Sugar Labs Sugar
 
@@ -62,6 +62,8 @@ The screen works in two high resolution modes: a mode of high transmissive color
 ### The sound board. Technical specifications of the XO board.
 
 One embedded component in the hardware of any computer is the sound board (or card) which is often integrated to the main board (motherboard). It is a set of electronic components dedicated (basically) to the processing of audio signals. In order to work properly, a device *driver* needs to be installed, a software component specifically designed for it.
+
+[insert picture here]
 
 The signals that are exchanged with the board are electric oscillations that and may be classified as **input signals** and **output signals**. These signals enter or leave the board by hooking input devices (microphone) or output devices (headphones or amplified speakers) to it: this connection is done by means of a male audio connector (plug) attached to the connecting device and the embedded female audio connectors (socket). Currently the female connectors in the board may be identified by means of a color code: for example the external microphone socket is colored pink while the line out socket is colored green.
 
