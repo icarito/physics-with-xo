@@ -7,3 +7,5 @@
 * [The software and hardware of the XO. Interaction with the physical world.](5_software_and_hardware.md)
 * [History of the use of data acquisition interfaces in Secondary Public Education Physics Laboratories](6_history.md)
 * [Measure Activity (versions 31, 36 and 42)](7_measure_activity.md)
+* [Analog to Digital conversion](8_analog_to_digital.md)
+* [Accuracy and Precision of the Analog to Digital conversion](9_precision_accuracy_ADC.md)
