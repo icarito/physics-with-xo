@@ -56,3 +56,57 @@ for this case, its:
 Following are two ways to recover accuracy in volt measurements:
     1. one of them (cv product.ta) by using the "product" block (bottom, left) and the other
     2. (cv Python.ta) with the "Python block" that allows to include mathemathical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788") (bottom, right)
+
+[insert turtle code here]
+
+This coefficient depends on each particular XO we are working with, so we must determine it for each of them. To know the dispersion level for *accuracy coefficients in voltage measurements*, 9 different XO1 laptops were used to measure the same voltage, which was later compared with the reference instrument (Vref=1.529 V).
+
+We graph **Cv** for each XO1 as a function of N, an ordinal arbitrary number that identifies each of the netbooks used:
+
+[insert dispersion graph here]
+
+It can be deduced that according to our measurements, the values obtained for **Cv** do not differ more than 4% (XO1 ordinal N=6) with respect to the reference so it is worth to introduce this correction only in applications that require it (where accuracy in voltage reading is fundamental).
+
+#### Precision:
+
+##### Precision associated with statistical dispersion of measurements:
+
+Now we must determine what level of statistical dispersion exists when measuring the same voltage repeatedly. We calculate the average of the series V_average, the standard deviation for the measure **σ-s** and from it the standard deviation for the average, **σ-est** (the parameter that allows to determine the dispersion of measurements with respect to their average value), and N-op, the optimal number of measurements to make.
+
+Summary[insert footnote]:
+
+(we summarize the expressions that were used when doing calculations)
+
+*Given a series of N values xi (resulting from performing measurements of the same physical magnitude under identical conditions), we calculate the arithmetical average xavg with:*
+
+[insert formula here]
+
+*We define the deviation εi of each measurement xi with respect to an average as*
+
+εi = xi - Xavg
+
+*Supposing that the series of measurements shows a normal distribution, it makes sense to calculate the standard deviation for each measurement:*
+
+[insert formula here]
+
+*For N->infinite and the above conditions, 68% of values will be found within the interval: X+/-σs*
+
+*Nevertheless the uncertainty associated with dispersion is determined starting from a previous value, calculating standard deviation from hte average with the expression:*
+
+[insert formula here]
+
+*Once nominal uncertainty σnom is determined in association with a measurement (which can be considered, in a simplified form and under certain conditions, to be equal to the appreciation of the utilized measuring instrument), we will be able to calculate the optimal number Nop of measurements to make. The criteria used here is to make enough measurement until the condition σest~=σnom allows to obtain the following expression:*
+
+[insert formula here]
+
+The combined uncertainty can be obtained with:
+
+[insert formula here]
+
+To reach our goal, we will compare the measurements from measuring a given voltage with the reference tester Fluke 87, the AD LQ mini (Vernier), and the XO. For this the TurtleBlocks Activity will be used to program the reading of 50 consecutive voltage readings, averaging them and showing the result on screen.
+
+Programming is as follows: 
+
+This program (Vpromedio.ta) is executed 30 times for the same voltage, then calculates the standard deviation σs for the set of measurement if there are differences from each other.
+
+The values reported from the procedure evidence that there is no dispersion in the order of a centesimal of a volt, so that value will be taken as associated uncertainty to the precision for statistical dispersion and appreciation combined.
