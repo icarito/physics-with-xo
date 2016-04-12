@@ -107,6 +107,35 @@ To reach our goal, we will compare the measurements from measuring a given volta
 
 Programming is as follows: 
 
+[insert turtleblocks program here]
+
 This program (Vpromedio.ta) is executed 30 times for the same voltage, then calculates the standard deviation σs for the set of measurement if there are differences from each other.
 
-The values reported from the procedure evidence that there is no dispersion in the order of a centesimal of a volt, so that value will be taken as associated uncertainty to the precision for statistical dispersion and appreciation combined.
+The values resulting from the procedure show that there is no dispersion in the order of a centesimal of a volt, so that value will be taken as the uncertainty associated to the precision for statistical dispersion and appreciation combined.
+
+##### Precision associated with linearity
+
+##### Calculation of the dispersion level in measurements of Voltage with respect to proportional adjustment (once the XO1 has been calibrated)
+
+Once the calibration level has been recovered by means of the introduction of the Cv coefficient, we must calculate how far apart the (corrected) voltages measured by the XO1 are from the proportional adjustment. For this we have calculated the relative percent deviations of voltages with respect to the proportional adjustment. The results are summarized in the following graph, where the relative percentual εr% is observed as a function of the reference voltage Vref (in this case it was measured with the LQ mini interface):
+
+
+[insert graph here]
+
+It can be concluded that hte set of values maintains a low percentual dispersion with respect to the applied adjustment, that don't exceed 1.5%.
+
+### Conclusions
+
+a- When used as a Voltmeter directly, measurements can be made that may differ in accuracy up to 4% with respect to a reference instrument.
+
+In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient Cv will need to be calculated. This factor must multiply the "voltage" sensor block each time that it is used.
+
+b- The uncertainty of the XO1 as voltmeter is:
+
+    -/+(0.01V +1.5% of the value displayed onscreen)
+
+#### Input impedance of the XO1 as voltmeter
+
+An ideal measuring device would be capable of obtaining a measurement for the system being studied without taking energy from it, that is, without intercting. Such a measuring device does not exist. Real measuring devices are constructed in such a was as to obtain a measurement from the minimum interaction with the system being measured.
+
+In the particular case of voltmeters, this condition would be met if their input impedance was infinite. The reference tester that we used has (according to the manufacturer) an input impedance of 10MΩ. The data relative to the XO1 indicate that its input impedance is in the order of 150 kΩ.
