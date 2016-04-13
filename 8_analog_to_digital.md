@@ -11,11 +11,11 @@ Current versions of this Activity return the integer value converted to Voltage 
 
 [insert picture here]
 
-By using the versions of Measure that we have referenced, we were able to obtain the A-D conversion to Voltage/integer and Resistance/integer that are shown below (going forward we will abbreviate *integer* into *int* when refering to an integer value).
+By using the versions of Measure that we have referenced, we were able to obtain the A-D conversion to Voltage/integer and Resistance/integer that are shown below (going forward we will abbreviate *integer* into *int* when referring to an integer value).
 
 ## Procedure
 
-In order to achieve the goal set you must make a decision with regard to the **tester** that we'll use as reference pattern with respect to which we'll contrast measurements taken by using the XO. This measuring instrument must meet the condition to be of the highest quality possible be in optimum operating conditions and have been calibrated within the maximum time period set by the manufacturer. Before beginning to measure, the operator will have to verify that he is working wihtin the parameters established by the manufacturer in order to consider the values obtained reliable.
+In order to achieve the goal set you must make a decision with regard to the **tester** that we'll use as reference pattern with respect to which we'll contrast measurements taken by using the XO. This measuring instrument must meet the condition to be of the highest quality possible be in optimum operating conditions and have been calibrated within the maximum time period set by the manufacturer. Before beginning to measure, the operator will have to verify that he is working within the parameters established by the manufacturer in order to consider the values obtained reliable.
 
 In our case, we had two measuring instruments that were judged to be the most adequate:
 
