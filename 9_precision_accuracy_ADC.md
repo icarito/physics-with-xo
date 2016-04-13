@@ -2,9 +2,9 @@
 
 ## Accuracy:
 
-Accuracy is the level of callibration of the measuring instrument to be analyzed. This value appears by comparing the results of measurements obtained with the same in respect to those obtained by using a second measuring instrument that is chosen as reference or standard.
+Accuracy is the level of calibration of the measuring instrument to be analyzed. This value appears by comparing the results of measurements obtained with the same in respect to those obtained by using a second measuring instrument that is chosen as reference or standard.
 
-In general it is recommended to check this periodically; for it an instrument is required that will serve as standard such as a high quality digital tester that has been callibrated as directed by the manufacturer. (For example, in our case, among others, we used a Fluke tester model 87 which must be callibrated "...once a year to make sure that it is working in accordance to its specifications." as explaind by its "Instructions Manual Fluke 87 TRUE RMS MULTIMETER", PN 834200, December 1988, Rev. 1. 3/93,  © 1993 John Fluke Mfg Co., Inc, Litho in U.S.A.)
+In general it is recommended to check this periodically; for it an instrument is required that will serve as standard such as a high quality digital tester that has been calibrated as directed by the manufacturer. (For example, in our case, among others, we used a Fluke tester model 87 which must be calibrated "...once a year to make sure that it is working in accordance to its specifications." as explained by its "Instructions Manual Fluke 87 TRUE RMS MULTIMETER", PN 834200, December 1988, Rev. 1. 3/93,  © 1993 John Fluke Mfg Co., Inc, Litho in U.S.A.)
 
 ## Precision:
 
@@ -30,9 +30,9 @@ Although the subject will be developed in detail in the following chapters, it m
 
 In order for the display of the value to become clear, text may be combined at the "print" block by using the "addition" block, since it admits alphanumerical variables (text and numeric values); the program then could be as follows (volt monitor.ta):
 
-Now that we know how to show measured values onscree, the questions that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
+Now that we know how to show measured values onscreen, the questions that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
 
-#### Apreciation:
+#### Appreciation:
 
 We may determine the appreciation of the XO as a voltmeter by using the programming shown above: the voltages are displayed onscreen to a centecimal of a Volt, therefore the **appreciation** is **0.01 V**.
 
