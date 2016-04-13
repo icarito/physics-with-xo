@@ -122,7 +122,7 @@ Once the calibration level has been recovered by means of the introduction of th
 
 [insert graph here]
 
-It can be concluded that hte set of values maintains a low percentual dispersion with respect to the applied adjustment, that don't exceed 1.5%.
+It can be concluded that the set of values maintains a low percentual dispersion with respect to the applied adjustment, that don't exceed 1.5%.
 
 ### Conclusions
 
@@ -136,6 +136,6 @@ b- The uncertainty of the XO1 as voltmeter is:
 
 #### Input impedance of the XO1 as voltmeter
 
-An ideal measuring device would be capable of obtaining a measurement for the system being studied without taking energy from it, that is, without intercting. Such a measuring device does not exist. Real measuring devices are constructed in such a was as to obtain a measurement from the minimum interaction with the system being measured.
+An ideal measuring device would be capable of obtaining a measurement for the system being studied without taking energy from it, that is, without interacting. Such a measuring device does not exist. Real measuring devices are constructed in such a was as to obtain a measurement from the minimum interaction with the system being measured.
 
 In the particular case of voltmeters, this condition would be met if their input impedance was infinite. The reference tester that we used has (according to the manufacturer) an input impedance of 10MΩ. The data relative to the XO1 indicate that its input impedance is in the order of 150 kΩ.
