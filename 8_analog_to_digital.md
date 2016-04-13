@@ -24,7 +24,7 @@ In our case, we had two measuring instruments that were judged to be the most ad
 
 Both instruments belonging to the Physics Laboratory of Liceo Solymar N°1 (Ciudad de la Costa, Canelones). The latter was connected to a Magalhães Laptop model MG10T (distributed by Plan Ceibal to Secondary School students of Canelones). The software that was used to control the interface is called "Logger Pro for Linux Public Beta" which can be downloaded at no cost from the interface provider (VERNIER LPL).
 
-The mentioned instruments were used within the conditions indicated by the manufacturer to take measurements. For example, for the multimeter they read: Operating Temperature: -20°C to 55°C and Relative Humidity between 0% and 90% (0 at 35°C). No correction of temperature coeficient was applied, because it was considered that other sources would be more significant in determining the precision and accuracy of measurements obtained with the XO.
+The mentioned instruments were used within the conditions indicated by the manufacturer to take measurements. For example, for the multimeter they read: Operating Temperature: -20°C to 55°C and Relative Humidity between 0% and 90% (0 at 35°C). No correction of temperature coefficient was applied, because it was considered that other sources would be more significant in determining the precision and accuracy of measurements obtained with the XO.
 
 NOTE: in the following graphs, the points are united by straight lines only in order to make a clear visualization of the tendency that the distribution follows. In any case this represetation is wrong from a Physics point of view.
 
