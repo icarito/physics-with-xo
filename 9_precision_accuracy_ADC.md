@@ -42,9 +42,9 @@ While it is true (as will be discussed further ahead) that there is no data disp
 
 [insert graph here]
 
-Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing thet ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to relate the volt to each other.
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to relate the volt to each other.
 
-While linear adjustment is satisfactory and prectically coincident with proportional adjustment, the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as **Cv**. In the case shown, the value is **0.9788**,  for this reason every volt measurement must be corrected with the following expression:
+While linear adjustment is satisfactory and practically coincident with proportional adjustment, the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as **Cv**. In the case shown, the value is **0.9788**,  for this reason every volt measurement must be corrected with the following expression:
 
 **Vcorrected = Cv.Voltage**
 
@@ -55,7 +55,7 @@ for this case, its:
 
 Following are two ways to recover accuracy in volt measurements:
     1. one of them (cv product.ta) by using the "product" block (bottom, left) and the other
-    2. (cv Python.ta) with the "Python block" that allows to include mathemathical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788") (bottom, right)
+    2. (cv Python.ta) with the "Python block" that allows to include mathematical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788") (bottom, right)
 
 [insert turtle code here]
 
@@ -91,7 +91,7 @@ Summary[insert footnote]:
 
 *For N->infinite and the above conditions, 68% of values will be found within the interval: X+/-σs*
 
-*Nevertheless the uncertainty associated with dispersion is determined starting from a previous value, calculating standard deviation from hte average with the expression:*
+*Nevertheless the uncertainty associated with dispersion is determined starting from a previous value, calculating standard deviation from the average with the expression:*
 
 [insert formula here]
 
