@@ -4,7 +4,7 @@
 
 Accuracy is the level of calibration of the measuring instrument to be analyzed. This value appears by comparing the results of measurements obtained with the same in respect to those obtained by using a second measuring instrument that is chosen as reference or standard.
 
-In general it is recommended to check this periodically; for it an instrument is required that will serve as standard such as a high quality digital tester that has been calibrated as directed by the manufacturer. (For example, in our case, among others, we used a Fluke tester model 87 which must be calibrated "...once a year to make sure that it is working in accordance to its specifications." as explained by its "Instructions Manual Fluke 87 TRUE RMS MULTIMETER", PN 834200, December 1988, Rev. 1. 3/93,  © 1993 John Fluke Mfg Co., Inc, Litho in U.S.A.)
+In general it is recommended to check this periodically; for this an instrument is required that will serve as standard such as a high quality digital tester that has been calibrated as directed by the manufacturer. (For example, in our case, among others, we used a Fluke tester model 87 which must be calibrated "...once a year to make sure that it is working in accordance to its specifications." as explained by its "Instructions Manual Fluke 87 TRUE RMS MULTIMETER", PN 834200, December 1988, Rev. 1. 3/93,  © 1993 John Fluke Mfg Co., Inc, Litho in U.S.A.)
 
 ## Precision:
 
@@ -38,7 +38,7 @@ We may determine the appreciation of the XO as a voltmeter by using the programm
 
 #### Accuracy:
 
-While it is true (as will be discussed further ahead) that there is no data dispersion in the order of a centecimal of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the callibration level of the XO1 as voltmeter; this can eb done by analyzing the graph Vref=f(Vxo1). The reference voltage Vref in this case was measured with the LQ mini interface.
+While it is true (as will be discussed further ahead) that there is no data dispersion in the order of a centecimal of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1 as voltmeter; this can be done by analyzing the graph Vref=f(Vxo1). The reference voltage Vref in this case was measured with the LQ mini interface.
 
 [insert graph here]
 
