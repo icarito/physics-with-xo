@@ -28,7 +28,7 @@ Although the subject will be developed in detail in the following chapters, it m
 
 [insert ta screenshot here]
 
-In order for the display of the value to become clear,, text may be combined at the "print" block by using the "addition" block, since it admits alphanumerical variables (text and numeric values); the program then could be as follows (volt monitor.ta):
+In order for the display of the value to become clear, text may be combined at the "print" block by using the "addition" block, since it admits alphanumerical variables (text and numeric values); the program then could be as follows (volt monitor.ta):
 
 Now that we know how to show measured values onscree, the questions that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
 
