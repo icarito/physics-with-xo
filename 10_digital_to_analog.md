@@ -44,7 +44,7 @@ You can also achieve synthesis with the TurtleBlocks Activity (v.130), with the 
 
 [insert ta program]
 
-By executing this example program, a sound with frequency of 440 Hz (adjustable) is produced by the speakers, with 5000ua (arbitrary units, adjustable), and one second of duration (adjustable), correponding to note LA (A4).
+By executing this example program, a sound with frequency of 440 Hz (adjustable) is produced by the speakers, with 5000ua (arbitrary units, adjustable), and one second of duration (adjustable), corresponding to note LA (A4).
 
 ### Frequency range of synthesized sounds
 
