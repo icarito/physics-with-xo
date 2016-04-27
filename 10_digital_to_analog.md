@@ -74,7 +74,7 @@ In this environment we have a powerful tool, the Audacity application (version 1
 
 [insert screenshot]
 
-With this software on XO1.5 we can sithesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
+With this software on XO1.5 we can sithethize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
 
 ## Synthesis of sound with the XO1.75
 
