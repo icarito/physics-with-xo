@@ -54,7 +54,7 @@ The following graph shows the record of Amplitude=f (frequency), obtained with t
 
 [insert graph]
 
-The following table shows some of the synthesized frequencies and the frequencies of components that accompany them; the measurement was done with an XO1.5 producing sound, and an XO1 detecting sound with the *Measure Activity*, *Sound*, *Baseline frequency*:
+The following table shows some of the synthethized frequencies and the frequencies of components that accompany them; the measurement was done with an XO1.5 producing sound, and an XO1 detecting sound with the *Measure Activity*, *Sound*, *Baseline frequency*:
 
 [insert table]
 
