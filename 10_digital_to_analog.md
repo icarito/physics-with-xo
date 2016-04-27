@@ -18,9 +18,9 @@
 
 When executing this example program, the speakers will emit a sound of 440 Hz of frequency (adjustable), fixed amplitude, and about 3 seconds of duration (non adjustable) corresponding to the note LA (A4).
 
-### Frequency range for synthetized sounds
+### Frequency range for synthesized sounds
 
-The sound card of the XO1 synthetizes sounds between 30 Hz and 5000 Hz. The synthetized sounds correspond to practically pure sinusoidal (sine) signals, although the presence of other frequencies can be detected. En general, these components have much smaller amplitudes than the main signal, but they are measurable. The following graph shows some of them and the frequencies that accompany them; measurement was done on an XO1 emitting and an XO1.5 HS detecting the sound with the Measure Activity / Sound / Baseline Frequency:
+The sound card of the XO1 synthesizes sounds between 30 Hz and 5000 Hz. The synthesized sounds correspond to practically pure sinusoidal (sine) signals, although the presence of other frequencies can be detected. En general, these components have much smaller amplitudes than the main signal, but they are measurable. The following graph shows some of them and the frequencies that accompany them; measurement was done on an XO1 emitting and an XO1.5 HS detecting the sound with the Measure Activity / Sound / Baseline Frequency:
 
 [insert table here]
 
@@ -38,7 +38,7 @@ The XO1.5 that was (initially) distributed by Plan Ceibal among secondary school
 
 ### Sugar TurtleBlocks Activity
 
-Just like with the XO1, the XO1.5 can sythethize sounds by utilizing the digital to analog converter (DAC) that come integrated to its sound card. Programming this sythesis is done by coding Python in the Pippy Activity development environment that is included with SUGAR (see code at "Sound Sythesys with XO1").
+Just like with the XO1, the XO1.5 can synthesize sounds by utilizing the digital to analog converter (DAC) that come integrated to its sound card. Programming this sythesis is done by coding Python in the Pippy Activity development environment that is included with SUGAR (see code at "Sound Sythesys with XO1").
 
 You can also achieve synthesis with the TurtleBlocks Activity (v.130), with the "senoidal" programming block contained in the media block palette.
 
@@ -54,7 +54,7 @@ The following graph shows the record of Amplitude=f (frequency), obtained with t
 
 [insert graph]
 
-The following table shows some of the synthethized frequencies and the frequencies of components that accompany them; the measurement was done with an XO1.5 producing sound, and an XO1 detecting sound with the *Measure Activity*, *Sound*, *Baseline frequency*:
+The following table shows some of the synthesized frequencies and the frequencies of components that accompany them; the measurement was done with an XO1.5 producing sound, and an XO1 detecting sound with the *Measure Activity*, *Sound*, *Baseline frequency*:
 
 [insert table]
 
@@ -70,7 +70,7 @@ The graph includes adjustment to the curve (V=f(t)) of the sinusoidal function (
 
 ## Gnome Desktop, Audacity software
 
-In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multiplatform. To synthethize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
+In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multiplatform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
 
 [insert screenshot]
 
