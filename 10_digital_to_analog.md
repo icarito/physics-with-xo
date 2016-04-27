@@ -70,14 +70,14 @@ The graph includes adjustment to the curve (V=f(t)) of the sinusoidal function (
 
 ## Gnome Desktop, Audacity software
 
-In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multiplatform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
+In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multiplatform. To synthethize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
 
 [insert screenshot]
 
-With this software on XO1.5 we can sithethize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
+With this software on XO1.5 we can synthethize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
 
 ## Synthesis of sound with the XO1.75
 
-Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (Stock-keeping unit) that is found within the battery slot of the XO as shown. Once it is known you may obtain the charecteristics of your variety of OLPC SKU.
+Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (stock-keeping unit) that is found within the battery slot of the XO as shown. Once it is known, you may obtain the characteristics of your variety of OLPC SKU.
 
 
