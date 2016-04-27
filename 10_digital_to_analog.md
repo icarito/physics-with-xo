@@ -58,7 +58,7 @@ The following table shows some of the synthethized frequencies and the frequenci
 
 [insert table]
 
-The extremely low frequency (**0.1 Hz**) that the XO1.5 can produce is worth noting. To determine the range of frequencies, a FLUKE 87 tester was used to measure down to the minimum 2 Hz. To study lower values the LabQuest mini (Vernier) interface was used to measure voltage from a speaker connected to the earphone out socket. The following chart displays measurements for V=f(t) from which we could calculate the minimum generated frequency:
+The extremely low frequency (**0.1 Hz**) that the XO1.5 can produce is remarcable. To determine the range of frequencies, a FLUKE 87 tester was used to measure down to the minimum 2 Hz. To study lower values the LabQuest mini (Vernier) interface was used to measure voltage from a speaker connected to the earphone out socket. The following chart displays measurements for V=f(t) from which we could calculate the minimum generated frequency:
 
 [insert chart]
 
