@@ -30,7 +30,7 @@ According to technical specifications, the sound produced is emitted by the embe
 
 In addition, this type of device will allow us to utilize the XO as a generator of mechanical oscillations of adjustable frequency, fundamental tool in a physics laboratory: especially if it is desired to study mechanical oscillations and waves.
 
-It is possible to achieve very acceptable results by using a low cost amplifier and speakers. The maximum power of the amplifier, its build quality and that of the speakers, as well as their accepted frequency range, will allow for the production of desired frequencies. It is worth to keep in mind that, especially when working with lower frequencies, while generally outside the range of low cost PC amplified speakers, however, they are the ones that are needed to excite the oscillating mechanical systems such as mass-spring, sheets with a fixed side, wave bucket oscilators on water surfaces, etc.
+It is possible to achieve very acceptable results by using a low cost amplifier and speakers. The maximum power of the amplifier, its build quality and that of the speakers, as well as their accepted frequency range, will allow for the production of desired frequencies. It is worth to keep in mind that, especially when working with lower frequencies, while generally outside the range of low cost PC amplified speakers, however, they are the ones that are needed to excite the oscillating mechanical systems such as mass-spring, sheets with a fixed side, wave bucket oscillators on water surfaces, etc.
 
 ## Sound Synthesys on XO1.5
 
