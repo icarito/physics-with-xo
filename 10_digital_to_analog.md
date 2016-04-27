@@ -28,7 +28,7 @@ The sound card of the XO1 synthetizes sounds between 30 Hz and 5000 Hz. The synt
 
 According to technical specifications, the sound produced is emitted by the embedded speakers, which respond optimally to the range between 480 and 40kHz, fed by 1.4W each, for this reason, sounds generated between 30Hz and 480Hz will not sound well or may not be heard at all. To hear them it would be necessary to connect amplified speakers such as can be found in any desktop PC, to the earphone plug socket (green socket, located to the left of the screen, with maximal power of 30 mW and 32 ohm impedance).
 
-In addition, this type of device will allow us to utilize the XO as a generator of mechanical oscillations of adjustable frequency, fundamental tool in a physics laboratory: especially if it is desired to study mechanical oscllations and waves.
+In addition, this type of device will allow us to utilize the XO as a generator of mechanical oscillations of adjustable frequency, fundamental tool in a physics laboratory: especially if it is desired to study mechanical oscillations and waves.
 
 It is possible to achieve very acceptable results by using a low cost amplifier and speakers. The maximum power of the amplifier, its build quality and that of the speakers, as well as their accepted frequency range, will allow for the production of desired frequencies. It is worth to keep in mind that, especially when working with lower frequencies, while generally outside the range of low cost PC amplified speakers, however, they are the ones that are needed to excite the oscillating mechanical systems such as mass-spring, sheets with a fixed side, wave bucket oscilators on water surfaces, etc.
 
