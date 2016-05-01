@@ -12,14 +12,14 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
     
     1. Project Title
     2. Share button
-    3. Save copy
+    3. Save copy  
 
 2. Edit Toolbar:
     
     [insert screenshot here]
 
     1. Copy
-    2. Paste
+    2. Paste  
 
 3. Save Toolbar:
 
@@ -31,7 +31,7 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
     4. Save as Image
     5. Import from Journal
     6. Load Python block
-    7. Load examples
+    7. Load examples  
 
 4. View Toolbar:
 
@@ -43,7 +43,7 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
     4. Centimeter coordinates
     5. Rescale coordinates
     6. Grow blocks
-    7. Shrink blocks
+    7. Shrink blocks  
 
 5. Palette Toolbar:
 
@@ -60,7 +60,7 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
     9. Aditional options palette
     10. Presentation templates palette
     11. Trash bin
-    12. Hide blocks
+    12. Hide blocks  
 
 6. Help toolbar
 
@@ -68,11 +68,11 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
 
     Enables contextual help
 
-7. [insert icon here] CLEAN: Clean drawing in the canvas
-8. [insert icon here] RUN: Runs the program (*Start* block) (maximum speed)
-9. [insert icon here] RUN SLOWLY: Runs the program at low speed
-10. [insert icon here] DEBUG: Runs the program block by block (to review the programming)
-11. [insert icon here] STOP TURTLE: Stops the execution of the program (red: RUN / black: STOP)
+7. [insert icon here] CLEAN: Clean drawing in the canvas  
+8. [insert icon here] RUN: Runs the program (*Start* block) (maximum speed)  
+9. [insert icon here] RUN SLOWLY: Runs the program at low speed  
+10. [insert icon here] DEBUG: Runs the program block by block (to review the programming)  
+11. [insert icon here] STOP TURTLE: Stops the execution of the program (red: RUN / black: STOP)  
 12. [insert icon here] STOP: Closes Turtle Blocks Activity
 
 [insert icon here] HIDE BLOCKS: in this state, it shows blocks; when fill color is yellow, it hides them. You may toggle between views by clicking this icon found on the right of the "trash bin".
@@ -80,26 +80,47 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
 ## Palettes
 
 1. Turtle commands palette
+
     [insert screenshot here]
+
 2. Pen commands palette
+
     [insert screenshot here]
+
 3. Pen colors palette
+
     [insert screenshot here]
+
 4. Numerical operators palette
+    
     [insert screenshot here]
+
 5. Flow operators palette
+
     [insert screenshot here]
+
 6. Variable blocks palette
+
     [insert screenshot here]
+
 7. Sensor palette
+
     [insert screenshot here]
+
 8. Media object palette
+
     [insert screenshot here]
+
 9. Aditional options palette
+
     [insert screenshot here]
+
 10. Presentation templates palette
+
     [insert screenshot here]
+
 11. Trash bin
+
     [insert screenshot here]
 
 ## Help for each block in palettes (TB v.109)
