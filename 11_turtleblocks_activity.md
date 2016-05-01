@@ -6,82 +6,100 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
 
 ## Toolbars of TB version 109
 
-1.- Activity toolbar (Project toolbar):
+1. Activity toolbar (Project toolbar):
+    
     [insert screenshot here]
-    a) Project Title
-    b) Share button
-    c) Save copy
-2.- Edit Toolbar:
+    
+    1. Project Title
+    2. Share button
+    3. Save copy
+
+2. Edit Toolbar:
+    
     [insert screenshot here]
-    a) Copy
-    b) Paste
-3.- Save Toolbar:
+
+    1. Copy
+    2. Paste
+
+3. Save Toolbar:
+
     [insert screenshot here]
-    a) Instant save
-    b) Save as HTML
-    c) Save as LOGO
-    d) Save as Image
-    e) Import from Journal
-    f) Load Python block
-    g) Load examples
-4.- View Toolbar:
+
+    1. Instant save
+    2. Save as HTML
+    3. Save as LOGO
+    4. Save as Image
+    5. Import from Journal
+    6. Load Python block
+    7. Load examples
+
+4. View Toolbar:
+
     [insert screenshot here]
-    a) Fullscreen
-    b) Cartesian coordinates
-    c) Polar coordinates
-    d) Centimeter coordinates
-    e) Rescale coordinates
-    f) Grow blocks
-    g) Shrink blocks
-5.- Palette Toolbar:
+
+    1. Fullscreen
+    2. Cartesian coordinates
+    3. Polar coordinates
+    4. Centimeter coordinates
+    5. Rescale coordinates
+    6. Grow blocks
+    7. Shrink blocks
+
+5. Palette Toolbar:
+
     [insert screenshot here]
-    a) Turtle commands palette
-    b) Pen commands palette
-    c) Pen colors palette
-    d) Numerical operators palette
-    e) Flow operators palette
-    f) Variable blocks palette
-    g) Sensor palette
-    h) Media object palette
-    i) Aditional options palette
-    j) Presentation templates palette
-    k) Trash bin
-    l) Hide blocks
-6.- Help toolbar
+
+    1. Turtle commands palette
+    2. Pen commands palette
+    3. Pen colors palette
+    4. Numerical operators palette
+    5. Flow operators palette
+    6. Variable blocks palette
+    7. Sensor palette
+    8. Media object palette
+    9. Aditional options palette
+    10. Presentation templates palette
+    11. Trash bin
+    12. Hide blocks
+
+6. Help toolbar
+
     [insert screenshot here]
+
     Enables contextual help
-7.- [insert icon here] CLEAN: Clean drawing in the canvas
-8.- [insert icon here] RUN: Runs the program (*Start* block) (maximum speed)
-9.- [insert icon here] RUN SLOWLY: Runs the program at low speed
-10.- [insert icon here] DEBUG: Runs the program block by block (to review the programming)
-11.- [insert icon here] STOP TURTLE: Stops the execution of the program (red: RUN / black: STOP)
-12.- [insert icon here] STOP: Closes Turtle Blocks Activity
+
+7. [insert icon here] CLEAN: Clean drawing in the canvas
+8. [insert icon here] RUN: Runs the program (*Start* block) (maximum speed)
+9. [insert icon here] RUN SLOWLY: Runs the program at low speed
+10. [insert icon here] DEBUG: Runs the program block by block (to review the programming)
+11. [insert icon here] STOP TURTLE: Stops the execution of the program (red: RUN / black: STOP)
+12. [insert icon here] STOP: Closes Turtle Blocks Activity
 
 [insert icon here] HIDE BLOCKS: in this state, it shows blocks; when fill color is yellow, it hides them. You may toggle between views by clicking this icon found on the right of the "trash bin".
 
 ## Palettes
 
-1.- Turtle commands palette
+1. Turtle commands palette
     [insert screenshot here]
-2.- Pen commands palette
+2. Pen commands palette
     [insert screenshot here]
-3.- Pen colors palette
+3. Pen colors palette
     [insert screenshot here]
-4.- Numerical operators palette
+4. Numerical operators palette
     [insert screenshot here]
-5.- Flow operators palette
+5. Flow operators palette
     [insert screenshot here]
-6.- Variable blocks palette
+6. Variable blocks palette
     [insert screenshot here]
-7.- Sensor palette
+7. Sensor palette
     [insert screenshot here]
-8.- Media object palette
+8. Media object palette
     [insert screenshot here]
-9.- Aditional options palette
+9. Aditional options palette
     [insert screenshot here]
-10.- Presentation templates palette
+10. Presentation templates palette
     [insert screenshot here]
-11.- Trash bin
+11. Trash bin
     [insert screenshot here]
 
 ## Help for each block in palettes (TB v.109)
