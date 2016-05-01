@@ -80,4 +80,4 @@ With this software on XO1.5 we can sithesize sounds of frequencies between 1.00 
 
 Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (Stock-keeping unit) that is found within the battery slot of the XO as shown. Once it is known you may obtain the charecteristics of your variety of OLPC SKU.
 
-
+[...]
