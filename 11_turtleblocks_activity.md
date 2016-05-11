@@ -137,7 +137,7 @@ We've included the help texts as they appear when invoked from inside the Activi
 | left      | Turns turtle counterclockwise (angle in degrees) | It has a numerical block attached where you must indicate how much to turn (by default: 90°) |
 | right     | Turns turtle clockwise (angle in degrees) | It has a numerical block attached where you must indicate how much to turn (by default: 90°) |
 | arc       | Moves turtle along an arc | It has a numerical block attached where you must indicate how much to turn (by default: 90°) as well as the desired radius (by default: 100) |
-| setxy     | Moves turtle to position xcor, ycor; (0, 0) is in the center of the screen. | It has a numerical block attached where you must indicate the x coordinate (by default: 0) as well as the y coordinate (by default: 0) of the point on the screen you wish the turtle to be. |
+| setxy     | Moves turtle to position xcor, ycor; (0, 0) is in the center of the screen| It has a numerical block attached where you must indicate the x coordinate (by default: 0) as well as the y coordinate (by default: 0) of the point on the screen you wish the turtle to be. |
 | seth      | Sets the heading of the turtle (0 is towards the top of the screen.) | It has a numerical block attached where you must indicate the angle the turtle body will be looking at for moving forward (by default: 0) |
 | xcor      | Holds current x-coordinate value of the turtle (can be used in place of a number block) | - |
 | ycor      | Holds current y-coordinate value of the turtle (can be used in place of a number block) | - |
