@@ -11,3 +11,4 @@
 * [Accuracy and Precision of the Analog to Digital conversion](9_precision_accuracy_ADC.md)
 * [Digital to Analog conversion](10_digital_to_analog.md)
 * [Turtle Blocks Activity (TB)](11_turtleblocks_activity.md)
+* [Brief tutorial of introduction to programming using the TurtleBlocks Activity (TB)](12_tb_programming_tutorial.md)
