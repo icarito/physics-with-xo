@@ -206,7 +206,7 @@ We've included the help texts as they appear when invoked from inside the Activi
 | vspace    | jogs stack down | Same as above. Extensible by pushing "+" |
 | stop stack | stops current action | - |
 | while     | do-while-True operator that uses boolean operators from Numbers palette | As long as the logical condition on the upper/right side is met ("if..."), it will execute the programming block connected to the bottom/right (after the "vertical spacer" block). It's useful to invoke it within a "named action". |
-| until     | do-until-True operator that uses boolean operators from Numbers palette | It executes the programming block that is connected to the lower/right (next to the "vertical spacer" block) until the logical condition in the upper/right side ("if...") is met. It's useful to invoke within a "named action. |
+| until     | do-until-True operator that uses boolean operators from Numbers palette | It executes the programming block that is connected to the lower/right (next to the "vertical spacer" block) until the logical condition in the upper/right side ("if...") is met. It's useful to invoke within a "named action". |
 
 ### Variable blocks palette
 
