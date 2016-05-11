@@ -147,13 +147,13 @@ We've included the help texts as they appear when invoked from inside the Activi
 
 | Blocks    | Help (original) | Additional clarification |
 |-----------|-----------------|--------------------------|
-| penup     | Turtle will not draw when moved. | - |
-| pendown   | Turtle will draw when moved. | - |
-| setpensize | Sets size of the line drawn by the turtle. | It has a numerical block attached where you must indicate the numeric value for the line width (by default: 5) |
-| fillscreen | Fills the background with (color, shade) | It has a numerical block attached where you must indicate the numeric value for the color (by default: 60) and shade (by default: 80). Resets turtle location to (0,0). |
-| pensize   | Holds current pen size (can be used in place of a number block). | - |
-| startfill | Starts filled polygon (used with end fill block). | - |
-| stopfill  | Completes filled polygon (used with start fill block). | - |
+| penup     | Turtle will not draw when moved| - |
+| pendown   | Turtle will draw when moved| - |
+| setpensize | Sets size of the line drawn by the turtle| It has a numerical block attached where you must indicate the numeric value for the line width (by default: 5) |
+| fillscreen | Fills the background with (color, shade) | It has a numerical block attached where you must indicate the numeric value for the color (by default: 60) and shade (by default: 80). Resets turtle location to (0,0)|
+| pensize   | Holds current pen size (can be used in place of a number block)| - |
+| startfill | Starts filled polygon (used with end fill block)| - |
+| stopfill  | Completes filled polygon (used with start fill block)| - |
 
 ### Pen colors palette
 | Blocks    | Help (original) | Additional clarification |
