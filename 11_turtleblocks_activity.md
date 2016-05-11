@@ -177,7 +177,7 @@ We've included the help texts as they appear when invoked from inside the Activi
 ### Numerical operators palette
 | Blocks    | Help (original) | Additional clarification |
 |-----------|-----------------|--------------------------|
-| plus      | Adds two alphanumeric inputs | Can be used to concatenate text (character strings). |
+| plus      | Adds two alphanumeric inputs | Can be used to concatenate text (character strings)|
 | minus     | Subtracts bottom numeric input from top numeric input | - |
 | product   | Multiplies two numeric inputs | - |
 | division  | Divides top numeric input (numerator) by bottom numeric input (denominator) | - |
@@ -201,11 +201,11 @@ We've included the help texts as they appear when invoked from inside the Activi
 | forever   | loops forever | Repeats the programming block execution of the blocks connected to the lower/right side indefinitely or until the block "stop stack" is found |
 | repeat    | loops specified number of times | Repeats N times (by default: 4) the execution of the programming block that is connected its the lower/right side |
 | if then   | if-then operator that uses boolean operators from Numbers palette | If the logical condition in the upper/right side is met, it executes the programming block to the lower/right side. Otherwise, execution continues with the one connected below |
-| if then else | if-then-else operator that uses boolean operators from Numbers palette | If the logical condition in the upper/right side is met, the programming block connected to the bottom/center is executed. Otherwise, the one in the bottom/right side will be executed. |
+| if then else | if-then-else operator that uses boolean operators from Numbers palette | If the logical condition in the upper/right side is met, the programming block connected to the bottom/center is executed. Otherwise, the one in the bottom/right side will be executed|
 | hspace    | jogs stack right | This is a connector that moves programming blocks to the right in order to avoid overlapping |
 | vspace    | jogs stack down | Same as above. Extensible by pushing "+" |
 | stop stack | stops current action | - |
-| while     | do-while-True operator that uses boolean operators from Numbers palette | As long as the logical condition on the upper/right side is met ("if..."), it will execute the programming block connected to the bottom/right (after the "vertical spacer" block). It's useful to invoke it within a "named action". |
+| while     | do-while-True operator that uses boolean operators from Numbers palette | As long as the logical condition on the upper/right side is met ("if..."), it will execute the programming block connected to the bottom/right (after the "vertical spacer" block). It's useful to invoke it within a "named action"|
 | until     | do-until-True operator that uses boolean operators from Numbers palette | It executes the programming block that is connected to the lower/right (next to the "vertical spacer" block) until the logical condition in the upper/right side ("if...") is met. It's useful to invoke within a "named action". |
 
 ### Variable blocks palette
