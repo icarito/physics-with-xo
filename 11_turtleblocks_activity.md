@@ -337,7 +337,7 @@ The following tables include (only) the new blocks that were added in version 13
 ### Media blocks palette
 | Blocks    | Help (original) | Additional clarification |
 |-----------|-----------------|--------------------------|
-| speak     | Emits thru the speakers (as synthetized voice) the phrase contained in the text block to to the right | It includes a block that indicates the text to be synthetized (by default: *hello*). Numerical values can be included. |
+| speak     | Emits thru the speakers (as synthetized voice) the phrase contained in the text block to to the right | It includes a block that indicates the text to be synthetized (by default: *hello*). Numerical values can be included|
 | sinewave | Plays a sinewave at frequency, amplitude, and duration (in seconds) | For generating sounds thru the speakers or the headphone output. Amplitude is in arbitrary units (by default: *frequency: 1000 Hz, amplitude: 5000 and duration: 1s*) |
 
 
