@@ -206,7 +206,7 @@ We've included the help texts as they appear when invoked from inside the Activi
 | vspace    | jogs stack down | Same as above. Extensible by pushing "+" |
 | stop stack | stops current action | - |
 | while     | do-while-True operator that uses boolean operators from Numbers palette | As long as the logical condition on the upper/right side is met ("if..."), it will execute the programming block connected to the bottom/right (after the "vertical spacer" block). It's useful to invoke it within a "named action"|
-| until     | do-until-True operator that uses boolean operators from Numbers palette | It executes the programming block that is connected to the lower/right (next to the "vertical spacer" block) until the logical condition in the upper/right side ("if...") is met. It's useful to invoke within a "named action". |
+| until     | do-until-True operator that uses boolean operators from Numbers palette | It executes the programming block that is connected to the lower/right (next to the "vertical spacer" block) until the logical condition in the upper/right side ("if...") is met. It's useful to invoke within a "named action"|
 
 ### Variable blocks palette
 
@@ -214,8 +214,8 @@ The following blocks are used to define variables ("boxes") and subroutines ("ac
 
 | Blocks    | Help (original) | Additional clarification |
 |-----------|-----------------|--------------------------|
-| start     | connects action to toolbar run buttons | This block begins execution of the main programming code. Clicking it is the same as pushing the "RUN" button (rabbit) in the toolbar. |
-| storeinbox1 | stores numeric value in Variable 1 | For handling variables, following **boxes** have been added: "1", "2" and "named". It stores a numeric value, a string or a media object in "box 1". |
+| start     | connects action to toolbar run buttons | This block begins execution of the main programming code. Clicking it is the same as pushing the "RUN" button (rabbit) in the toolbar|
+| storeinbox1 | stores numeric value in Variable 1 | For handling variables, following **boxes** have been added: "1", "2" and "named". It stores a numeric value, a string or a media object in "box 1"|
 | storeinbox2 | stores numeric value in Variable 2 | idem. |
 | string | string value | In order to change the numeric value, all you need to do is to click within the block, delete the 100, and write a new value |
 | box1 | Variable 1 (numeric value) | Current contents of the variable called "box 1" |
