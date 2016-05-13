@@ -25,15 +25,15 @@ This activity allows us to draw on the screen by executing orders that are given
 
 We will use these capabilities to draw Cartesian axes and draw charts on the screen by joining the points successively occupied by the turtle. In cases where this sequence is very dense, the stroke will look as corresponding to a continuous function.
 
-It can also display text on-screen, the value of the magnitude measured by a sensor at a given moment (or combination of both), a photo taken by the built-in digital camera (with block *show* of the *Media object palette*) or also data being measured may be permanently showed on-screen by displaying the status bar (this is achieved with block *print* from the *Additional options palette*).
+It can also display text on-screen, the value of the magnitude measured by a sensor at a given moment (or combination of both), a photo taken by the built-in digital camera (with the block *show* of the *Media object palette*) or also data being measured may be permanently shown on-screen by displaying the status bar (this is achieved with the block *print* from the *Additional options palette*).
  
-A very interesting feature of this Activity, is the ability to synthesize human voice to output a text message, a numeric value or a combination of both; this is achieved by running a Python programming block called *speak.py* (TB v.109) or by running the *speak* block (TB v.130) from the *Media object palette*. As previously described, TB allows to synthesize a sinusoidal signal of adjustable frecuency (and produce an audible sound for example), this time either by executing the Python programming block called *sinewave.py* (TB v.109) or by executing the *sinewave* block (TB v.130) from the *Media blocks palette* (in this case the duration of the output signal may also be selected).
+A very interesting feature of this Activity, is the ability to synthesize human voice to output a text message, a numeric value or a combination of both; this is achieved by running a Python programming block called *speak.py* (TB v.109) or by running the *speak* block (TB v.130) from the *Media object palette*. As previously described, TB allows to synthesize a sinusoidal signal of adjustable frecuency (and produce an audible sound, for example), this time either by executing the Python programming block called *sinewave.py* (TB v.109) or by executing the *sinewave* block (TB v.130) from the *Media blocks palette* (in this case the duration of the output signal may also be selected).
 
-**Note: the following examples relate to TB v.109 running on XO1 except those that refer to the 130 version which is indicated explicitly in brackets (with name * .ta).**
+**Note: the following examples relate to TB v.109 running on XO1 except those that refer to version 130, which are indicated explicitly in brackets (with .ta extension).**
 
 ## CONSTRUCTION OF GEOMETRIC FIGURES.
 
-### Example 1 to draw a square:
+### Example 1 - to draw a square:
 
 The canvas on which the turtle moves can be interpreted as a cartesian space with the origin (0, 0) located at the center (initial position of the turtle at the beginning of any TB program's execution) and border positions -600 to +600 (horizontal axis **x**) and -450 to +450 (vertical axis **y**). 
 
@@ -45,147 +45,200 @@ Case A: One way to do it is to command the turtle to occupy the vertices of the 
 
 To run it, you must either press the icon (run) [icon run here], or click in the topmost block "start" (which executes the main routine of the program). The block *clean* clears the canvas before starting any action.
 
-If you want to know what action each block performs, the program can be executed by pressing the icon (debug) [icon debug here] which runs the program block by block, modifying the color of the block that is running at every moment; this mode allows understanding what it is doing and detect possible errors in programming.
+If you want to know what action each block performs, the program can be executed by pressing the icon (debug) [icon debug here] which runs the program block by block, modifying the color of the block that is running at every moment; this mode allows understanding what it is doing and detecting possible programming errors.
 
 **Case B:** An alternative is to have the turtle move forward and turn 90 degrees (an angle that we will call *external*, supplemental to internal) four times, as shown in the following example (*cuadrado adelante derecha.ta*):
 
 [insert blocks]
 
-Here you can see that the forward and right blocks repeat themselves, so we could run the same action without retyping, adding a repeat block as shown in the following example (cuadrado repetir 4 .ta): 
+Here you can see that the forward and right blocks repeat themselves, so we could run the same action without retyping, adding a repeat block as shown in the following example (*cuadrado repetir 4.ta*): 
 
-{insert blocks}
+[insert blocks]
 
-Case C: 
+**Case C:**
 
-{insert blocks}
+[insert blocks]
 
-In this case we have included the blocks hidden blocks (not to be displayed while the program is running), full screen (showing only the canvas and the turtle strokes hiding toolbars and palettes) and set color/random (0, 100) (randomly changing the stroke color on each new side of the square). 
+In this case we have included the block *hide blocks* (in order not display them while the program is running), full screen (to show only the canvas and the turtle strokes while hiding toolbars and palettes) and *set color/random (0, 100)* (to randomly change the stroke color on each new side of the square). 
 
-This examples show that it is possible to perform the same action in different ways, each written in a more sumarized way than its predecessor. The idea is not to repeat blocks, by including blocks as repeat, while, forever, until, etc.
+This example shows that it is possible to perform the same action in different ways, each of them written more concisely than its predecessor. The idea is not to repeat blocks, by including blocks such as repeat, while, forever, until, etc.
 
-Example 2 draw an equilateral triangle:
+### Example 2 - to draw an equilateral triangle:
 
-We will make this track (tri?ngulo repetir 3.ta) recalling that internal angles thereof are 60 degrees. But as our turtle makes use of external angles, we will use the corresponding 120 degrees. We will proceed in a similar way to the programming of previous case C:
+We will trace this path (*triángulo repetir 3.ta*) recalling that internal angles thereof are 60°. But as our turtle makes use of external angles, we will use the corresponding 120°. We will proceed in a similar way to the programming of previous **case C**:
 
-{insert blocks}
+[insert blocks]
 
-Example 3 draw a regular polygon of N sides. Introduction to using variables ("box") in TB: 
+### Example 3 - to draw a regular polygon of N sides. Introduction to using variables ("box") in TB: 
 
-Comparing the last two programs we see that the set of blocks within the repeat block runs a number of times that matches the "Number of sides" of the polygon to draw, and that the external angle that is written along the right block (responsible for spinning the turtle) corresponds to the value (360 / number of sides). This allows us to introduce the concept of variable, an amount that can be entered as a parameter and can then be displayed on screen, used for later calculations, etc.: In TB variables are stored in "boxes": box 1, box 2, or in a box whose name we choose. In this case we create two boxes: 1."Number of sides" and 2."external angle". The value corresponding to the box "Number of sides" should be written in it before running the program, while the value of the box "external angle" is calculated from that. The following program (pol?gono cajas .ta) draws a triangle, a square, a pentagon, etc. according to the value initially enter in the box "Number of sides" (values 3, 4, 5, etc.). Cases corresponding to the values 3 and 5 are shown which produce the layout of an equilateral triangle and a pentagon:
+Comparing the last two programs we see that the set of blocks within the repeat block runs a number of times that matches the "Number of sides" of the polygon to draw, and that the external angle that is written along the right block (responsible for spinning the turtle) corresponds to the value (360° / number of sides). This allows us to introduce the concept of **variable**, an amount that can be entered as a parameter and can then be displayed on screen, used for later calculations, etc.: 
 
-{insert blocks}
+In TB variables are stored in *"boxes"*: box 1, box 2, or in a box whose name we choose. 
 
-{insert blocks}
+In this case we create two boxes: 
 
-Display on-screen text, numerical values and images. Introduction to data types, operators and control structures in TB:
+1. "Number of sides" and 
+2. "external angle". 
 
-To do this simply use the block show connected to:
-1. A block [insert block icon] (string of characters) you want to display
-2. A block [insert block icon] (real or integer numeric value) or
+The value corresponding to the box "Number of sides" should be written in it before running the program, while the value of the box "external angle" is calculated from that.
+
+The following program (*polígono cajas.ta*) draws a triangle, a square, a pentagon, etc. according to the value initially entered in the box "Number of sides" (values 3, 4, 5, etc.). Cases corresponding to the values 3 and 5 are shown which produce the figure of an equilateral triangle and a pentagon:
+
+[insert blocks]
+
+[insert blocks]
+
+## Displaying text, numerical values and images on-screen. Introduction to data types, operators and control structures in TB:
+
+To do this simply use the block *show* connected to:
+
+1. A block [insert string block]  (string of characters) you want to display
+2. A block [insert number block]  (real or integer numeric value) or
 3. The contents of a variable "box". This block may be the result of reading a sensor connected to the external microphone input of the XO.
 
+The *show* block may be used to display text and numeric values at the same time using the addition operator in order to clarify the interpretation of the displayed value. The following example (*mostrar volumen.ta*) displays the numeric value corresponding to the volume of sound captured by the microphone of the XO:
 
-It can be used to display text and numeric value at the same time using the addition operator and to clarify the interpretation of the displayed value. The following example (mostrar volumen.ta) displays on screen the numeric value corresponding to the volume of sound recording the microphone of the XO:
+[insert blocks]
 
-{insert blocks}
+If we want to continually monitor the volume, we should write a program (*monitor de volumen.ta*) that permanently repeats the above action. For this we will use the block *forever*, but attached to the *print* block which will show it in a status bar that is displayed on the bottom of the screen. We will do this because *show* writes from the initial position of the turtle and, if we don't want to do it over what is already written, we must reposition before repeating the action (we will be use it to generate tables of values further ahead). The following is the volume monitor:
 
-If we want to continually monitor the volume, we should write a program (monitor de volumen.ta) that permanently repeats the above action. For this we will use the block forever, but attached to the print block which will show it in a status bar that is displayed on the bottom of the screen. We will do this because show writes from the initial position of the turtle and, if we don't want to do it over what is already written, we must reposition before repeating the action (will be used to generate tables of values below). Monitor volume shown below:
+[insert blocks]
 
-{insert blocks}
+To complete the presentation of data types in TB how to display them on screen, we'll add a logical condition: if the volume is greater than a certain value, the camera will take a photo and it will be shown on screen.  
 
-To complete the presentation of data types in TB and displays on screen, we should add a logic condition: if the volumen is greater than a certain value, the camera will take a photo and it will be shown on screen.  
+For this we must use the *if-then* block (from the Flow operators palette) in addition to the *greater-than* operator: in this way, if the condition (logical or boolean data type that can only be either *true* or *false*) is met, the program (*si volumen 100 saca foto.ta*) runs the lines that follow the *then*:
 
-For this we use the if-then block (from the flow operators palette) next to the greater than operator: in this way, if the condition (type of logical or boolean data that can only take two values truth of false) is truth, the program (si volumen 100 saca foto.ta) runs the lines that follow the then: 
-  
-{insert blocks}
+[insert blocks]
 
-The stop action block connected at the lowest location in the set stops execution of the block forever once the condition is met and the picture is displayed. If you want to continue program execution indefinitely that block should be removed. This permanent execution without stopping condition is called a loop.
+The *stop action* block connected at the lowest location in the set stops execution of the *forever* block once the condition is met and the picture is displayed. If you want to continue program execution indefinitely that block should be removed. This permanent execution without a stopping condition is called an infinite loop.
  
-The following example (storyboard 36.ta) is a program that triggers the camera 36 times in succession, placing a photo next to each other forming a 6x6 matrix to cover the entire screen. This is an example that can be used as entertainment for the younger children.
+The following example (*storyboard 36.ta*) is a program that triggers the camera 36 times in succession, placing a photo next to each other forming a 6x6 matrix to cover the entire screen. This is an example that can be used as entertainment for younger children.
+
+[insert blocks]
+
+A slight modification (*storyboard.ta*) repeats the action indefinitely until the program execution is interrupted:
+
+[insert blocks]
+
+With the show block, any other type of media objects, in particular videos, can also be displayed on screen: these objects must be stored in the Journal of the XO.
+
+## Emitting sounds and synthesizing speech. Introduction to the Python block.
+
+TB's ability to make sounds of adjustable frequency was discussed in **Chapter 10 - Digital to analog conversion** (by loading the Python [icon here] programming sample block called sinewave.py).
+
+Another interesting TB feature refers to the possibility of issuing a spoken message using the Python programming block *speak.py* included as a sample in the folder *pysamples*. This code can be included in our TB program by loading the Python block; this procedure is described in **Chapter 11 Turtle Blocks Activity (TB)**.
+
+The following example (*si volumen 100 habla.ta*) is a modification of the previous *si volumen 100 saca foto.ta* which makes the XO "speak" when the volume recorded by the microphone exceeds the (arbitrary) value 100. In this case the message "the sound volume is very high" will be heard:
 
 {insert blocks}
 
-A slight modification (storyboard.ta) repeats the action indefinitely until the program execution is interrupted:
+Note: You must remember that every time this program is copied to another XO, the Python block is "empty", so the process "load" and save in the Journal should be repeated. From then it runs correctly each time it is invoked. A *comment* programming block has been added as a reminder of this fact is easily forgotten.
 
-{insert blocks}
+When working with TB version 130 or later, this problem of "emptying" does not exist because the *speak* block is used, as shown below (si volumen 100 habla v130.ta):
 
-With the show block, any other type of media objects, in particular videos can also be displayed on screen: these objects must be stored in the Journal of XO.
+[insert blocks]
 
+**Generalization**: as in the two examples above (speak.py and sinewave.py), within a TB program, one can enter a portion of code written in several lines of Python by introducing the *Python* block. This can facilitate common tasks that appear as samples in the pysamples folder and that can not be programmed using the available TB blocks. An absolutely original block may be written using (for example) Pippy Activity, saved it in the Journal with the name *myblock*, and then loaded it into our program.
 
+## Access to time measurements and calculations of mathematical functions. Introduction to the Python function block.
 
+[insert icon here] A block having a great versatility when programming is the *Python function* block, unlike the *Python* block, it allows the execution of a command or single line of programming; for example, if one wants to make time measurements, we may use this block to invoke the Python *time ()* statement, and we will obtain the current time, measured with respect to an arbitrary origin (known as epoch). If we wanted to program a timer to the thousandth of a second, we could write the following program (*Cronómetro (ms).ta*):
 
-Emission of sounds and speech synthesis. Introduction to the Python block
+[insert blocks]
 
-TB's ability to make sounds of adjustable frequency was discussed in Chapter 10, the digital to analog conversion (by loading the Python [icon here] programming sample block called sinewave.py).
+The program begins by saving the initial instant in a box we will call "ti" and then permanently prints on screen the result of subtracting to the current time (previously stored in the box "tf") the value of "ti". Since *time ()* is expressed in seconds, we multiply the result by 1000 so that the interval will appear in milliseconds on screen. Of the operation "1000x(tf-ti)" we take only the integer part, by running the Python function *int ()*.
 
-Another interesting TB capacity refers to the possibility of issuing a spoken message using the Python programming block speak.py included as a sample in the folder pysamples. This code can be included in our TB program by loading the block Python; this procedure is described in Chapter 11 Activity TURTLE BLOCKS (TB).
+We see another example of programming (*reloj.ta*) using the localtime().tm\_hour and localtime().tm\_min statements within *Python function* blocks in order to program the on-screen display of the current time:
 
-The following example (si volumen 100 habla .ta) is a modification of the previous si volumen 100 saca foto .ta which makes the XO "talk" when the volume recorded by the microphone exceeds the value (arbitrary) 100. In this case the message "the sound volume is very high" plays:
+[insert blocks]
 
-{insert blocks}
+In addition to the above, this block allows us to perform advanced mathematical calculations of one (x), two (x, y) or three (x, y, z) variables. To select the number of parameters or variables, you must press the "+" sign, located at the lower left corner of the block. By default the block's output is: f (x) = x with x = 100. To perform any other calculations, the funtion must be written within the block function "f(x)" with the proper syntax that can be consulted in PYTHON DOC MATH. The following example (*Báskara.ta*) is a program that obtains the roots of a quadratic equation after inputing the a, b and c coefficients (storing them in "boxes" of the same name):
 
-Note: You must remember that every time this program is copied to another XO, the Python block is "empty", so the process "load" and save in the Journal should be repeated. From then it runs correctly each time it is invoked. Comment programming block is added as a reminder of this fact you can forget.
+[insert blocks]
 
-If working with TB version 130 and later, this problem of "emptying" does not exist because the block is used to talk like (si volumen 100 habla v130.ta) is shown below:
+In this case it is x² - x - 10 = 0, displaying on screen:
 
-{insert blocks}
+[insert result]
 
-Generalization: as in the two examples above (speak.py and sinewave.py), within a programming TB can enter a portion of code written in Python of several lines by introducing the block Python. This can facilitate common tasks that appear as samples in the pysamples folder and can not be programmed using the TB blocks available. You can also write an absolutely original block in Activity Pippy (for example), save it in the Journal with myblock name, and then load it into our program.
+The previous program could be constructed by joining blocks of the numeric operators palette, but it would be longer and much less intuitive.
 
+## Using actions and storing values in the stack: *empty stack*, *push* and *pop* blocks.
 
-Access to time measurements and calculations of mathematical functions. Introduction to the Python function block
+It may be noted that the example program immediately preceding (*Báskara.ta*) is written based on two columns of blocks: the main column is headed by `start` [insert icon] and a secondary column is headed by `named action` [insert hat icon]. When invoked with `named action` [insert stack icon], the latter is run from the main body of the program.  
 
-[icon here] A block having a great versatility when programming is Python function block, unlike the block Python, allows the execution of a command line or single programming; for example, if you want to make time measurements we can invoke from this block the Python time () command, and obtain the current time, measured with respect to an arbitrary origin (known as epoch). If we set a timer to the thousandth of a second, we can write the following program (Cron?metro (ms) .ta):
+This way of writing complex programs based on specific modules that perform simple tasks is recommended to gain simplicity, clarity and the ability to reuse actions that are repeated in various programs. In TB these subroutines or sub-programs are called actions and to work with them, the action1, action2, or named action blocks are used, the latter being very useful for making the drafting of the program more readable and intuitive.
 
-{insert blocks}
+After introducing the concept of variable in TB with the use of "boxes", we present an alternative that expands this type of storage possibilities: the stack. These consist of a series of memory addresses that can be loaded with values with the `push` block for subsequent use, in this case, by using the `pop` block. The values are stored as when filling a box with packages: the first to enter will be the last to leave (so called FILO - first in, last out).
 
-The program begins saving the initial instant in a box we will call "ti" to then permanently print on sreen the result of subtracting to the current time (previously stored in the box "tf") the value of "ti". As time () it is expressed in seconds, multiply the result by 1000 so that on screen appears the interval in milliseconds. Of the operation "1000x(tf-ti)" we take only the integer part, by running the Python command int ().
+It should be made clear that any program that makes use of a stack, should begin by erasing its contents with the `empty stack` block. If while testing a program one wishes to know the contents of a stack, the `show stack` block can be used.
 
-We see another example of programming (reloj.ta) using commands localtime().tm_hour and localtime().tm_min within Python function blocks to program the on-screen display of the current time:
+We will show here an application program, which monitors the current time, and when it matches any of the values stored in the "stack" (through the action *cargar timbres* (load alarms)), it will emit a sound of 1000 Hz frequency.
 
-{insert blocks}
+For getting current time, the functions *localtime().tm_hour* (hour) and *localtime().tm_min* (minutes) are used. The action `cargar timbres` (load alarms) empties the stack and stores the time values for every alarm.  The action `puesta a punto` (setup) stores in the box `timbre` (alarm) the time nearest to the current time. When both values match, a sound is emitted.
 
-In addition to the above, this block allows us to perform advanced mathematical calculations of one (x), two (x, y) or three (x, y, z) variables. To select the number of parameters or variables, you must press the "+" sign, located in the lower left corner of the block. By default the block's output is: f (x) = x with x = 100. To perform any other calculations, the funtion must be written within the block function "f(x)" with the proper syntax that can be consulted in PYTHON DOC MATH. The following example (B?skara.ta) is the programming that obtains the roots of a quadratic equation after the imput of the a, b and c coefficients (storing them in "boxes" of the same name):
+This example (`timbres solymar1.ta`) can be used for automatically ringing school bells for starting and ending classes at a school. The current time and the time for the next ring are displayed:
 
-{insert blocks}
+NOTE: The set of blocks within the action `cargar timbres` may be collapsed into a single block by clicking the "-" sign.
 
-In this case it is x? - x - 10 = 0, displaying on screen:
+[insert blocks]
 
-{insert blocks}
+## Programming the display of tables of values onscreen
 
-The previous program could be constructed by joining blocks of the numeric operators palette, but it would be longer and less intuitive.
+A very common application of any data acquisition software is the generation and on-screen display of a table of values. The following example displays a table of values showing in the left column the values of x and in the right column the result of the given function of **x**, in this example, the expression **f (x) = x 2 +5**.
 
-Using actions and storing values in the stack: empty stack, push and pull blocks.
+To do this, we must use the block *show* repeatedly (iteration): for each iteration, the variable **x** is incremented by one unit and the value of the chosen function **f(x)** will be calculated.
 
-It may be noted that the example program immediately preceding (B?skara.ta) is written based on two columns of blocks: the main column headed by [insert icon] and a secondary column headed by [insert icon]. When being invoked with [insert icon] the latter is run from the main body of the program.  
+Initially the screen is cleared, the turtle is located in the upper row, and a header is written (action *cabezal* (header)), and the turtle is positioned in the next row. Then, and repeatedly **N** times, (the amount of values to show), the value of **x** is written, moving on to the next column, the value of **f(x)** is written, and then moving on to the next row to start again writing each pair of values (*tabla fx.ta*):
 
-This way of writing complex programs based on specific modules that perform simple tasks is recommended to gain in simplicity, clarity and reuse actions that are repeated in various programs. In TB these subroutines or sub-programs are called actions and to work with them the action1, action2, or named action blocks are used, the latter very useful for making more readable and intuitive the drafting of the program.
+[insert blocks here]
 
-After having introduced the concept of variable in TB with the use of "boxes", we present an alternative that expands this type of storage possibilities: the stack. This consists of a series of memory addresses that can get load of values by the push block for subsequently use, in this case by the pull block. The values ??are stored as when proceeding to fill a box with packages: the first to enter will be the last to leave (so called FILO first in last out).
+The following program (*tabla tiempo volumen.ta*) will show a table of values "time instant **t**" / "volume recorded by the microphone **volume**". In order to do this, it will calculate the time interval (in seconds) measured from the beginning of the program's execution in a similar way as the procedure outlined before in the *cronómetro (ms).ta* example:
 
-It is clear that any program that makes use of the stack should begin erasing its contents by the empty stack block. If during the step of test-programming you want to know the content, the show stack block can be used.
+## Construction of charts based in the x coordinate and based on time
 
-We will show here an application program, which monitors the current time and when it matches any of the values ??stored in the "stack" (through the action cargar timbres (load alarms)), issues a sound of 1000 Hz frequency.
+The application that follows the construction and display of tables of values is the construction of charts. To begin, we shall graph a matemathical function of x as a function of the value of the **x** coordinate that is incremented in succesive iterations. The direct way of obtaining a drawing of a chart of this kind is by means of the turtle positioning block `set xy`, that will locate it at the given (x, y) coordinates. By default, the turtle will draw a line between its origin and its destination, so if they are close, it will draw the curve that represents the function.
 
+The function f(x)=500e^-x/150 * sin(x/10) for the interval [1, 559].
 
+The variable **x** matches the **x** coordinate of the turtle that will take the initial value 1 and increment an unit for each iteration. The block *Python function* will calculate the value that the function will take and is used to determine the **y** coordinate of the turtle.
 
-For getting current time, the commands localtime().tm_hour (hour) and localtime().tm_min (minutes) are used. The action cargar timbres (load alarms) empties the stack and stores the time values that match with an input or output timbre (alarm).  The action puesta a punto (set up) stores in the box timbre (alarm) the time nearest to the current time. When both values match, there is an output sound 
-correspondant the alarm.
+To achieve the iteration we must use one of:
 
-This example (timbres solymar1.ta) can be used to automatically ringing doorbells in and out of classes at a high school. The current time and the time to the next ring are displayed:
+1. the `repeat` block N times,
+2. the `forever` block (plus a stop condition)
+3. the `until` block (plus a condition), or
+4. the `while` block (that will run as long as the condition is met)
 
-NOTE: The set of blocks within the action cargar timbres may collapse in a single block by clicking the "-" sign.
+In this case (*osc amort.ta*) we used the latter to draw a chart until the turtle's **x** coordinate reaches the value 560.
 
-{insert blocks}
+[insert screenshot here]
 
+In a similar way as when displaying a table of values for x/f(x) or time/volume, drawing a chart where the **x** coordinate is proportional to time involves using the *Python function* block with *time()* initially stored as "ti" (initial instant) in order to be able to further on calculate the elapsed time from the beginning. Since the canvas **x** coordinate is between -450 and 450, it is likely that we'll have to multiply the time interval by a factor to allow optimally displaying the chart onscreen.
 
-Programming deployment of value boxes onscreen
+The example (*gráfica volumen=f(t) with axis.ta*) shows a chart of the microphone's volume as a function of time:
 
-A very common programming of any Data acquisition software is the generation and on-screen display  frame of values. At
-following example table of values shown in column shown
-left values x and in the right column the result of the function x
-given, in this example, by the expression f (x) = x 2 +5.
+[insert screenshot here]
 
-To do this, we must use the block show repeatedly (iteration):
-for each iteration the variable x is incremented by one unit and calculated the
-value taken by the function f (x) chosen.
+The action *ejes* is in charge of drawing a pair of black colored axes with origin at the center of the screen (0, 0) with headers "volume" and "t(s)". Then, a red color is chosen for drawing the curve and the initial time is pushed into the *"ti" box*. The program is structured basde on a `forever` block that will draw the curve until the turtle reaches the coordinate **x=550** (visible right border of the screen). It shows that the drawing is not only based on placing the turtle at coordinates (X=time interval, y=volume) for the following reasons:
+
+1. **x** coordinate: when using the time interval directly, the turtle takes 550 seconds to reach the visible border to the right of the screen (excessively slow speed), for this reason we use this value multiplied by **20** in order to achieve a faster screen sweep.
+
+2. **y** coordinate: when using the value as returned by the `volume` block for the usual sound intensity in a room with several people talking, the turtle will move outside the screen (values of y>600), for this reason we used "volume/10" in order to obtain a drawing that will be visible in the entire screen.
+
+Of course the values of coefficients mentioned above must be adjusted to the use that the program will have. The values obtained from the microphone by monitoring *volume* (arbitrary units) must be used qualitatively and will only make sense relative to each other, since the sound subsystems of different XO models will produce very different values.
+
+### Note on Recursivity in TB
+
+Some programming languages have a very particular ability called recursivity. It consists of the posibility of an action to call itself, producing very potent code that is able to perform a complex action in few lines of code. TB possesses this ability, as can be consulted from FORSTER (blog of Tony Forster).
+
+## 12.2 Recommendations when programming the reading of sensors in TB and Measure
+
+Our experience in using different versions of Measure and TB indicates a series of recommendations to take into account:
+
+1. Measure and TB are activities in constant development, so the calibration of measures obtained from Measure will need to be verified, as well running program in each new version of TB, to be sure that they are not affected by new improvements. This testing work is fundamental to avoid losing time later on. In this project we use versions of Measure 31 (XO1), 42 (XO1.5), TB v109 (XO1) and TB v130 (XO1.5) because they were tested to satisfaction. For XO1.75, TB v158 was used.
+
+2. A common bug in TB consists of programs failing to run the first time they are executed, so testing should start from the second execution.
+
+3. When working with TB and *sensor blocks* one must take into account that two sensor blocks cannot be used at the same time, or you will get an error. This also happens when one supposedly has erased a block by dragging it back to the palette, but in reality remaining behind it. There are exceptions: for example, `volume` and `frequency` might coexist. An example of this is included in the program *dibuja con tu voz.ta* that allows to draw the scree by placing the turtle in position (x,y), commanded by the values of (frequency, volume) of the captured voice.
+
+[insert drawing here]
