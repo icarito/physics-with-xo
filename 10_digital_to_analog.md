@@ -1,18 +1,18 @@
-# Digital to Analog conversion
+# 10. Digital to Analog conversion
 
 ## Synthesis of sound on XO1
 
 ## Pippy Sugar Activity
 
-    The XO1 can sythethize sounds by means of the digital to analog (DAC) converter integrated to its sound card. The programming of this synthesis can be done by programming Python code in the programming activity Pippy that comes included with SUGAR. The following code (Oscilador.py) may be used to program the synthesys of pure sounds of the desired frequency (in Hz), amplitude (arbitrary units), and duration (in seconds):
+The XO1 can sythethize sounds by means of the digital to analog (DAC) converter integrated to its sound card. The programming of this synthesis can be done by programming Python code in the programming activity Pippy that comes included with SUGAR. The following code (Oscilador.py) may be used to program the synthesys of pure sounds of the desired frequency (in Hz), amplitude (arbitrary units), and duration (in seconds):
 
-    [insert screenshot here]
+[insert screenshot here]
 
 ## Turtle Blocks Sugar Activity (TB)
 
-    It is also possible to achieve the synthesis with the TurtleBlocks Activity (v.109), with the python example "sinewave.py". The same may be loaded from the main menu:
+It is also possible to achieve the synthesis with the TurtleBlocks Activity (v.109), with the python example "sinewave.py". The same may be loaded from the main menu:
 
-    Main Toolbar/ Save/ Load Python Block/ "sinewave.py"/ Open
+Main Toolbar/ Save/ Load Python Block/ "sinewave.py"/ Open
 
 [insert screenshot]
 
@@ -34,11 +34,11 @@ It is possible to achieve very acceptable results by using a low cost amplifier 
 
 ## Sound Synthesys on XO1.5
 
-The XO1.5 that was (initially) distributed by Plan Ceibal among secondary school students can dual boot: it can start Linux Fedora with either SUGAR or the GNOME Desktop. Following is how to sythethize pure sounds in both graphical environments:
+The XO1.5 that was (initially) distributed by Plan Ceibal among secondary school students can dual boot: it can start Linux Fedora with either SUGAR or the GNOME Desktop. Following is how to synthesize pure sounds in both graphical environments:
 
 ### Sugar TurtleBlocks Activity
 
-Just like with the XO1, the XO1.5 can synthesize sounds by utilizing the digital to analog converter (DAC) that come integrated to its sound card. Programming this sythesis is done by coding Python in the Pippy Activity development environment that is included with SUGAR (see code at "Sound Sythesys with XO1").
+Just like with the XO1, the XO1.5 can synthesize sounds by utilizing the digital to analog converter (DAC) that come integrated to its sound card. Programming this synthesis is done by coding Python in the Pippy Activity development environment that is included with SUGAR (see code at "Sound Synthesis with XO1").
 
 You can also achieve synthesis with the TurtleBlocks Activity (v.130), with the "senoidal" programming block contained in the media block palette.
 
@@ -48,7 +48,7 @@ By executing this example program, a sound with frequency of 440 Hz (adjustable)
 
 ### Frequency range of synthesized sounds
 
-The sound card of the XO1.5 sythethizes sounds of frequencies comprised between **0.1 Hz** and **7999** Hz. Generated sounds correspond to practically pure sinusoidal signals up to 5000Hz. While the presence of other components can be detected, these components grow in amplitude in frequencies between 5000 and 7999 Hz, until they emit a sound with oscillating amplitude (known as *beat*) when reaching the latter value.
+The sound card of the XO1.5 synthesizes sounds of frequencies comprised between **0.1 Hz** and **7999** Hz. Generated sounds correspond to practically pure sinusoidal signals up to 5000Hz. While the presence of other components can be detected, these components grow in amplitude in frequencies between 5000 and 7999 Hz, until they emit a sound with oscillating amplitude (known as *beat*) when reaching the latter value.
 
 The following graph shows the record of Amplitude=f (frequency), obtained with the Measure Activity, Sound, Baseline frequency, for the emission of 7500 Hz, that we see is accompanied by another of frequency 8500 Hz of comparable amplitude:
 
@@ -58,23 +58,23 @@ The following table shows some of the synthesized frequencies and the frequencie
 
 [insert table]
 
-The extremely low frequency (**0.1 Hz**) that the XO1.5 can produce is remarcable. To determine the range of frequencies, a FLUKE 87 tester was used to measure down to the minimum 2 Hz. To study lower values the LabQuest mini (Vernier) interface was used to measure voltage from a speaker connected to the earphone out socket. The following chart displays measurements for V=f(t) from which we could calculate the minimum generated frequency:
+The extremely low frequency (**0.1 Hz**) that the XO1.5 can produce is remarkable. To determine the range of frequencies, a FLUKE 87 tester was used to measure down to the minimum 2 Hz. To study lower values the LabQuest mini (Vernier) interface was used to measure voltage from a speaker connected to the earphone out socket. The following chart displays measurements for V=f(t) from which we could calculate the minimum generated frequency:
 
 [insert chart]
 
 The graph includes adjustment to the curve (V=f(t)) of the sinusoidal function (expected), showing a high correspondence between them.
 
-## Strenght of generated signal
+## Strength of generated signal
 
 (Same as XO1)
 
 ## Gnome Desktop, Audacity software
 
-In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multiplatform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
+In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multi-platform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
 
 [insert screenshot]
 
-With this software on XO1.5 we can synthesizee sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
+With this software on XO1.5 we can synthesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
 
 ## Synthesis of sound with the XO1.75
 

@@ -1,4 +1,4 @@
-# Turtle Blocks Activity (TB)
+# 11. Turtle Blocks Activity (TB)
 
 The Sugar Graphical User Interface includes several Activities that can be used to learn how to program, known as programming environments. Some of them are Pippy, Etoys, Scratch and Turtle Blocks. The latter, Turtle Blocks Activity (Sugar Labs), is the one we'll use throughout this work. It is a development environment inspired in the LOGO programming language, created -among others- by the southafrican mathematician Seymour Papert in the decade of 1960; frequently identified with a turtle that drew on screen guided by programming that a user wrote, generally children and teenagers, as it was widely used to teach first steps in programming.
 
@@ -43,7 +43,7 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
     4. Centimeter coordinates
     5. Rescale coordinates
     6. Grow blocks
-    7. Shrink blocks<br>
+    7. Shrink blocks
 
 5. Palette Toolbar:
 
@@ -57,10 +57,10 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
     6. Variable blocks palette
     7. Sensor palette
     8. Media object palette
-    9. Aditional options palette
+    9. Additional options palette
     10. Presentation templates palette
     11. Trash bin
-    12. Hide blocks<br>
+    12. Hide blocks
 
 6. Help toolbar
 
@@ -111,7 +111,7 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
 
     [insert screenshot here]
 
-9. Aditional options palette
+9. Additional options palette
 
     [insert screenshot here]
 
@@ -242,7 +242,7 @@ The following blocks are used to define variables ("boxes") and subroutines ("ac
 | sound | raw microphone input signal | Range -32000 to 32000 |
 | volume | microphone input volume | Range 0 to 32000 |
 | pitch | frequency for the most intense sound from microphone input | Resolution +/- 8 Hz |
-| resistance | value for the resistance connected to the input microphone (measuring range: from 700 to 14000 ohm) | In case of using a stereo connector (TRS), it measures the resistance between the two TS contacs (tip and sleeve), corresponding to the left channel (CHL). Ranges: <br> XO1: 750 Ω to 14 kΩ <br> XO1.5: 2 kΩ to 420 MΩ <br> XO1.75 SKU 206: 0 to 1x10^7 Ω |
+| resistance | value for the resistance connected to the input microphone (measuring range: from 700 to 14000 ohm) | In case of using a stereo connector (TRS), it measures the resistance between the two TS contacts (tip and sleeve), corresponding to the left channel (CHL). Ranges: <br> XO1: 750 Ω to 14 kΩ <br> XO1.5: 2 kΩ to 420 MΩ <br> XO1.75 SKU 206: 0 to 1x10^7 Ω |
 | voltage | microphone input voltage | In case of using a stereo connector (TRS), it will measure the voltage between the TS contacts (tip and sleeve), corresponding to the left channel. Ranges: <br> XO1: 0.4 to 1.85 V <br> XO1.5: 0.17 to 3 V <br> XO1.75 SKU 206: 0 to 3.03 V |
 | xyz | push acceleration in x, y, z to the heap | The XO1.75 includes an accelerometer sensor. The results are pushed to the stack and may be retrieved with three "pop" blocks: one for the X component, another for the Y component and a third for the Z forward/backward component |
 
@@ -268,7 +268,7 @@ The following blocks are used to define variables ("boxes") and subroutines ("ac
 | show heap | show FILO in status block | - |
 | empty heap | empty the FILO | - |
 | pop       | pop value off of the FILO (can be used in place of a number block) | - |
-| comment   | make a comment to your code | It is used to make the code more readable with the inclusion of comments and/or clarifications. (by default: *comment* block). The content of the comment is displayed in the status bar (bottom, center, with orange background) when the program is executed in "walk" or "debug" modes|
+| comment   | make a comment to your code | It is used to make the code more readable with the inclusion of comments and/or clarifications. (by default: `comment` block). The content of the comment is displayed in the status bar (bottom, center, with orange background) when the program is executed in "walk" or "debug" modes|
 | print | print value in status block | A block or "status bar" is displayed in the bottom-center of the screen, with orange background. It can show numerical values, strings, or a combination of both by using the "+" block from the numerical operators palette|
 | Python | a programmable block: used to add advanced single-variable math equations, e.g., sin(x) | Python function block: This block runs single Python statements or advanced mathematical calculations. By pushing the "+" it adds up to three variables (x, y, z) to the calculation to be done (by default: f(x)=x, x=100). E.g: <br> Mathematics: sin(x) <br> Time: time() |
 | userdefined | runs code found in the tamyblock.py module found in the Journal | There are two applications: the first will run Python code that has been saved in the Journal with the name "myblock"; the second will execute the code loaded from "load Python block" from the third top icon (by default: 100). Growable block: accepts up to three parameters|
@@ -337,8 +337,8 @@ The following tables include (only) the new blocks that were added in version 13
 ### Media blocks palette
 | Blocks    | Help (original) | Additional clarification |
 |-----------|-----------------|--------------------------|
-| speak     | Emits thru the speakers (as synthetized voice) the phrase contained in the text block to to the right | It includes a block that indicates the text to be synthetized (by default: *hello*). Numerical values can be included|
-| sinewave | Plays a sinewave at frequency, amplitude, and duration (in seconds) | For generating sounds thru the speakers or the headphone output. Amplitude is in arbitrary units (by default: *frequency: 1000 Hz, amplitude: 5000 and duration: 1s*) |
+| speak     | Emits thru the speakers (as synthesized voice) the phrase contained in the text block to to the right | It includes a block that indicates the text to be synthesized (by default: *hello*). Numerical values can be included|
+| sinewave | Plays a sinewave at frequency, amplitude, and duration (in seconds) | For generating sounds through the speakers or the headphone output. Amplitude is in arbitrary units (by default: *frequency: 1000 Hz, amplitude: 5000 and duration: 1s*) |
 
 
 

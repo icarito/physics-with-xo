@@ -1,8 +1,9 @@
-# Analog to Digital conversion: Voltage and Resistance as integers in XO1 and XO1.5
+# 8. Analog to Digital conversion: Voltage and Resistance as integers in XO1 and XO1.5
 
 The Measure Activity displays an oscillogram of the detected signal from the built-in microphone of the XO or an external one connected to the microphone input socket. Beyond this, its initial versions also displayed qualitative information onscreen relative to the readings from sensors connected to the netbook by means of a horizontal bar that was vertically displaced with changes in the signal. Starting with version 31, it was possible to read from the bottom part of the screen the integer value product of the AD conversion:
 
 [missing photo here]
+
 Sensors, CC Connect the sensor to the microphone input jack (pink) on the left side of the XO.
 
 Current versions of this Activity return the integer value converted to Voltage or Resistance values that is being measured (the picture is an XO1.5 measuring on dual channel with version 36):
@@ -19,8 +20,13 @@ In order to achieve the goal set you must make a decision with regard to the **t
 
 In our case, we had two measuring instruments that were judged to be the most adequate:
 
-    a- A digital multimeter (tester) of the FLUKE® brand, TRUE RMS MULTIMETER, model 87 (FLUKE 87)
-    b- LabQuest Mini data acquisition interface and the corresponding sensors, of the Vernier brand (VERNIER LQM)
+
+<style type="text/css">
+    ol { list-style-type: lower-alpha; }
+</style>
+
+1. A digital multimeter (tester) of the FLUKE® brand, TRUE RMS MULTIMETER, model 87 (FLUKE 87)
+2. LabQuest Mini data acquisition interface and the corresponding sensors, of the Vernier brand (VERNIER LQM)
 
 Both instruments belonging to the Physics Laboratory of Liceo Solymar N°1 (Ciudad de la Costa, Canelones). The latter was connected to a Magalhães Laptop model MG10T (distributed by Plan Ceibal to Secondary School students of Canelones). The software that was used to control the interface is called "Logger Pro for Linux Public Beta" which can be downloaded at no cost from the interface provider (VERNIER LPL).
 

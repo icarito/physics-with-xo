@@ -3,7 +3,6 @@
 ## Guzmán Trinidad
 #### Physics Teacher graduated from the "Artigas" Teacher Institute (1992)
 
-
 > This work is dedicated to Andrea and our children: Juan and Guille
 
 * [Contact Author](mailto:fisicaconxo@gmail.com)

@@ -1,4 +1,4 @@
-# Accuracy and Precision of the Analog to Digital conversion (XO1, XO1.5, XO1.75)
+# 9. Accuracy and Precision of the Analog to Digital conversion (XO1, XO1.5, XO1.75)
 
 ## Accuracy:
 
@@ -54,8 +54,8 @@ for this case, its:
 "Voltage" being the value measured directly by the XO1.
 
 Following are two ways to recover accuracy in volt measurements:
-    1. one of them (cv product.ta) by using the "product" block (bottom, left) and the other
-    2. (cv Python.ta) with the "Python block" that allows to include mathematical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788") (bottom, right)
+1. one of them (cv product.ta) by using the "product" block (bottom, left) and the other
+2. (cv Python.ta) with the "Python block" that allows to include mathematical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788") (bottom, right)
 
 [insert turtle code here]
 
@@ -77,7 +77,7 @@ Summary[insert footnote]:
 
 (we summarize the expressions that were used when doing calculations)
 
-*Given a series of N values xi (resulting from performing measurements of the same physical magnitude under identical conditions), we calculate the arithmetical average xavg with:*
+*Given a series of N values xi (resulting from performing measurements of the same physical magnitude under identical conditions), we calculate the arithmetical average `xavg` with:*
 
 [insert formula here]
 
@@ -126,11 +126,15 @@ It can be concluded that the set of values maintains a low percentual dispersion
 
 ### Conclusions
 
-a- When used as a Voltmeter directly, measurements can be made that may differ in accuracy up to 4% with respect to a reference instrument.
+<style type="text/css">
+    ol { list-style-type: upper-alpha; }
+</style>
 
-In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient Cv will need to be calculated. This factor must multiply the "voltage" sensor block each time that it is used.
+1. When used as a Voltmeter directly, measurements can be made that may differ in accuracy up to 4% with respect to a reference instrument.
 
-b- The uncertainty of the XO1 as voltmeter is:
+    In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient Cv will need to be calculated. This factor must multiply the "voltage" sensor block each time that it is used.
+
+2. The uncertainty of the XO1 as voltmeter is:
 
     -/+(0.01V +1.5% of the value displayed onscreen)
 

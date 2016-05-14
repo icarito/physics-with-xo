@@ -1,4 +1,4 @@
-# History of the use of data acquisition interfaces in Secondary Public Education Physics Laboratories (N.T. in Uruguay)
+# 6. History of the use of data acquisition interfaces in Secondary Public Education Physics Laboratories (N.T. in Uruguay)
 
 Many of the Physics Laboratories of the CES began working with data acquisition interfaces decades ago.
 
@@ -19,10 +19,10 @@ Between the years 1992 and 1994 at the Physics Laboratory of Liceo Solymar N°1,
 
 The picture on the left shows the complete system: The tape deck (from which the program was loaded), TV (used as display), "Spectrum" microcomputer (in front of the TV) and "Dédalo" interface (to the right). The photo on the right shows the circuit board and power source of the unit.
 
-![Interfaz Dedalo (ext)](images/dedalo.png?raw=true)
-![Interfaz Dedalo (int)](images/dedalo_int.png?raw=true)
+![Interfaz Dedalo (ext)](images/dedalo.png)
+![Interfaz Dedalo (int)](images/dedalo_int.png)
 
-In the year 1994 Physics equipment including a PC and the data acquisition interface "CASSY-E" from the german company "Leybold" were distributed to all secondary schools. This generalization in access to technology was followed by a great number of Physics teachers, who flocked to use it in their secondary school courses and in research. Evidence of this is the great number and variety of articles published in the "Educación en Física" journal of the APFU (spanish initials for Association of Physics Teachers of Uruguay). See APFU:
+In the year 1994 Physics equipment including a PC and the data acquisition interface "CASSY-E" from the german company "Leybold" were distributed to all secondary schools. This generalization in access to technology was followed by a great number of Physics teachers, who flocked to use it in their secondary school courses and in research. Evidence of this is the great number and variety of articles published in the "Educación en Física" journal of the APFU (Spanish initials for Association of Physics Teachers of Uruguay). See APFU:
 
 1. GARCÍA, P., “Construcción de cajas de sensor para Interfases Cassy”, Vol. 2, No 3, Agosto de 1996. - (Constructing sensor boxes for Cassy Interfaces)
 2. GÓMEZ, E., MAYERO, M., “Registrando distintas cantidades de magnitud con el ordenador”, Vol. 4, No 1, Julio de 1998. - (Recording different physical magnitudes with the computer)

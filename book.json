@@ -1,0 +1,10 @@
+{
+    "author": [ "Guzmán Trinidad",
+                "Sebastian Silva (trans.)",
+                "Laura Vargas (trans.)"],
+    "plugins": [
+        "hide-published-with",
+        "-sharing"
+    ],
+    "pluginsConfig": {}
+}
