@@ -32,17 +32,17 @@ In order for the display of the value to become clear, text may be combined at t
 
 ![monitor de voltaje.ta](images/9_blocks_2.png)
 
-Now that we know how to show measured values onscreen, the questions that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
+Now that we know how to show measured values on-screen, the questions that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
 
 #### Appreciation:
 
-We may determine the appreciation of the XO as a voltmeter by using the programming shown above: the voltages are displayed onscreen to a centecimal of a Volt, therefore the **appreciation** is **0.01 V**.
+We may determine the appreciation of the XO as a voltmeter by using the programming shown above: the voltages are displayed on-screen to a centecimal of a Volt, therefore the **appreciation** is **0.01 V**.
 
 #### Accuracy:
 
 While it is true (as will be discussed further ahead) that there is no data dispersion in the order of a centecimal of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1 as voltmeter; this can be done by analyzing the graph Vref=f(Vxo1). The reference voltage Vref in this case was measured with the LQ mini interface.
 
-[insert graph here]
+![Vref=f(Vxo1)](images/9_graph_1.png)
 
 Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to relate the volt to each other.
 
@@ -56,10 +56,10 @@ for this case, its:
 "Voltage" being the value measured directly by the XO1.
 
 Following are two ways to recover accuracy in volt measurements:
-1. one of them (cv product.ta) by using the "product" block (bottom, left) and the other
-2. (cv Python.ta) with the "Python block" that allows to include mathematical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788") (bottom, right)
-
-[insert turtle code here]
+1. one of them (cv product.ta) by using the "product" block:
+   ![cv producto.ta](images/9_blocks_3.png)
+2. (cv Python.ta) with the "Python block" that allows to include mathematical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788"):
+   ![cv Python.ta](images/9_blocks_4.png)
 
 This coefficient depends on each particular XO we are working with, so we must determine it for each of them. To know the dispersion level for *accuracy coefficients in voltage measurements*, 9 different XO1 laptops were used to measure the same voltage, which was later compared with the reference instrument (Vref=1.529 V).
 
