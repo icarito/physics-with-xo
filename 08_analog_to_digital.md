@@ -2,15 +2,16 @@
 
 The Measure Activity displays an oscillogram of the detected signal from the built-in microphone of the XO or an external one connected to the microphone input socket. Beyond this, its initial versions also displayed qualitative information onscreen relative to the readings from sensors connected to the netbook by means of a horizontal bar that was vertically displaced with changes in the signal. Starting with version 31, it was possible to read from the bottom part of the screen the integer value product of the AD conversion:
 
-[missing photo here]
-
-Sensors, CC Connect the sensor to the microphone input jack (pink) on the left side of the XO.
+    Sensors, DC (connect sensor to pink 'Mic In' on left side of XO)
+    Bias/Offset Disabled - Volts (-32768)
 
 Current versions of this Activity return the integer value converted to Voltage or Resistance values that is being measured (the picture is an XO1.5 measuring on dual channel with version 36):
 
-[insert picture here]
+    Voltage sensor (connect sensor to pink 'Mic In' on left side of XO)
+    Voltage - Volts (1.698) (1.693)
 
-[insert picture here]
+    Resistive sensor (connect sensor to pink 'Mic In' on left side of XO)
+    Resistance - Ohms (420000000) (126730050)
 
 By using the versions of Measure that we have referenced, we were able to obtain the A-D conversion to Voltage/integer and Resistance/integer that are shown below (going forward we will abbreviate *integer* into *int* when referring to an integer value).
 
@@ -20,7 +21,6 @@ In order to achieve the goal set you must make a decision with regard to the **t
 
 In our case, we had two measuring instruments that were judged to be the most adequate:
 
-
 <style type="text/css">
     ol { list-style-type: lower-alpha; }
 </style>
@@ -28,13 +28,78 @@ In our case, we had two measuring instruments that were judged to be the most ad
 1. A digital multimeter (tester) of the FLUKE® brand, TRUE RMS MULTIMETER, model 87 (FLUKE 87)
 2. LabQuest Mini data acquisition interface and the corresponding sensors, of the Vernier brand (VERNIER LQM)
 
-Both instruments belonging to the Physics Laboratory of Liceo Solymar N°1 (Ciudad de la Costa, Canelones). The latter was connected to a Magalhães Laptop model MG10T (distributed by Plan Ceibal to Secondary School students of Canelones). The software that was used to control the interface is called "Logger Pro for Linux Public Beta" which can be downloaded at no cost from the interface provider (VERNIER LPL).
+Both instruments belonging to the Physics Laboratory of Liceo Solymar N°1 (Ciudad de la Costa, Canelones). The latter was connected to a **Magalhães** Laptop model **MG10T** (distributed by Plan Ceibal to Secondary School students of Canelones). The software that was used to control the interface is called "Logger Pro for Linux Public Beta" which can be downloaded at no cost from the interface provider (VERNIER LPL).
+
 
 The mentioned instruments were used within the conditions indicated by the manufacturer to take measurements. For example, for the multimeter they read: Operating Temperature: -20°C to 55°C and Relative Humidity between 0% and 90% (0 at 35°C). No correction of temperature coefficient was applied, because it was considered that other sources would be more significant in determining the precision and accuracy of measurements obtained with the XO.
 
 NOTE: in the following graphs, the points are united by straight lines only in order to make a clear visualization of the tendency that the distribution follows. In any case this representation is wrong from a Physics point of view.
 
-[insert graphs here]
+## XO1: A-D conversion Voltage/integer
+
+|V(V)|int|
+|----|---|
+|0,45|-30757|
+|0,615|-23220|
+|0,833|-13252|
+|1,042|-3761|
+|1,209|3874|
+|1,42|13484|
+|1,642|23561|
+|1,809|31208|
+|1,832|32249|
+
+![AD conversion XO1 (V)](images/8_graph_1.png)
+
+## XO1: A-D conversion Resistance/integer
+
+|R(Ω)|int
+|---|---
+|818|-30385
+|997|-26856
+|1180|-23534
+|1771|-14660
+|2190|-9577
+|4700|9286
+|6710|17256
+|8240|21457
+|10300|25547
+
+![AD conversion XO1 (R)](images/8_graph_2.png)
+
+## XO1.5: A-D conversion Voltage/integer
+
+|V(V)|int
+|---|---
+|0,31|9291
+|0,603|7295
+|0,816|5840
+|1,029|4388
+|1,219|3105
+|1,402|1854
+|1,621|363
+|1,804|-883
+|1,959|-1947
+
+![AD conversion XO1.5 (V)](images/8_graph_3.png)
+
+## XO1.5: A-D conversion Resistance/integer
+
+|R(Ω)|int
+|---|---
+|2190|25874
+|4700|22870
+|6710|20963
+|8240|19679
+|10300|18202
+|16090|15020
+|22000|12727
+|55700|6808
+|67500|5822
+|99600|4210
+
+![AD conversion XO1.5 (R)](images/8_graph_4.png)
+
 
 ## Analysis of the A-D conversion curves obtained
 

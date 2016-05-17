@@ -8,7 +8,7 @@ In general it is recommended to check this periodically; for this an instrument 
 
 ## Precision:
 
-In an ADC the precision of conversion depends on its *resolution or number of bits (n)* and the *linearity* of the effected conversion. Other factors such as signal displacement **b** (offset) also affect precision. The original analog signal that we'll call **A** is converted into a given digital signal **D** by the following expression: D=int[(2^n/FS)*A+b] being FS (Full Scale) the maximum input voltage, and int[...] the integer part of the expression between square brackets.
+In an ADC the precision of conversion depends on its *resolution or number of bits (n)* and the *linearity* of the effected conversion. Other factors such as signal displacement **b** (offset) also affect precision. The original analog signal that we'll call **A** is converted into a given digital signal **D** by the following expression: D=int[(2^n/FS)\*A+b] being FS (Full Scale) the maximum input voltage, and int[...] the integer part of the expression between square brackets.
 
 For example, the AD conversor integrated to the sound board of the XO1 (Analog Devices 1888) has a 16bit resolution, and a maximum input voltage of 1.85 V (approx) therefore we are able to resolve the value in a series of 2^16=65536 steps of digitization.
 
@@ -26,9 +26,11 @@ The results show ahead correspond to measures taken with an XO1, SKU5, model kno
 
 Although the subject will be developed in detail in the following chapters, it may be intuitive to recognize that the following code written with the programming blocks of the TurtleBlocks (TB) Activity allows us to read the voltage from the external microphone input:
 
-[insert ta screenshot here]
+![TB volts](images/9_blocks_1.png)
 
-In order for the display of the value to become clear, text may be combined at the "print" block by using the "addition" block, since it admits alphanumerical variables (text and numeric values); the program then could be as follows (volt monitor.ta):
+In order for the display of the value to become clear, text may be combined at the "print" block by using the "addition" block, since it admits alphanumerical variables (text and numeric values); the program then could be as follows (*monitor de voltaje.ta*):
+
+![monitor de voltaje.ta](images/9_blocks_2.png)
 
 Now that we know how to show measured values onscreen, the questions that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
 
