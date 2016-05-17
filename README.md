@@ -10,7 +10,7 @@
 #### This edition is a Work in Progress to translate the work into English (with permission)
 * [Contact Translators](mailto:equipo@somosazucar.org)
 
-> [Read online](https://icarito.gitbooks.io/physics-with-xo/content/3_research_protocol.html) - [PDF](https://www.gitbook.com/download/pdf/book/icarito/physics-with-xo) - NOTE: This is a draft.
+> [Read online](https://icarito.gitbooks.io/physics-with-xo/content/) - [PDF](https://www.gitbook.com/download/pdf/book/icarito/physics-with-xo) - NOTE: This is a draft.
 
 
 
