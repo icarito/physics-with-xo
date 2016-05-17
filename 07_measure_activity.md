@@ -79,7 +79,7 @@ This control allows to select between 10 Hz/DIV and 1000 Hz/DIV (by default: 500
 2. Voltage sensor (gray)
 3. "Invert" button
 4. Pull down: 1/10 s, 1 s, 30 s, 5 min., 30 min.
-5. "Start logging" button
+5. "Start recording" button
 
 **Sensitivity control**:
 
@@ -93,7 +93,7 @@ Sensitivity is adjustable by using the vertical slider located to the right of t
 2. Voltage sensor (selected, note the fourth icon in the top bar)
 3. "Invert" button
 4. Pull down: 1/10 s, 1 s, 30 s, 5 min., 30 min.
-5. "Start logging" button
+5. "Start recording" button
 
 **Sensitivity control**:
 
@@ -114,9 +114,114 @@ In sensor mode, the bottom bar shows the value of Resistance or Voltage as read 
     Resistive sensor (connect sensor to pink 'Mic In' on left side of XO)
     Resistance (Ohms)   (420000000) (12673050)
 
-### Toolbar of the Measure Activity v.31
+### Toolbar of the Measure Activity v.36
 
 #### 1. Project Toolbar
 
 ![Project Toolbar](images/measure_36_a.png)
 
+1. Project title
+2. "Share" button (gray, not available)
+3. Save a copy
+
+Top toolbar, 5th icon (after sensitivity slider): "Freeze the display" button
+Top toolbar, 6th icon: "Capture sample now" button
+Top toolbar, 7h icon: Exit the activity
+
+#### 2. Configuration Toolbar, Sound, Time Base
+
+![Configuration Toolbar / Time Base](images/measure_36_b.png)
+
+1. "Sound" (selected, see third icon in the top toolbar)
+2. Resistance sensor (not selected)
+3. Voltage sensor (not selected)
+4. "Time base" (selected)
+5. "Sampling interval" pull-down menu: 1/10 s, 1 s, 30 s, 5 min., 30 min.
+6. "Start recording" button
+
+**Sensitivity control**:
+
+Sensitivity is adjustable by using the two vertical sliders located to the right of the screen (top = maximum sensibility). Next to these controls, "Invert" buttons have been added (one per channel).
+
+**Horizontal sweep control**:
+
+Slider bar (3th icon in the top bar)<br>
+This control allows to select between 0.05 ms/DIV and 1.0 ms/DIV (by default: 0.5 ms/DIV). Settings are displayed in the bottom bar, as follows:
+
+    Sound   Time Base
+    X Axis Scale : 1 division = 0.5 ms
+
+#### 3. Configuration Toolbar, Sound, Frequency Base
+
+![Configuration Toolbar / Frequency Base](images/measure_36_c.png)
+
+1. "Sound" (selected, see third icon in the top toolbar)
+2. Resistance sensor (not selected)
+3. Voltage sensor (not selected)
+4. "Frequency base" (selected)
+5. "Sampling interval" pull-down menu: 1/10 s, 1 s, 30 s, 5 min., 30 min.
+6. "Start recording" button
+
+**Sensitivity control**:
+
+Sensitivity is adjustable by using the two vertical sliders located to the right of the screen (top = maximum sensibility).
+
+**Horizontal sweep control**:
+
+Slider bar (3th icon in the top bar)<br>
+This control allows to select between 10 Hz/DIV and 1000 Hz/DIV (by default: 500 Hz/DIV). Settings are displayed in the bottom bar, as follows:
+
+    Sound   Time Base
+    X Axis Scale : 1 division = 500 Hz
+
+#### 4. Resistance sensor
+
+![Resistance Sensor](images/measure_36_d.png)
+
+1. Sound (not selected)
+2. Resistance sensor (selected, note the third button in the top bar)
+3. Voltage sensor (not selected)
+4. "Time base" (selected)
+5. "Sampling interval" pull-down menu: 1/10 s, 1 s, 30 s, 5 min., 30 min.
+6. "Start recording" button
+
+**Sensitivity control**:
+
+Sensitivity is adjustable by using the vertical slider located to the right of the screen (top = maximum sensibility). Next to these controls, "Invert" buttons have been added (one per channel).
+
+#### 5. Voltage sensor
+
+![Voltage Sensor](images/measure_36_e.png)
+
+1. Sound (not selected)
+2. Resistance sensor (not selected)
+3. Voltage sensor (selected, note the third button in the top bar)
+4. "Time base" (selected)
+5. "Sampling interval" pull-down menu: 1/10 s, 1 s, 30 s, 5 min., 30 min.
+6. "Start recording" button
+
+**Sensitivity control**:
+
+Sensitivity is adjustable by using the vertical slider located to the right of the screen (top = maximum sensibility). Next to these controls, "Invert" buttons have been added (one per channel).
+
+## 7.3 Measure Activity v41: Toolbar
+
+This version (June 18th, 2012) includes noteworthy tools for using it as a musical instrument tuner. An idea to use this activity for this purpose was published on 01/09/2011 at the "*Física con XO*" web page.
+
+It was programmed to tune the following instruments: Recorder, Mandolin, Cello, Cavaquinho, Violin, Viola, Guitar, Charango, Ukelele, Sitar and Bass. New instruments may also be configured.
+
+![Tuner](images/measure_41_a.png)
+
+In the lower toolbar (from left to right):
+
+1. List for selecting the instrument
+2. Note to tune (can show every note)
+3. Frequency corresponding to the selected note (in Hertz)
+4. ("Tuning fork" icon) Show/hide tuning line
+5. ("Lines" icon) Show/hide harmonics
+6. ("Play" icon) Plays the note (synthesizes the note for tuning)
+7. ("Note" - G in the example) Name of the note being played
+
+### How to tune a musical instrument:
+
+In order to tune an instrument, for example, a guitar, choose *Sound mode / Frequency Base* and click on the "tuning fork" icon (d). You will see then a set of six vertical lines appear located in the x coordinate, corresponding to the base frequency of each note for a tuned instrument. When tapping a string, the corresponding "peak" should be centered at the reference line. If this doesn't happen, tighten or loose the string until achieving it. An icon "play note" is included that will play the reference frequency.
