@@ -65,7 +65,7 @@ This coefficient depends on each particular XO we are working with, so we must d
 
 We graph **Cv** for each XO1 as a function of N, an ordinal arbitrary number that identifies each of the netbooks used:
 
-[insert dispersion graph here]
+![cv Python.ta](images/9_graph_2.png)
 
 It can be deduced that according to our measurements, the values obtained for **Cv** do not differ more than 4% (XO1 ordinal N=6) with respect to the reference so it is worth to introduce this correction only in applications that require it (where accuracy in voltage reading is fundamental).
 
@@ -73,9 +73,11 @@ It can be deduced that according to our measurements, the values obtained for **
 
 ##### Precision associated with statistical dispersion of measurements:
 
-Now we must determine what level of statistical dispersion exists when measuring the same voltage repeatedly. We calculate the average of the series V_average, the standard deviation for the measure **σ-s** and from it the standard deviation for the average, **σ-est** (the parameter that allows to determine the dispersion of measurements with respect to their average value), and N-op, the optimal number of measurements to make.
+Now we must determine what level of statistical dispersion exists when measuring the same voltage repeatedly. We calculate the average of the series V\_average, the standard deviation for the measure **σ-s** and from it the standard deviation for the average, **σ-est** (the parameter that allows to determine the dispersion of measurements with respect to their average value), and N-op, the optimal number of measurements to make.
 
-Summary[insert footnote]:
+Summary[^6]:
+
+[^6]: This summary is based in the following references: Roederer (1980), Maiztegui & Gleisner (1980), Gil & Rodríguez (2001), Díaz & Pecard (1970), Maiztegui et al (1987(, Chemuschi & Greco (1970).
 
 (we summarize the expressions that were used when doing calculations)
 
@@ -109,9 +111,9 @@ To reach our goal, we will compare the measurements from measuring a given volta
 
 Programming is as follows: 
 
-[insert turtleblocks program here]
+   ![Vpromedio.ta](images/9_blocks_7.png)
 
-This program (Vpromedio.ta) is executed 30 times for the same voltage, then calculates the standard deviation σs for the set of measurement if there are differences from each other.
+This program (*Vpromedio.ta*) is executed 30 times for the same voltage, then calculates the standard deviation σs for the set of measurement if there are differences from each other.
 
 The values resulting from the procedure show that there is no dispersion in the order of a centesimal of a volt, so that value will be taken as the uncertainty associated to the precision for statistical dispersion and appreciation combined.
 
@@ -121,8 +123,7 @@ The values resulting from the procedure show that there is no dispersion in the 
 
 Once the calibration level has been recovered by means of the introduction of the Cv coefficient, we must calculate how far apart the (corrected) voltages measured by the XO1 are from the proportional adjustment. For this we have calculated the relative percent deviations of voltages with respect to the proportional adjustment. The results are summarized in the following graph, where the relative percentual εr% is observed as a function of the reference voltage Vref (in this case it was measured with the LQ mini interface):
 
-
-[insert graph here]
+[!er%=f(Vref)](images/9_graph_3.png)
 
 It can be concluded that the set of values maintains a low percentual dispersion with respect to the applied adjustment, that don't exceed 1.5%.
 
@@ -146,4 +147,10 @@ An ideal measuring device would be capable of obtaining a measurement for the sy
 
 In the particular case of voltmeters, this condition would be met if their input impedance was infinite. The reference tester that we used has (according to the manufacturer) an input impedance of 10MΩ. The data relative to the XO1 indicate that its input impedance is in the order of 150 kΩ.
 
-TO BE CONTINUED
+## Accuracy and precision of resistance measurements with XO1:
+
+The reading of ohmic resistance connected to the external microphone input is done in a similar way as the reading of voltages (*monitor de resistencia.ta*), substituting the `voltage` sensor block for the `resistance` sensor block:
+
+[!monitor de resistencia.ta](images/9_blocks_8.png)
+
+Now that we know how to show the mean resistance on-screen, the question becomes: what is the precision of the XO as an ohm-meter? The answer involves taking into account a series of issues:

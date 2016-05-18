@@ -1,4 +1,4 @@
-# 3. "Physics with XO" Research Protocol as presented to the Council of Higher Education [(CES)][^1]
+# 3. "Physics with XO" Research Protocol as presented to the Council of Higher Education (CES)[^1]
 
 [^1]: This *Research Protocol* is offered as introduction as it was presented before the CES at the end of 2011 for the purpose of requesting a special license for writing this work, in accordance to Art. 75 of the Statute of Teaching Staff.
 
