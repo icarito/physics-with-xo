@@ -16,7 +16,7 @@ In an ideal AD conversion, the function D= f(A) represents the direct proportion
 
 Source: Gil & Rodriguez (2001)
 
-## Accuracy and precision of measures with XO1.
+## 9.1 Accuracy and precision of measurements with XO1.
 
 ### Note
 
@@ -40,7 +40,7 @@ We may determine the appreciation of the XO as a voltmeter by using the programm
 
 #### Accuracy:
 
-While it is true (as will be discussed further ahead) that there is no data dispersion in the order of a centecimal of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1 as voltmeter; this can be done by analyzing the graph Vref=f(Vxo1). The reference voltage Vref in this case was measured with the LQ mini interface.
+While it is true (as will be discussed further ahead) that there is no data dispersion in the order of a hundredth of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1 as voltmeter; this can be done by analyzing the graph Vref=f(Vxo1). The reference voltage Vref in this case was measured with the LQ mini interface.
 
 ![Vref=f(Vxo1)](images/9_graph_1.png)
 
@@ -115,7 +115,7 @@ Programming is as follows:
 
 This program (*Vpromedio.ta*) is executed 30 times for the same voltage, then calculates the standard deviation σs for the set of measurement if there are differences from each other.
 
-The values resulting from the procedure show that there is no dispersion in the order of a centesimal of a volt, so that value will be taken as the uncertainty associated to the precision for statistical dispersion and appreciation combined.
+The values resulting from the procedure show that there is no dispersion in the order of a hundredth of a volt, so that value will be taken as the uncertainty associated to the precision for statistical dispersion and appreciation combined.
 
 ##### Precision associated with linearity
 
@@ -123,7 +123,7 @@ The values resulting from the procedure show that there is no dispersion in the 
 
 Once the calibration level has been recovered by means of the introduction of the Cv coefficient, we must calculate how far apart the (corrected) voltages measured by the XO1 are from the proportional adjustment. For this we have calculated the relative percent deviations of voltages with respect to the proportional adjustment. The results are summarized in the following graph, where the relative percentual εr% is observed as a function of the reference voltage Vref (in this case it was measured with the LQ mini interface):
 
-[!er%=f(Vref)](images/9_graph_3.png)
+![er%=f(Vref)](images/9_graph_3.png)
 
 It can be concluded that the set of values maintains a low percentual dispersion with respect to the applied adjustment, that don't exceed 1.5%.
 
@@ -151,6 +151,152 @@ In the particular case of voltmeters, this condition would be met if their input
 
 The reading of ohmic resistance connected to the external microphone input is done in a similar way as the reading of voltages (*monitor de resistencia.ta*), substituting the `voltage` sensor block for the `resistance` sensor block:
 
-[!monitor de resistencia.ta](images/9_blocks_8.png)
+![monitor de resistencia.ta](images/9_blocks_8.png)
 
-Now that we know how to show the mean resistance on-screen, the question becomes: what is the precision of the XO as an ohm-meter? The answer involves taking into account a series of issues:
+Now that we know how to show the mean resistance on-screen, the question becomes: What is the precision of the XO as an ohm-meter? The answer involves a number of aspects to consider:
+
+### Appreciation:
+
+We can determine the appreciation of the XO1 as ohm-meter by using the program described above: The resistance is shown on screen up to a hundredth of ohm, therefore the **appreciation is 0.01 Ω**. Nevertheless, (as can be observed by running the program), the digit that corresponds to this decimal order (and many times the preceding two) are constantly varying, for this reason determining the absolute uncertainty in these measurements depends on factors that must be quantified in detail.
+
+### Accuracy:
+
+The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1 as ohm-meter, which can be achieved by analyzing  the graph **Rref = f (Rxo1)**.
+
+![Rref = f (Rxo1)](images/9_graph_4.png.png)
+
+A non-linear relationship between the graphed variables is clearly observable, which becomes explicit when performing proportional adjustment; from it one may obtain the *accuracy coeficient for resistance measurements*, a correction factor that we will call **Cr** (in the example case the value is **1.050**). Every measurement of resistance must be corrected by means of the following expression:
+
+**Rxo1 corrected = Cr * Rxo1**
+
+In this case:
+
+**Rxo1 corrected = (1.050) * Rx01**
+
+with "**Rxo1** being the measurement directly performed by the XO1.
+
+The following graph presents the variables Rfluke and Rxo1 (corrected by the Cr coeficient), joined by an adjustment of a third degree polynomial:
+
+![Rfluke = f(Rxo1 corrected)](images/9_graph_5.png.png)
+
+Depending on the level of accuracy of resistance measurements one wishes to operate under, either one of the procedures might be chosen in order to retrieve the accuracy resistance measurements:
+
+#### First level:
+
+Measurements of resistance may be corrected by means of the **Cr** coefficient by multiplying it as a factor of the `resistance` block each time it is used; the following example (`cr Python.ta`) demonstrates it:
+
+![cr Python.ta](images/9_blocks_9.png)
+
+#### Second level:
+
+When looking for greater accuracy and precision, a cubic adjustment may be applied (instead of the previous one), as shown by the following code (`CR Python cúbico.ta`):
+
+![cr Python cúbico.ta](images/9_blocks_10.png)
+
+This **Cr** coefficient depends on each particular XO we are using, so it should be determined for each of them. The following graph displays the result of measuring resistance with 9 different XO1; we have graphed **Rxo1 = f (Rref)** (inverting the axes order to be able to observe the general tendency in the same graph), switching the axis magnitudes, with respect to the previous graph:
+
+![Rxo1 = f(Rref)](images/9_graph_6.png.png)
+
+Measured resistances for different XO1 are not precisely corrected so that the differences in levels of calibration between them are observable, as well as the non-linear tendency which all of them share. Nevertheless, once the correction has been made, the user will be able to verify that the curve **Rref=f(Rxo1)** intersects the straight line of proportional adjustment at the 11000 ohm value, for this reason a practical method for calculating the **Cr** factor might be extracted: a resistance of this value might be connected (for example by combining resistors with 1% tolerance for example) to the XO1 and then calculating the coefficient with:
+
+**Cr=11000Ω/Rxo1 11k**
+
+with denominator being the value as displayed by the `resistance` sensor of the particular XO1 when running the program previously seen.
+
+To determine the level of dispersion of **Cr** coefficients, following is a graph of the **Cr** value for each XO1 as a function of "N", an arbitrary ordinal number that identifies each of the used netbooks:
+
+![Cr = f(N)](images/9_graph_7.png.png)
+
+It may be deduced according to our measurements that the values of **Cr** obtained involve calibration differences that don't surpass 3% (N=6) of the reference value, so it will only be worth to introduce this correction for applications that merit it.
+
+### Precision
+
+### Precision associated with linearity:
+
+#### a. Calculating the level of dispersion in measurements of Resistance with respect to proportional adjustment (once the XO1 is calibrated)
+
+Once the level of calibration is retrieved by means of the introduction of the **Cr** coefficient, the must calculate how far apart from proportional adjustment are the (corrected) resistance values as measured by the XO1. For this we have calculated the relative percentage of deviation of the resistance values with respect to proportional adjustment. The results are summarized in the following graph:
+
+![stdev% vs Rref](images/9_graph_8.png.png)
+
+For the measured values a standard deviation in the order of 5% is calculated, which can be considered as a measure of the non-linearity of the Rref = f(Rxo1) function.
+
+#### b. Calculating the level of dispersion in measurements of Resistance with respect to cubic adjustment (once the XO1 is calibrated)
+
+Once the calibration level has been retrieved by means of the introduction of the **Cr** coefficient, and having performed the adjustment by a 3-degree polynomial, we must calculate how far the (corrected) resistance values measured with the XO1 are from the mentioned adjustment. The results are summarized in the following graph:
+
+![stdev% vs Rref](images/9_graph_9.png.png)
+
+In this case, a standard deviation of less than 2% is calculated for measured values, which is clearly an improvement from the proportional adjustment previously mentioned.
+
+### Precision associated with statistical dispersion of measurements:
+
+We shall determine what level of statistical dispersion exists when measuring the same resistance multiple times. For doing this, we solder to an audio cable (to be connected to the external microphone socket), a resistor of known resistance, that is within the measurement range of the XO1, and wait sufficient time for the set to reach ambient temperature. This must be done because resistance will depend on temperature and otherwise the risk is taken of assuming that a single resistance value is being measured when in reality it would be a value that is varying.
+
+Next, we will compare the measurements that result from measuring the resistance with a FLUKE 87 tester and the XO. We will use the TurtleBlocks Activity, where we will program (`R promedio.ta`) the reading of 50 consecutive resistance measurements, for which we will calculate an average to be displayed on-screen:
+
+![R promedio.ta](images/9_blocks_11.png)
+
+The procedure is repeated for five resistors of resistances within the measurement range of the XO1 (700 to 14000 ohm approximately), chosen to sweep the range uniformly in order to detect local non-linearities.
+
+We will calculate the average for each series, the standard deviation of each **σs** and from it, the standard deviation of the average **σest**, and the optimal **Nop** number.
+
+The program is similar to the one previously shown to perform repeated voltage measurements, but substitutes the `voltage` sensor block with the `resistance` block, and the text blocks `average voltage=` and `V`(unit) for the corresponding `average resistance=` and `ohm` (unit).
+
+The program is run 30 times for each resistance value. This series is input into *Logger Pro* for processing, the standard deviation for each **σs** measurement is calculated; the results are shown in the following graph:
+
+![stdev% vs Rref](images/9_graph_10.png.png)
+
+We are interested in analysing the level of statistical dispersion of the resistance values measured by the XO1, which can be summarized as in the following table:
+
+|Rfluke(Ω)|average Rxo1 (Ω)|σs|σest|Nop
+|---------|----------------|---|----|---
+|818      |780.8           |0.02406|0,004393|7
+|2188     |2024            |0.06454|0,01178 |43
+|4.72x10^3|4820            |0.3641 |0,06647 |1327
+|6.71x10^3|6929            |0.2965 |0,05413 |880
+|10300    |1.014x10^4      |0.7629 |0,1393  |5821
+
+It can be observed that the level of dispersion is such that it is not practical to measure with appreciation equal to a hundredth of Ohm (it's not practical to measure 5821 times). This happens because we are at conditions where *σest > σnom* is true, where the statistical dispersion is more important than nominal uncertainties.
+
+In reality, we have to define the value of appreciation considering a practical criterion in such a way that a reasonable measurement can be obtained by measuring only once. For this we will calculate the value to be used in the appreciation (considered equal to *σnom*) such that the Nop is lower than 1.5. Accordingly and by using the expression Nop = (σs/σnom)^2 + 1, it may be deduced that measuring resistances with an appreciation of **1Ω**, allows us to reach our target.
+
+## Conclusions:
+
+1. If using the XO1 directly as ohm-meter, we will get measurements that differ in precision up to a distance of 3% with respect to the reference instrument.
+
+    The function Rref=f(Rxo1) that links both variables presents a non linearity that allows the definition of two precedures for recovering calibration and determining the level of precision of resistance measurements:
+
+    1. Calculating the precision coefficient in resistance measurements Cr and use it as an adjustment factor, or
+    2. Construct a polynomial regression of third degree for attaining superior accuracy and precision.
+
+1. Once the calibration has been corrected with "procedure 1", the combined uncertainty of XO1 as ohm-meter can be calculated as:
+
++/-(1Ω + 5% of the value read on screen)
+
+**Note:**
+
+A practical option for working with these concepts quickly when calibrating sensors such as temperature or illumination (lighting), is the following:
+    If a Temperature/Resistance calibration curve is constructed, or Illumination/Resistance, the inaccuracy and imprecision remain hidden within the curve adjustment parameters applied when calibrating the sensor. This has the advantage of simpifying treatment of these concepts and the disadvantage that these parameters are good only for the particular XO1 being used.
+
+## 9.2 Accuracy and precision of measurements with XO1.5.
+
+### Note 1:
+
+The following results are from measurements taken with XO1.5, SKU 121. This corresponds to the model CL1C known as XO1.5HS, distributed by Plan Ceibal among students of basic cycle of Secondary Public School (*liceo*) when the first replacement plan was implemented and students could exchange their XO1 for this model. Students in the Canelones region got the JP S.A. Couto Magalhães MG10T model instead (known as Magallanes MG2).
+
+### Note 2:
+
+Starting with XO1.5, these netbooks include a stereo external microphone socket, so it is possible to measure two voltages (`voltage` and `voltage2`) or resistances (`resistance` and `resistance2`) at the same time; these are known (for its relation with measurements from an double channel oscilloscope or audio work) as measurements from the left channel CHL (for the English abbreviation), and right channel CHR.
+
+## Accuracy and precision in measuring Voltage with XO1.5
+
+### Appreciation
+
+The voltages are shown on-screen up to a hundredth of a Volt, therefore the **appreciation** is **0.01 V**.
+
+### Accuracy
+
+Although in this case there isn't data dispersion in the order of a hundredth of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1.5 as voltmeter; this can be done by analyzing the graph **Vref=f(Vxo1.5)**. The reference voltage **Vref** in this case was measured with the FLUKE 87 tester.  The value name Vxo1.5 is the voltage measured by the XO on the left channel:
+
+![Vref=f(Vxo1)](images/9_2_graph_1.png)
