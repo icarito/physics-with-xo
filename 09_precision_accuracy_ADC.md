@@ -44,18 +44,20 @@ While it is true (as will be discussed further ahead) that there is no data disp
 
 ![Vref=f(Vxo1)](images/9_graph_1.png)
 
-Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to relate the volt to each other.
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the volt measurements to one another.
 
 While linear adjustment is satisfactory and practically coincident with proportional adjustment, the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as **Cv**. In the case shown, the value is **0.9788**,  for this reason every volt measurement must be corrected with the following expression:
 
 **Vcorrected = Cv.Voltage**
 
-for this case, its:
+In this case, it is:
+
 **Vcorrected = (0.9788).Voltage**
 
 "Voltage" being the value measured directly by the XO1.
 
 Following are two ways to recover accuracy in volt measurements:
+
 1. one of them (cv product.ta) by using the "product" block:
    ![cv producto.ta](images/9_blocks_3.png)
 2. (cv Python.ta) with the "Python block" that allows to include mathematical formulas and commands in the Python language (the variable "box" was included in order to modify the variable value within the program "save in box 'cv' value 0.9788"):
@@ -109,7 +111,7 @@ The combined uncertainty can be obtained with:
 
 To reach our goal, we will compare the measurements from measuring a given voltage with the reference tester Fluke 87, the AD LQ mini (Vernier), and the XO. For this the TurtleBlocks Activity will be used to program the reading of 50 consecutive voltage readings, averaging them and showing the result on screen.
 
-Programming is as follows: 
+The program is as follows: 
 
    ![Vpromedio.ta](images/9_blocks_7.png)
 
@@ -139,7 +141,7 @@ It can be concluded that the set of values maintains a low percentual dispersion
 
 2. The uncertainty of the XO1 as voltmeter is:
 
-    -/+(0.01V +1.5% of the value displayed onscreen)
+    -/+(0.01V +1.5% of the value displayed on-screen)
 
 #### Input impedance of the XO1 as voltmeter
 
@@ -147,7 +149,7 @@ An ideal measuring device would be capable of obtaining a measurement for the sy
 
 In the particular case of voltmeters, this condition would be met if their input impedance was infinite. The reference tester that we used has (according to the manufacturer) an input impedance of 10MΩ. The data relative to the XO1 indicate that its input impedance is in the order of 150 kΩ.
 
-## Accuracy and precision of resistance measurements with XO1:
+## Accuracy and precision of resistance measurements with XO1
 
 The reading of ohmic resistance connected to the external microphone input is done in a similar way as the reading of voltages (*monitor de resistencia.ta*), substituting the `voltage` sensor block for the `resistance` sensor block:
 
@@ -155,13 +157,13 @@ The reading of ohmic resistance connected to the external microphone input is do
 
 Now that we know how to show the mean resistance on-screen, the question becomes: What is the precision of the XO as an ohm-meter? The answer involves a number of aspects to consider:
 
-### Appreciation:
+### Appreciation
 
 We can determine the appreciation of the XO1 as ohm-meter by using the program described above: The resistance is shown on screen up to a hundredth of ohm, therefore the **appreciation is 0.01 Ω**. Nevertheless, (as can be observed by running the program), the digit that corresponds to this decimal order (and many times the preceding two) are constantly varying, for this reason determining the absolute uncertainty in these measurements depends on factors that must be quantified in detail.
 
-### Accuracy:
+### Accuracy
 
-The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1 as ohm-meter, which can be achieved by analyzing  the graph **Rref = f (Rxo1)**.
+The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1 as ohm-meter, which can be achieved by analyzing the graph **Rref = f (Rxo1)**.
 
 ![Rref = f (Rxo1)](images/9_graph_4.png.png)
 
@@ -229,7 +231,7 @@ Once the calibration level has been retrieved by means of the introduction of th
 
 In this case, a standard deviation of less than 2% is calculated for measured values, which is clearly an improvement from the proportional adjustment previously mentioned.
 
-### Precision associated with statistical dispersion of measurements:
+### Precision associated with statistical dispersion of measurements
 
 We shall determine what level of statistical dispersion exists when measuring the same resistance multiple times. For doing this, we solder to an audio cable (to be connected to the external microphone socket), a resistor of known resistance, that is within the measurement range of the XO1, and wait sufficient time for the set to reach ambient temperature. This must be done because resistance will depend on temperature and otherwise the risk is taken of assuming that a single resistance value is being measured when in reality it would be a value that is varying.
 
@@ -239,7 +241,7 @@ Next, we will compare the measurements that result from measuring the resistance
 
 The procedure is repeated for five resistors of resistances within the measurement range of the XO1 (700 to 14000 ohm approximately), chosen to sweep the range uniformly in order to detect local non-linearities.
 
-We will calculate the average for each series, the standard deviation of each **σs** and from it, the standard deviation of the average **σest**, and the optimal **Nop** number.
+We will calculate the average for each series, the standard deviation of each measurement **σs** and from it, the standard deviation of the average **σest**, and the optimal number **Nop**.
 
 The program is similar to the one previously shown to perform repeated voltage measurements, but substitutes the `voltage` sensor block with the `resistance` block, and the text blocks `average voltage=` and `V`(unit) for the corresponding `average resistance=` and `ohm` (unit).
 
@@ -300,3 +302,114 @@ The voltages are shown on-screen up to a hundredth of a Volt, therefore the **ap
 Although in this case there isn't data dispersion in the order of a hundredth of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1.5 as voltmeter; this can be done by analyzing the graph **Vref=f(Vxo1.5)**. The reference voltage **Vref** in this case was measured with the FLUKE 87 tester.  The value name Vxo1.5 is the voltage measured by the XO on the left channel:
 
 ![Vref=f(Vxo1)](images/9_2_graph_1.png)
+
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the volt measurements to one another.
+
+While linear adjustment is satisfactory and practically coincident with proportional adjustment (y=Ax), the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as **Cv**. Therefore, every volt measurement must be corrected with the following expression:
+
+**Vcorrected = Cv * Voltage**
+
+In our case, since **A = 0.999**, it's not justified to perform any correction.
+
+#### Relative accuracy: Volt measurements with double channel
+
+We have to compare the relative calibration level between measurements obtained in both channels: supposedly both handle the same accuracy level, but our measurements don't confirm this, as the following graphs show:
+
+![Vref=f(Vxo1)](images/9_2_graph_2.png)
+
+![Vref=f(Vxo1)](images/9_2_graph_3.png)
+
+The first graph shows a proportional adjustment with coefficient A=0.9955, which might suggest accordance between measurements; however the second graph shows that values can differ up to 2% (Vchl = 0.51V).
+
+### Precision
+
+#### Precision associated with linearity
+
+#### Calculating the level of dispersion in Volt measurements with respect to proportional adjustment (once the XO1.5 has been calibrated)
+
+Results are summarized in the following graph where we represent relative deviation percentage εr% as a function of Vfluke, the reference voltage:
+
+![εr%=f(Vref)](images/9_2_graph_4.png)
+
+It can be observed that the set of values holds a low dispersion percentage with respect to the adjustment for voltages beyond 0.50 V (less than 1%), however these deviations can be much higher for lower values (3.74% for 0.19V). The standard deviation for the 10 values displayed is in the order of 1.3%.
+
+### Conclusions
+
+1. If the XO1.5 is used directly as Voltmeter, measurements ca be made that may differ in accuracy with respect to the reference instrument. In order to obtain more accurate results, an accuracy coefficient for voltage measurements Cv needs to be calculated before commencing measurments, for each XO in particular. A coefficient needs to be calculated for each channel (CHL and CHR), since they may not coincide.
+
+   This factor needs to be multiplied to hte `voltage` (CHL) and `voltage2` (CHR) sensor block each time it is used.
+
+2. The uncertainty of the XO1.5 as a voltmeter is:
+
+    -/+(0.01V +2% of the value displayed on-screen)
+
+#### Input impedance of the XO1.4 as voltmeter
+
+The data relative to the XO1.5 indicate its input impedance is in the order of 15 kΩ. This value, 10 times lower than the XO1, should be taken into account when evaluating the use of this netbook as voltmeter.
+
+## Accuracy and precision of resistance measurements with XO1.5
+
+### Appreciation
+
+The resistance is shown on screen up to a hundredth of ohm, therefore the **appreciation is 0.01 Ω**. Nevertheless, (as can be observed by running the program), the digit that corresponds to this decimal order (and many times the preceding two) are constantly varying, for this reason determining the absolute uncertainty in these measurements depends on factors that must be quantified in detail.
+
+The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1.5 as ohm-meter, which can be achieved by analyzing the graph **Rref = f (Rxo1.5)**.
+
+![Rref = f (Rxo1.5)](images/9_2_graph_5.png)
+
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the resistance measurements to one another.
+
+While linear adjustment is satisfactory and practically coincident with proportional adjustment (y=Ax), the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to calculate the *accuracy coefficient in resistance measurements*, and that will call **Cr** (in this example, the value is **1.153**). Every resistance measurement must be corrected using the following expression:
+
+Rxo1.5 corrected = Cr * Rxo1.5
+
+In our example:
+
+Rxo1.5 corrected = (1.153) * Rxo1.5
+
+where "Rxo1.5" is the value directly obtained by the XO1.5's CHL.
+
+### Relative accuracy: Resistance measurements in double channel
+
+We have to compare the relative calibration level between measurements obtained in both channels: supposedly both handle the same accuracy level, but our measurements don't confirm this, as the following graphs show:
+
+![Rxo1.5 CHR Ω = f (Rxo1.5 CHL Ω)](images/9_2_graph_6.png)
+
+![Rxo1.5 CHR = f (Rxo1.5 CHL)](images/9_2_graph_7.png)
+
+### Precision
+
+#### Calculating the level of dispersion in resistance measurements with respect to proportional adjustment (once the XO1.5 has been calibrated)
+
+Once the calibration level has been recovered by means of the introduction of the Cr coefficient, we must calculate how far apart the (corrected) resistance values measured by the XO1 are from the proportional adjustment. For this we have calculated the relative percent deviations of resistance values with respect to the proportional adjustment. The results are summarized in the following graph:
+
+![e rel % = f (Rfluke)](images/9_2_graph_8.png)
+
+Even though it is observed that for all 9 values measured the standard deviation is in the order of 6%, for resistances beyond R C HL = 15000 Ω, deviations are in the vicinity of 13%.
+
+### Precision associated with statistical dispersion of measurements:
+
+We will determine what level of statistical dispersion exists when measuring the same resistance repeatedly. To achieve this, we solder to an audio cable (to be connected to the external microphone socket), and a resistor of known resistance, that is within the measurement range of the XO1.5, and wait sufficient time for the set to reach ambient temperature. This must be done because resistance will depend on temperature and otherwise the risk is taken of assuming that a single resistance value is being measured when in reality it would be a value that is varying.
+
+Next, we will compare the measurements that result from measuring the resistance with a FLUKE 87 tester and the XO. We will use the TurtleBlocks Activity, where we will program the reading of 50 consecutive resistance measurements, for which we will calculate an average to be displayed on-screen.
+
+The procedure is repeated for 6 resistors of resistances within the measurement range of the XO1.5 (2600 Ω to 420 MΩ approximately), chosen to sweep the range uniformly in order to detect local non-linearities.
+
+We will calculate the average for each series, the standard deviation of each measurement **σs** and from it, the standard deviation of the average **σest**, and the optimal number **Nop**.
+
+The program is similar to the one previously shown to perform repeated voltage measurements, but substitutes the `voltage` sensor block with the `resistance` block, and the text blocks `average voltage=` and `V`(unit) for the corresponding `average resistance=` and `ohm` (unit).
+
+The program is run 30 times for each resistance value. This series is input into *Logger Pro* for processing, the standard deviation for each **σs** measurement is calculated:
+
+![stdev% vs Rref](images/9_2_graph_9.png)
+
+We are interested in analysing the level of statistical dispersion of the resistance values measured by the XO1.5, which can be summarized as in the following table:
+
+|R xo1.5 PROMEDIO (Ω)|σ S    |σ est  |N op
+|--------------------|-------|-------|---
+|4866                |0,3684 |0,06726|1358
+|6544                |0,5418 |0.09892|2936
+|9572                |0,7236 |0,1321 |5237
+|14430               |1,919  |0,3503 |36827
+|19530               |3,8    |0,6938 |144401
+|48040               |9,649  |1,762  |931033
