@@ -1,6 +1,6 @@
 # 10. Digital to Analog conversion
 
-## Synthesis of sound on XO1
+## 10.1 Synthesis of sound on XO1
 
 ## Pippy Sugar Activity
 
@@ -32,7 +32,7 @@ In addition, this type of device will allow us to utilize the XO as a generator 
 
 It is possible to achieve very acceptable results by using a low cost amplifier and speakers. The maximum power of the amplifier, its build quality and that of the speakers, as well as their accepted frequency range, will allow for the production of desired frequencies. It is worth to keep in mind that, especially when working with lower frequencies, while generally outside the range of low cost PC amplified speakers, however, they are the ones that are needed to excite the oscillating mechanical systems such as mass-spring, sheets with a fixed side, wave bucket oscillators on water surfaces, etc.
 
-## Sound Synthesys on XO1.5
+## 10.2 Sound Synthesys on XO1.5
 
 The XO1.5 that was (initially) distributed by Plan Ceibal among secondary school students can dual boot: it can start Linux Fedora with either SUGAR or the GNOME Desktop. Following is how to synthesize pure sounds in both graphical environments:
 
@@ -76,8 +76,26 @@ In this environment we have a powerful tool, the Audacity application (version 1
 
 With this software on XO1.5 we can synthesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
 
-## Synthesis of sound with the XO1.75
+## 10.3 Synthesis of sound with the XO1.75
+
+![photo]
 
 Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (stock-keeping unit) that is found within the battery slot of the XO as shown. Once it is known, you may obtain the characteristics of your variety of OLPC SKU.
 
-[...]
+In our case we had an XO1.75 CL2A (also known as B1) SKU 199. Frequency measurements performed no this model indicate a behaviour similar to XO1.5, although they use different audio subsystems. We may consider synthesis performance as acceptable for frequencies starting at 1Hz, a higher value than the minimal obtainable frequency with XO1.5 (amazingly 0.1Hz) up to 5000 Hz, value at which higher frequency components start to appear with increasing intensity up to the higher limit of 7999 Hz where we can clearly hear a beat of 2 Hz.
+
+Below you will find the record of synthesis of 1 Hz and its adjustment to the sinusoid function:
+
+![Potential V = f(Time s)]
+
+### Note
+
+During measurementes we were able to verify that the XO1.75 synthesizes from about 0.5Hz but with noticeable deviations with respect to the expected sinusoidal function, so we preferred to set the minimum acceptable value to 1 Hz.
+
+Just like the XO1.5, using the XO1.75 with Audacity, we can synthesize sounds of frequencies in the range between 1.00 Hz and 20.000.00 Hz (at the least), with a resolution of 0.01 Hz.
+
+## 10.4 Synthesis of sound with other netbooks distributed by Plan Ceibal
+
+If an XO is not available, sounds may be synthesized just the same with other computers. For example, the Magalhães Model MG 10T (known as "Magallanes MG2") was (initially) distributed to students of UTU (CETP) and secondary schools (CES) in the region of Canelones. It comes with an Ubuntu Linux operating system (10.04 LTS, *Lucid Lynx* release, of April of 2010, Gnome (version 2.30.2), Distributor: Ubuntu, compilation date: 25/06/10). Also the Magalhães Model MG 101A3 (known as the "Magallanes MG3") which was distributed among students of UTU (CETP) and highschool students (CES), during 2012. It comes with the same operating system release.
+
+In these machines we can also work with Audacity (version 1.3.12-beta) to synthesize sounds of frequencies in the range between 1.00Hz and 20 000.00 Hz (at the least) and resolution of 0.01 Hz.

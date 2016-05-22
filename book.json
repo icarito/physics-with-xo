@@ -4,6 +4,7 @@
                 "Laura Vargas (trans.)"],
     "plugins": [
         "hide-published-with",
+        "katex",
         "-sharing"
     ],
     "pluginsConfig": {}
