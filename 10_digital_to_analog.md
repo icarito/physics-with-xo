@@ -6,7 +6,7 @@
 
 The XO1 can sythethize sounds by means of the digital to analog (DAC) converter integrated to its sound card. The programming of this synthesis can be done by programming Python code in the programming activity Pippy that comes included with SUGAR. The following code (Oscilador.py) may be used to program the synthesys of pure sounds of the desired frequency (in Hz), amplitude (arbitrary units), and duration (in seconds):
 
-[insert screenshot here]
+![pippy](images/10_screen_1.png)
 
 ## Turtle Blocks Sugar Activity (TB)
 
@@ -14,7 +14,7 @@ It is also possible to achieve the synthesis with the TurtleBlocks Activity (v.1
 
 Main Toolbar/ Save/ Load Python Block/ "sinewave.py"/ Open
 
-[insert screenshot]
+![turtleblocks](images/10_blocks_1.png)
 
 When executing this example program, the speakers will emit a sound of 440 Hz of frequency (adjustable), fixed amplitude, and about 3 seconds of duration (non adjustable) corresponding to the note LA (A4).
 
@@ -22,7 +22,15 @@ When executing this example program, the speakers will emit a sound of 440 Hz of
 
 The sound card of the XO1 synthesizes sounds between 30 Hz and 5000 Hz. The synthesized sounds correspond to practically pure sinusoidal (sine) signals, although the presence of other frequencies can be detected. En general, these components have much smaller amplitudes than the main signal, but they are measurable. The following graph shows some of them and the frequencies that accompany them; measurement was done on an XO1 emitting and an XO1.5 HS detecting the sound with the Measure Activity / Sound / Baseline Frequency:
 
-[insert table here]
+|Frequency (Hz)|Component Frequency(Hz)
+|---|---
+|400|-|-|-|-
+|800|1200|1600|1950|-
+|1000|2000|3000|4000|5000
+|2000|6000|-|-|-
+|3000|6000|7000|-|-
+|4000|8000|-|-|-
+|5000|9000|10000|-|-     
 
 ### Generated signal strength
 
@@ -42,7 +50,7 @@ Just like with the XO1, the XO1.5 can synthesize sounds by utilizing the digital
 
 You can also achieve synthesis with the TurtleBlocks Activity (v.130), with the "senoidal" programming block contained in the media block palette.
 
-[insert ta program]
+![ta program](images/10_blocks_2.png)
 
 By executing this example program, a sound with frequency of 440 Hz (adjustable) is produced by the speakers, with 5000ua (arbitrary units, adjustable), and one second of duration (adjustable), corresponding to note LA (A4).
 
@@ -52,15 +60,25 @@ The sound card of the XO1.5 synthesizes sounds of frequencies comprised between 
 
 The following graph shows the record of Amplitude=f (frequency), obtained with the Measure Activity, Sound, Baseline frequency, for the emission of 7500 Hz, that we see is accompanied by another of frequency 8500 Hz of comparable amplitude:
 
-[insert graph]
+![amplitude = f(freq)](images/10_graph_1.png)
 
 The following table shows some of the synthesized frequencies and the frequencies of components that accompany them; the measurement was done with an XO1.5 producing sound, and an XO1 detecting sound with the *Measure Activity*, *Sound*, *Baseline frequency*:
 
-[insert table]
+|Frequency (Hz)|Frecuencia de componente (Hz)
+|---|---
+|1000|2000|5000|-|-
+|2000|14000|-|-|-
+|3000|13000|-|-|-
+|4000|12000|-|-|-
+|5000|11000|-|-|-
+|6000|10000|-|-|-
+|7000|9000|-|-|-
+|7500|8500|-|-|-
+|7999|Audible beat of about 2Hz (2 pulses per sec)
 
 The extremely low frequency (**0.1 Hz**) that the XO1.5 can produce is remarkable. To determine the range of frequencies, a FLUKE 87 tester was used to measure down to the minimum 2 Hz. To study lower values the LabQuest mini (Vernier) interface was used to measure voltage from a speaker connected to the earphone out socket. The following chart displays measurements for V=f(t) from which we could calculate the minimum generated frequency:
 
-[insert chart]
+![frequency range](images/10_graph_2.png)
 
 The graph includes adjustment to the curve (V=f(t)) of the sinusoidal function (expected), showing a high correspondence between them.
 
@@ -72,13 +90,13 @@ The graph includes adjustment to the curve (V=f(t)) of the sinusoidal function (
 
 In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multi-platform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
 
-[insert screenshot]
+![audacity](images/10_screen_2.png)
 
 With this software on XO1.5 we can synthesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
 
 ## 10.3 Synthesis of sound with the XO1.75
 
-![photo]
+![sku photo](images/10_photo_1.png)
 
 Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (stock-keeping unit) that is found within the battery slot of the XO as shown. Once it is known, you may obtain the characteristics of your variety of OLPC SKU.
 
@@ -86,7 +104,7 @@ In our case we had an XO1.75 CL2A (also known as B1) SKU 199. Frequency measurem
 
 Below you will find the record of synthesis of 1 Hz and its adjustment to the sinusoid function:
 
-![Potential V = f(Time s)]
+![Potential V = f(Time s)](images/10_graph_3.png)
 
 ### Note
 
