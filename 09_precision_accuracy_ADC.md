@@ -48,11 +48,15 @@ Having plotted the values, two adjustments are included to the data set: for one
 
 While linear adjustment is satisfactory and practically coincident with proportional adjustment, the proportionality coefficient $$A$$ is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as $$C _ v$$. In the case shown, the value is **0.9788**,  for this reason every volt measurement must be corrected with the following expression:
 
-$$V _ \text{corrected} = C _ v \cdot \text{Voltage}$$
+$$
+V _ \text{corrected} = C _ v \cdot \text{Voltage}
+$$
 
 In this case, it is:
 
-$$V _ \text{corrected} = (0.9788) \cdot \text {Voltage}$$
+$$
+V _ \text{corrected} = (0.9788) \cdot \text {Voltage}
+$$
 
 "Voltage" being the value measured directly by the XO1.
 
@@ -83,38 +87,43 @@ Summary[^6]:
 
 (we summarize the expressions that were used when doing calculations)
 
-Given a series of $$N$$ values $$x_i$$ (resulting from performing measurements of the same physical magnitude under identical conditions), we calculate the arithmetical average $$\overline{x}$$ with:
-
+Given a series of $$ N $$ values $$ x _ i $$ (resulting from performing measurements of the same physical magnitude under identical conditions), we calculate the arithmetical average $$ \overline{x} $$ with:
+<br>
+$$
+\overline{x} = \displaystyle \frac { \displaystyle \sum _ {i=1} ^ {N} x _ i } {N}
 $$ 
-\displaystyle \overline{x} = \frac{ \displaystyle \sum_{i=1}^{N}x_i }{N}
-$$
 
-
-*We define the deviation εi of each measurement xi with respect to an average as*
+We define the deviation εi of each measurement xi with respect to an average as
 
 $$
-\varepsilon _ i = x _ i - \overline{x}
+\displaystyle \varepsilon _ i = x _ i - \overline{x}
 $$
 
-*Supposing that the series of measurements shows a normal distribution, it makes sense to calculate the standard deviation for each measurement:*
+Supposing that the series of measurements shows a normal distribution, it makes sense to calculate the standard deviation for each measurement:
 
 $$
-\sigma = \sqrt{ \frac { \displaystyle \sum_{i=1}^{N} \varepsilon _ i ^ 2 } { (N - 1) } }
+\sigma _ s = \sqrt{ \displaystyle \frac { \displaystyle \sum _ {i=1}^{N} \displaystyle \varepsilon _ i ^ 2 } { (N - 1) } }
 $$
 
-*For $$ N \to \infty $$ and the above conditions, 68% of values will be found within the interval: $$ X \pm \sigma _ s $$*
+For $$ N \to \infty $$ and the above conditions, 68% of values will be found within the interval: $$ X \pm \sigma _ s $$
 
-*Nevertheless the uncertainty associated with dispersion is determined starting from a previous value, calculating standard deviation from the average with the expression:*
+Nevertheless the uncertainty associated with dispersion is determined starting from a previous value, calculating standard deviation from the average with the expression:
 
-[insert formula here]
+$$
+\sigma _ \text{est} = \displaystyle \frac { \sigma _ s } { \sqrt {N} }
+$$
 
-*Once nominal uncertainty σnom is determined in association with a measurement (which can be considered, in a simplified form and under certain conditions, to be equal to the appreciation of the utilized measuring instrument), we will be able to calculate the optimal number Nop of measurements to make. The criteria used here is to make enough measurement until the condition σest~=σnom allows to obtain the following expression:*
+Once nominal uncertainty σnom is determined in association with a measurement (which can be considered, in a simplified form and under certain conditions, to be equal to the appreciation of the utilized measuring instrument), we will be able to calculate the optimal number Nop of measurements to make. The criteria used here is to make enough measurement until the condition σest~=σnom allows to obtain the following expression:
 
-[insert formula here]
+$$
+N _ \text{op} = [ \displaystyle \frac { \sigma _ s } { \sigma _ \text{nom} } ] ^ {2} +1
+$$
 
 The combined uncertainty can be obtained with:
 
-[insert formula here]
+$$
+\delta x = \sqrt {\sigma _ \text {nom} ^2 + \sigma _ \text {est} ^2}
+$$
 
 To reach our goal, we will compare the measurements from measuring a given voltage with the reference tester Fluke 87, the AD LQ mini (Vernier), and the XO. For this the TurtleBlocks Activity will be used to program the reading of 50 consecutive voltage readings, averaging them and showing the result on screen.
 
@@ -130,7 +139,7 @@ The values resulting from the procedure show that there is no dispersion in the 
 
 ##### Calculation of the dispersion level in measurements of Voltage with respect to proportional adjustment (once the XO1 has been calibrated)
 
-Once the calibration level has been recovered by means of the introduction of the Cv coefficient, we must calculate how far apart the (corrected) voltages measured by the XO1 are from the proportional adjustment. For this we have calculated the relative percent deviations of voltages with respect to the proportional adjustment. The results are summarized in the following graph, where the relative percentual εr% is observed as a function of the reference voltage Vref (in this case it was measured with the LQ mini interface):
+Once the calibration level has been recovered by means of the introduction of the $$C _ v$$ coefficient, we must calculate how far apart the (corrected) voltages measured by the XO1 are from the proportional adjustment. For this we have calculated the relative percent deviations of voltages with respect to the proportional adjustment. The results are summarized in the following graph, where the relative percentual $$ \varepsilon _ r \% $$ is observed as a function of the reference voltage Vref (in this case it was measured with the LQ mini interface):
 
 ![er%=f(Vref)](images/9_graph_3.png)
 
@@ -144,11 +153,13 @@ It can be concluded that the set of values maintains a low percentual dispersion
 
 1. When used as a Voltmeter directly, measurements can be made that may differ in accuracy up to 4% with respect to a reference instrument.
 
-    In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient Cv will need to be calculated. This factor must multiply the `voltage` sensor block each time that it is used.
+    In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient $$C _ v$$ will need to be calculated. This factor must multiply the `voltage` sensor block each time that it is used.
 
 2. The uncertainty of the XO1 as voltmeter is:
 
-    -/+(0.01V +1.5% of the value displayed on-screen)
+$$
+\pm (0.01V +1.5\% \text{of the value displayed on-screen})
+$$
 
 #### Input impedance of the XO1 as voltmeter
 
@@ -158,7 +169,7 @@ In the particular case of voltmeters, this condition would be met if their input
 
 ## Accuracy and precision of resistance measurements with XO1
 
-The reading of ohmic resistance connected to the external microphone input is done in a similar way as the reading of voltages (*monitor de resistencia.ta*), substituting the `voltage` sensor block for the `resistance` sensor block:
+The reading of ohmic resistance connected to the external microphone input is done in a similar way as the reading of voltages (`monitor de resistencia.ta`), substituting the `voltage` sensor block for the `resistance` sensor block:
 
 ![monitor de resistencia.ta](images/9_blocks_8.png)
 
@@ -170,21 +181,25 @@ We can determine the appreciation of the XO1 as ohmmeter by using the program de
 
 ### Accuracy
 
-The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1 as ohmmeter, which can be achieved by analyzing the graph **Rref = f (Rxo1)**.
+The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1 as ohmmeter, which can be achieved by analyzing the graph $$R _ \text{ref} = f( R _ \text{xo1} )$$.
 
 ![Rref = f (Rxo1)](images/9_graph_4.png)
 
-A non-linear relationship between the graphed variables is clearly observable, which becomes explicit when performing proportional adjustment; from it one may obtain the *accuracy coeficient for resistance measurements*, a correction factor that we will call **Cr** (in the example case the value is **1.050**). Every measurement of resistance must be corrected by means of the following expression:
+A non-linear relationship between the graphed variables is clearly observable, which becomes explicit when performing proportional adjustment; from it one may obtain the *accuracy coeficient for resistance measurements*, a correction factor that we will call $$C _ r$$ (in the example case the value is **1.050**). Every measurement of resistance must be corrected by means of the following expression:
 
-**Rxo1 corrected = Cr * Rxo1**
+$$
+R _ \text{xo1} \text {corrected} = C _ r \cdot R _ \text{xo1}
+$$
 
 In this case:
 
-**Rxo1 corrected = (1.050) * Rx01**
+$$
+R _ \text{xo1} \text {corrected} = (1.050) \cdot R _ \text{xo1}
+$$
 
-with "**Rxo1** being the measurement directly performed by the XO1.
+with $$R _ \text {xo1}$$ being the measurement directly performed by the XO1.
 
-The following graph presents the variables Rfluke and Rxo1 (corrected by the Cr coeficient), joined by an adjustment of a third degree polynomial:
+The following graph presents the variables $$ R _ \text{fluke}$$ and $$R _ \text{xo1}$$ (corrected by the $$C _ r$$ coeficient), joined by an adjustment of a third degree polynomial:
 
 ![Rfluke = f(Rxo1 corrected)](images/9_graph_5.png)
 
@@ -192,7 +207,7 @@ Depending on the level of accuracy of resistance measurements one wishes to oper
 
 #### First level:
 
-Measurements of resistance may be corrected by means of the **Cr** coefficient by multiplying it as a factor of the `resistance` block each time it is used; the following example (`cr Python.ta`) demonstrates it:
+Measurements of resistance may be corrected by means of the $$C _ r$$ coefficient by multiplying it as a factor of the `resistance` block each time it is used; the following example (`cr Python.ta`) demonstrates it:
 
 ![cr Python.ta](images/9_blocks_9.png)
 
@@ -202,17 +217,20 @@ When looking for greater accuracy and precision, a cubic adjustment may be appli
 
 ![cr Python cúbico.ta](images/9_blocks_10.png)
 
-This **Cr** coefficient depends on each particular XO we are using, so it should be determined for each of them. The following graph displays the result of measuring resistance with 9 different XO1; we have graphed **Rxo1 = f (Rref)** (inverting the axes order to be able to observe the general tendency in the same graph), switching the axis magnitudes, with respect to the previous graph:
+This $$C _ r$$ coefficient depends on each particular XO we are using, so it should be determined for each of them. The following graph displays the result of measuring resistance with 9 different XO1; we have graphed $$ R _ \text{xo1} = f ( R _ \text{ref} )$$ (inverting the axes order to be able to observe the general tendency in the same graph), switching the axis magnitudes, with respect to the previous graph:
 
 ![Rxo1 = f(Rref)](images/9_graph_6.png)
 
-Measured resistances for different XO1 are not precisely corrected so that the differences in levels of calibration between them are observable, as well as the non-linear tendency which all of them share. Nevertheless, once the correction has been made, the user will be able to verify that the curve **Rref=f(Rxo1)** intersects the straight line of proportional adjustment at the 11000 ohm value, for this reason a practical method for calculating the **Cr** factor might be extracted: a resistance of this value might be connected (for example by combining resistors with 1% tolerance for example) to the XO1 and then calculating the coefficient with:
+Measured resistances for different XO1 are not precisely corrected so that the differences in levels of calibration between them are observable, as well as the non-linear tendency which all of them share. Nevertheless, once the correction has been made, the user will be able to verify that the curve $$R _ \text{ref} = f ( R _ \text{xo1} )$$ intersects the straight line of proportional adjustment at the 11000 ohm value, for this reason a practical method for calculating the $$C _ r$$ factor might be extracted: a resistance of this value might be connected (for example by combining resistors with 1% tolerance for example) to the XO1 and then calculating the coefficient with:
 
-**Cr=11000Ω/Rxo1 11k**
+$$
+C _ r = 11000 \Omega / R _ \text{xo1 11k} 
+$$
+
 
 with denominator being the value as displayed by the `resistance` sensor of the particular XO1 when running the program previously seen.
 
-To determine the level of dispersion of **Cr** coefficients, following is a graph of the **Cr** value for each XO1 as a function of "N", an arbitrary ordinal number that identifies each of the used netbooks:
+To determine the level of dispersion of **Cr** coefficients, following is a graph of the $$C _ r$$ value for each XO1 as a function of $$N$$, an arbitrary ordinal number that identifies each of the used netbooks:
 
 ![Cr = f(N)](images/9_graph_7.png)
 
@@ -224,15 +242,15 @@ It may be deduced according to our measurements that the values of **Cr** obtain
 
 #### a. Calculating the level of dispersion in measurements of Resistance with respect to proportional adjustment (once the XO1 is calibrated)
 
-Once the level of calibration is retrieved by means of the introduction of the **Cr** coefficient, the must calculate how far apart from proportional adjustment are the (corrected) resistance values as measured by the XO1. For this we have calculated the relative percentage of deviation of the resistance values with respect to proportional adjustment. The results are summarized in the following graph:
+Once the level of calibration is retrieved by means of the introduction of the $$C _ r$$ coefficient, the must calculate how far apart from proportional adjustment are the (corrected) resistance values as measured by the XO1. For this we have calculated the relative percentage of deviation of the resistance values with respect to proportional adjustment. The results are summarized in the following graph:
 
 ![stdev% vs Rref](images/9_graph_8.png)
 
-For the measured values a standard deviation in the order of 5% is calculated, which can be considered as a measure of the non-linearity of the Rref = f(Rxo1) function.
+For the measured values a standard deviation in the order of 5% is calculated, which can be considered as a measure of the non-linearity of the $$ R _ \text {ref} = f( R _ \text{xo1}) $$ function.
 
 #### b. Calculating the level of dispersion in measurements of Resistance with respect to cubic adjustment (once the XO1 is calibrated)
 
-Once the calibration level has been retrieved by means of the introduction of the **Cr** coefficient, and having performed the adjustment by a 3-degree polynomial, we must calculate how far the (corrected) resistance values measured with the XO1 are from the mentioned adjustment. The results are summarized in the following graph:
+Once the calibration level has been retrieved by means of the introduction of the $$ C _ r$$ coefficient, and having performed the adjustment by a 3-degree polynomial, we must calculate how far the (corrected) resistance values measured with the XO1 are from the mentioned adjustment. The results are summarized in the following graph:
 
 ![stdev% vs Rref](images/9_graph_9.png)
 
@@ -248,17 +266,17 @@ Next, we will compare the measurements that result from measuring the resistance
 
 The procedure is repeated for five resistors of resistances within the measurement range of the XO1 (700 to 14000 ohm approximately), chosen to sweep the range uniformly in order to detect local non-linearities.
 
-We will calculate the average for each series, the standard deviation of each measurement **σs** and from it, the standard deviation of the average **σest**, and the optimal number **Nop**.
+We will calculate the average for each series, the standard deviation of each measurement $$ \sigma _ s$$ and from it, the standard deviation of the average $$\sigma _ \text{est}$$, and the optimal number $$N _ \text{op}$$.
 
 The program is similar to the one previously shown to perform repeated voltage measurements, but substitutes the `voltage` sensor block with the `resistance` block, and the text blocks `average voltage=` and `V`(unit) for the corresponding `average resistance=` and `ohm` (unit).
 
-The program is run 30 times for each resistance value. This series is input into *Logger Pro* for processing, the standard deviation for each **σs** measurement is calculated; the results are shown in the following graph:
+The program is run 30 times for each resistance value. This series is input into *Logger Pro* for processing, the standard deviation for each $$ \sigma _ s $$ measurement is calculated; the results are shown in the following graph:
 
 ![stdev% vs Rref](images/9_graph_10.png)
 
 We are interested in analysing the level of statistical dispersion of the resistance values measured by the XO1, which can be summarized as in the following table:
 
-|Rfluke(Ω)|average Rxo1 (Ω)|σs|σest|Nop
+|$$R _ \text{fluke} (\Omega)$$|$$\text{average} R _ \text{xo1} (\Omega)$$|$$\sigma _ s$$|$$\sigma _ \text{est}$$|$$N _ \text{op}$$
 |---------|----------------|---|----|---
 |818      |780.8           |0.02406|0,004393|7
 |2188     |2024            |0.06454|0,01178 |43
@@ -266,22 +284,24 @@ We are interested in analysing the level of statistical dispersion of the resist
 |6.71x10^3|6929            |0.2965 |0,05413 |880
 |10300    |1.014x10^4      |0.7629 |0,1393  |5821
 
-It can be observed that the level of dispersion is such that it is not practical to measure with appreciation equal to a hundredth of Ohm (it's not practical to measure 5821 times). This happens because we are at conditions where *σest > σnom* is true, where the statistical dispersion is more important than nominal uncertainties.
+It can be observed that the level of dispersion is such that it is not practical to measure with appreciation equal to a hundredth of Ohm (it's not practical to measure 5821 times). This happens because we are at conditions where $$\sigma _ \text{est} > \sigma _ \text{nom}$$ is true, where the statistical dispersion is more important than nominal uncertainties.
 
-In reality, we have to define the value of appreciation considering a practical criterion in such a way that a reasonable measurement can be obtained by measuring only once. For this we will calculate the value to be used in the appreciation (considered equal to *σnom*) such that the Nop is lower than 1.5. Accordingly and by using the expression Nop = (σs/σnom)^2 + 1, it may be deduced that measuring resistances with an appreciation of **1Ω**, allows us to reach our target.
+In reality, we have to define the value of appreciation considering a practical criterion in such a way that a reasonable measurement can be obtained by measuring only once. For this we will calculate the value to be used in the appreciation (considered equal to $$ \sigma `_ \text{nom} $$ such that the $$N _ \text{op}$$ is lower than 1.5. Accordingly and by using the expression $$ N _ \text{op} = [\sigma _ s / \sigma _ \text{nom}]^2 + 1$$, it may be deduced that measuring resistances with an appreciation of **1Ω**, allows us to reach our target.
 
 ## Conclusions:
 
 1. If using the XO1 directly as ohmmeter, we will get measurements that differ in precision up to a distance of 3% with respect to the reference instrument.
 
-    The function Rref=f(Rxo1) that links both variables presents a non linearity that allows the definition of two precedures for recovering calibration and determining the level of precision of resistance measurements:
+    The function $$R _ \text{ref} = f( R _ \text{xo1} )$$ that links both variables presents a non linearity that allows the definition of two precedures for recovering calibration and determining the level of precision of resistance measurements:
 
-    1. Calculating the precision coefficient in resistance measurements Cr and use it as an adjustment factor, or
+    1. Calculating the precision coefficient in resistance measurements $$C _ r$$ and use it as an adjustment factor, or
     2. Construct a polynomial regression of third degree for attaining superior accuracy and precision.
 
 1. Once the calibration has been corrected with "procedure 1", the combined uncertainty of XO1 as ohmmeter can be calculated as:
 
-+/-(1Ω + 5% of the value read on screen)
+$$
+\pm (1 \Omega + 5\% \text{ of the value read on screen})
+$$
 
 **Note:**
 
@@ -306,17 +326,19 @@ The voltages are shown on-screen up to a hundredth of a Volt, therefore the **ap
 
 ### Accuracy
 
-Although in this case there isn't data dispersion in the order of a hundredth of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1.5 as voltmeter; this can be done by analyzing the graph **Vref=f(Vxo1.5)**. The reference voltage **Vref** in this case was measured with the FLUKE 87 tester.  The value name Vxo1.5 is the voltage measured by the XO on the left channel:
+Although in this case there isn't data dispersion in the order of a hundredth of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1.5 as voltmeter; this can be done by analyzing the graph $$V _ \text{ref} = f ( V _ \text{xo1.5} )$$. The reference voltage $$ V _ \text{ref} $$ in this case was measured with the FLUKE 87 tester.  The value name $$ V _ \text{xo1.5} $$ is the voltage measured by the XO on the left channel:
 
 ![Vref=f(Vxo1)](images/9_2_graph_1.png)
 
-Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relatively negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the volt measurements to one another.
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment $$(y=mx+b)$$ and for the other the proportional $$(y=ax)$$; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relatively negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the volt measurements to one another.
 
-While linear adjustment is satisfactory and practically coincident with proportional adjustment (y=Ax), the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as **Cv**. Therefore, every volt measurement must be corrected with the following expression:
+While linear adjustment is satisfactory and practically coincident with proportional adjustment $$(y=Ax)$$, the proportionality coefficient $$A$$ is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as $$C _ v$$. Therefore, every volt measurement must be corrected with the following expression:
 
-**Vcorrected = Cv * Voltage**
+$$
+V _ \text{corrected} = C _ v \cdot \text{Voltage}
+$$
 
-In our case, since **A = 0.999**, it's not justified to perform any correction.
+In our case, since $$A = 0.999$$, it's not justified to perform any correction.
 
 #### Relative accuracy: Volt measurements with double channel
 
@@ -326,7 +348,7 @@ We have to compare the relative calibration level between measurements obtained 
 
 ![Vref=f(Vxo1)](images/9_2_graph_3.png)
 
-The first graph shows a proportional adjustment with coefficient A=0.9955, which might suggest accordance between measurements; however the second graph shows that values can differ up to 2% (Vchl = 0.51V).
+The first graph shows a proportional adjustment with coefficient $$ A=0.9955 $$, which might suggest accordance between measurements; however the second graph shows that values can differ up to 2% $$(V _ \text{chl} = 0.51V)$$.
 
 ### Precision
 
@@ -334,7 +356,7 @@ The first graph shows a proportional adjustment with coefficient A=0.9955, which
 
 #### Calculating the level of dispersion in Volt measurements with respect to proportional adjustment (once the XO1.5 has been calibrated)
 
-Results are summarized in the following graph where we represent relative deviation percentage εr% as a function of Vfluke, the reference voltage:
+Results are summarized in the following graph where we represent relative deviation percentage εr% as a function of $$ V _ \text{fluke} $$, the reference voltage:
 
 ![εr%=f(Vref)](images/9_2_graph_4.png)
 
@@ -342,13 +364,15 @@ It can be observed that the set of values hold a low dispersion percentage with 
 
 ### Conclusions
 
-1. If the XO1.5 is used directly as Voltmeter, measurements ca be made that may differ in accuracy with respect to the reference instrument. In order to obtain more accurate results, an accuracy coefficient for voltage measurements Cv needs to be calculated before commencing measurments, for each XO in particular. A coefficient needs to be calculated for each channel (CHL and CHR), since they may not coincide.
+1. If the XO1.5 is used directly as voltmeter, measurements ca be made that may differ in accuracy with respect to the reference instrument. In order to obtain more accurate results, an accuracy coefficient for voltage measurements $$ C _ v $$ needs to be calculated before commencing measurements, for each XO in particular. A coefficient needs to be calculated for each channel (CHL and CHR), since they may not coincide.
 
-   This factor needs to be multiplied to hte `voltage` (CHL) and `voltage2` (CHR) sensor block each time it is used.
+   This factor needs to be multiplied to the `voltage` (CHL) and `voltage2` (CHR) sensor block each time it is used.
 
 2. The uncertainty of the XO1.5 as a voltmeter is:
 
-    -/+(0.01V +2% of the value displayed on-screen)
+$$
+\pm (0.01V + 2\% \text{ of the value displayed on-screen})
+$$
 
 #### Input impedance of the XO1.5 as voltmeter
 
@@ -362,21 +386,25 @@ The resistance is shown on screen up to a hundredth of ohm, therefore the **appr
 
 ### Accuracy
 
-The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1.5 as ohmmeter, which can be achieved by analyzing the graph **Rref = f (Rxo1.5)**.
+The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1.5 as ohmmeter, which can be achieved by analyzing the graph $$R _ \text{ref} = f ( R _ \text{xo1.5} )$$.
 
 ![Rref = f (Rxo1.5)](images/9_2_graph_5.png)
 
-Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the resistance measurements to one another.
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment $$(y=mx+b)$$ and for the other the proportional $$(y=ax)$$; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the resistance measurements to one another.
 
-While linear adjustment is satisfactory and practically coincident with proportional adjustment (y=Ax), the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to calculate the *accuracy coefficient in resistance measurements*, that we will call **Cr** (in this example, the value is **1.153**). Every resistance measurement must be corrected using the following expression:
+While linear adjustment is satisfactory and practically coincident with proportional adjustment $$(y=Ax)$$, the proportionality coefficient $$A$$ is not one, therefore measurements are not accurate. To recover accuracy we need to calculate the *accuracy coefficient in resistance measurements*, that we will call $$C _ r$$ (in this example, the value is **1.153**). Every resistance measurement must be corrected using the following expression:
 
-Rxo1.5 corrected = Cr * Rxo1.5
+$$
+R _ \text{xo1.5} \text{ corrected} = C _ r * R _ \text{xo1.5}
+$$
 
 In our example:
 
-Rxo1.5 corrected = (1.153) * Rxo1.5
+$$
+R _ \text{xo1.5} \text{ corrected} = (1.153) * R _ \text{xo1.5}
+$$
 
-where "Rxo1.5" is the value directly obtained by the XO1.5's CHL.
+where $$ R _ \text{xo1.5} $$ is the value directly obtained by the XO1.5's CHL.
 
 ### Relative accuracy: Resistance measurements in double channel
 
@@ -392,11 +420,11 @@ We have to compare the relative calibration level between measurements obtained 
 
 #### Calculating the level of dispersion in resistance measurements with respect to proportional adjustment (once the XO1.5 has been calibrated)
 
-Once the calibration level has been recovered by means of the introduction of the Cr coefficient, we must calculate how far apart the (corrected) resistance values measured by the XO1.5 are from the proportional adjustment. For this we have calculated the relative percent deviations of resistance values with respect to the proportional adjustment. The results are summarized in the following graph:
+Once the calibration level has been recovered by means of the introduction of the $$ C _ r $$ coefficient, we must calculate how far apart the (corrected) resistance values measured by the XO1.5 are from the proportional adjustment. For this we have calculated the relative percent deviations of resistance values with respect to the proportional adjustment. The results are summarized in the following graph:
 
 ![e rel % = f (Rfluke)](images/9_2_graph_8.png)
 
-Even though it is observed that for all 9 values measured the standard deviation is in the order of 6%, for resistances beyond R C HL = 15000 Ω, deviations are in the vicinity of 13%.
+Even though it is observed that for all 9 values measured the standard deviation is in the order of 6%, for resistances beyond $$ R _ \text{chl} = 15000 \Omega $$, deviations are in the vicinity of 13%.
 
 ### Precision associated with statistical dispersion of measurements:
 
@@ -406,17 +434,17 @@ Next, we will compare the measurements that result from measuring the resistance
 
 The procedure is repeated for 6 resistors of resistances within the measurement range of the XO1.5 (2600 Ω to 420 MΩ approximately), chosen to sweep the range uniformly in order to detect local non-linearities.
 
-We will calculate the average for each series, the standard deviation of each measurement **σs** and from it, the standard deviation of the average **σest**, and the optimal number **Nop**.
+We will calculate the average for each series, the standard deviation of each measurement **σs** and from it, the standard deviation of the average $$\sigma _ \text{est}$$, and the optimal number $$N _ \text{op}$$.
 
 The program is similar to the one previously shown to perform repeated voltage measurements, but substitutes the `voltage` sensor block with the `resistance` block, and the text blocks `average voltage=` and `V`(unit) for the corresponding `average resistance=` and `ohm` (unit).
 
-The program is run 30 times for each resistance value. This series is input into *Logger Pro* for processing, the standard deviation for each **σs** measurement is calculated:
+The program is run 30 times for each resistance value. This series is input into *Logger Pro* for processing, the standard deviation for each $$ \sigma _ s $$ measurement is calculated:
 
 ![stdev% vs Rref](images/9_2_graph_9.png)
 
 We are interested in analysing the level of statistical dispersion of the resistance values measured by the XO1.5, which can be summarized as in the following table:
 
-|R xo1.5 PROMEDIO (Ω)|σ S    |σ est  |N op
+|$$ R _ \text{xo1.5} \text{ average} (\Omega)$$|$$\sigma _ s$$|$$ \sigma _ \text{ est } $$|$$ N _ \text{op} $$
 |--------------------|-------|-------|---
 |4866                |0,3684 |0,06726|1358
 |6544                |0,5418 |0.09892|2936
@@ -426,21 +454,24 @@ We are interested in analysing the level of statistical dispersion of the resist
 |48040               |9,649  |1,762  |931033
 
 
-It can be observed that the level of dispersion is such that it is not practical to measure with appreciation equal to a hundredth of Ohm (it's not practical to measure 931033 times). This happens because we are at conditions where *σest > σnom* is true, where the statistical dispersion is more important than nominal uncertainties.
+It can be observed that the level of dispersion is such that it is not practical to measure with appreciation equal to a hundredth of Ohm (it's not practical to measure 931033 times). This happens because we are at conditions where $$ \sigma _ \text{est} > \sigma _ \text{nom} $$ is true, where the statistical dispersion is more important than nominal uncertainties.
 
-In reality, we have to define the value of appreciation considering a practical criterion in such a way that a reasonable measurement can be obtained by measuring only once. For this we will calculate the value to be used in the appreciation (considered equal to *σnom*) such that the Nop is lower than 1.5. Accordingly and by using the expression Nop = (σs/σnom)^2 + 1, it may be deduced that measuring resistances with an appreciation of **10Ω**, allows us to reach our target.
+In reality, we have to define the value of appreciation considering a practical criterion in such a way that a reasonable measurement can be obtained by measuring only once. For this we will calculate the value to be used in the appreciation (considered equal to $$ \sigma _ \text{nom} $$) such that the $$ N _ \text{op} $$ is lower than 1.5. Accordingly and by using the expression $$ N _ \text{op} = ( \sigma _ s / \sigma _ \text{nom})^2 + 1 $$, it may be deduced that measuring resistances with an appreciation of **10Ω**, allows us to reach our target.
+
 
 ## Conclusions:
 
-1. If using the XO1.5 directly as ohmmeter, we will get measurements that may differ in precision with respect to the reference instrument. In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient Cr will need to be calculated. A coefficient must be calculated for each channel (CHL and CHR), since they may not coincide.
+1. If using the XO1.5 directly as ohmmeter, we will get measurements that may differ in precision with respect to the reference instrument. In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient $$ C _ r $$ will need to be calculated. A coefficient must be calculated for each channel (CHL and CHR), since they may not coincide.
 
 This factors must multiply the `resistance` (CHL) and `resistance2` sensor blocks each time that they is used.
 
 2. Once corrected for calibration, the combined uncertainty of the XO1.5 as ohmmeter can be calculated as:
 
-   +/- (10 Ω + a percentage in the order of 6% of the value presented onscreen)
+$$
+\pm (10 \Omega + \text{ a percentage in the order of } 6 \% \text { of the value presented onscreen } )
+$$
 
-   This describes mean deviations. For measurements above Rchl = 15000 Ω the deviations will be in the surroundings of 13%.
+   This describes mean deviations. For measurements above $$R _ \text{chl} = 15000 \Omega$$ the deviations will be in the surroundings of 13%.
 
 ## 9.3 Accuracy and precision of measurements with XO1.75.
 
@@ -470,19 +501,23 @@ The voltages are shown on-screen up to a hundredth of a Volt, therefore the **ap
 
 ### Accuracy
 
-Although in this case there isn't data dispersion in the order of a hundredth of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1.75 as voltmeter; this can be done by analyzing the graph **Vref=f(Vxo1.75)**. The reference voltage **Vref** in this case was measured with the FLUKE 87 tester.  The value name Vxo1.75 is the voltage measured by the XO on the left channel:
+Although in this case there isn't data dispersion in the order of a hundredth of a Volt, the values measured by the XO and the reference instruments independently or simultaneously usually don't coincide, therefore we must determine the accuracy of the obtained results, by calculating the calibration level of the XO1.75 as voltmeter; this can be done by analyzing the graph $$V _ \text{ref} = f ( V _ \text{xo1} \cdot 75)$$. The reference voltage $$V _ \text{ref}$$ in this case was measured with the FLUKE 87 tester.  The value name $$V _ \text{xo1.75}$$ is the voltage measured by the XO on the left channel:
 
 ![Vref=f(Vxo1)](images/9_3_graph_1.png)
 
-Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relatively negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the volt measurements to one another.
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment $$(y=mx+b)$$ and for the other the proportional $$(y=ax)$$; the first of them shows a **correlation coefficient ("Correlation")=1**, this implies that the data adjusts itself to the linear function optimally. In favor of simplicity, and observing an ordinal at the origin of relatively negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the volt measurements to one another.
 
-While linear adjustment is satisfactory and practically coincident with proportional adjustment (y=Ax), the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as **Cv**. In our case, it is **0.9696**, so every volt measurement must be corrected with the following expression:
+While linear adjustment is satisfactory and practically coincident with proportional adjustment $$(y=Ax)$$, the proportionality coefficient $$A$$ is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as $$C _ v$$. In our case, it is **0.9696**, so every volt measurement must be corrected with the following expression:
 
-**Vcorrected = Cv * Voltage**
+$$
+V _ \text{corrected} = C _ v \cdot \text{Voltage}
+$$
 
 For our case, it's:
 
-**Vcorrected = (0.9696) * Voltage**
+$$
+V _ \text{corrected} = (0.9696) \cdot \text{Voltage}
+$$
 
 Where **"Voltage"** is the result of measuring the CHL of the XO1.75.
 
@@ -496,7 +531,7 @@ We have to compare the relative calibration level between measurements obtained 
 
 #### Calculating the level of dispersion in Volt measurements with respect to proportional adjustment (once the XO1.75 SKU 199 has been calibrated)
 
-Results are summarized in the following graph where we represent relative deviation percentage εr% as a function of Vfluke, the reference voltage:
+Results are summarized in the following graph where we represent relative deviation percentage $$\varepsilon r \% $$ as a function of $$ V _ \text{fluke} $$, the reference voltage:
 
 ![εr%=f(Vref)](images/9_3_graph_2.png)
 
@@ -510,21 +545,25 @@ The resistance is shown on screen up to a hundredth of ohm, therefore the **appr
 
 ### Accuracy
 
-The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1.75 as ohmmeter, which can be achieved by analyzing the graph **Rref = f (Rxo1.75)**.
+The measured resistance values for the XO and the reference instrument (FLUKE 87 tester) generally don't coincide, indicating a need for correcting the calibration (accuracy) of the XO1.75 as ohmmeter, which can be achieved by analyzing the graph $$ R _ \text{ref} = f ( R _ \text{xo1.75} )$$.
 
 ![Rref = f (Rxo1.5)](images/9_3_graph_3.png)
 
-Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment **(y=mx+b)** and for the other the proportional **(y=ax)**; the first of them shows a **correlation coefficient ("Correlation")=0.9998**, this implies that the data adjusts itself to the linear function (almost) optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the resistance measurements to one another.
+Having plotted the values, two adjustments are included to the data set: for one part the linear adjustment $$(y=mx+b)$$ and for the other the proportional $$(y=ax)$$; the first of them shows a **correlation coefficient ("Correlation")=0.9998**, this implies that the data adjusts itself to the linear function (almost) optimally. In favor of simplicity, and observing an ordinal at the origin of relative negligible value, we prefer to apply the proportional adjustment (instead of the referred linear) to link the resistance measurements to one another.
 
-While linear adjustment is satisfactory and practically coincident with proportional adjustment (y=Ax), the proportionality coefficient **A** (generally) is not one, therefore measurements are not accurate. To recover accuracy we need to calculate the *accuracy coefficient in resistance measurements*, that we will call **Cr** (in this example, the value is **1.063**). Every resistance measurement must be corrected using the following expression:
+While linear adjustment is satisfactory and practically coincident with proportional adjustment $$(y=Ax)$$, the proportionality coefficient $$A$$ (generally) is not one, therefore measurements are not accurate. To recover accuracy we need to calculate the *accuracy coefficient in resistance measurements*, that we will call $$C _ r$$ (in this example, the value is **1.063**). Every resistance measurement must be corrected using the following expression:
 
-Rxo1.5 corrected = Cr * Rxo1.75
+$$
+R _ \text{xo1.5} \text{ corrected } = C _ r \cdot R _ \text{xo1.75}
+$$
 
 In our example:
 
-Rxo1.5 corrected = (1.063) * Rxo1.75
+$$
+R _ \text{xo1.5} \text{ corrected } = (1.063) \cdot R _ \text{xo1.75}
+$$
 
-Where "Rxo1.75" is the value directly obtained by the XO1.75's CHL.
+Where $$R _ \text{xo1.75}$$ is the value directly obtained by the XO1.75's CHL.
 
 ### Relative accuracy: Resistance measurements in double channel
 
@@ -536,7 +575,7 @@ We have to compare the relative calibration level between measurements obtained 
 
 #### Calculating the level of dispersion in resistance measurements with respect to proportional adjustment (once the XO1.75 has been calibrated)
 
-Once the calibration level has been recovered by means of the introduction of the Cr coefficient, we must calculate how far apart the (corrected) resistance values measured by the XO1.75 are from the proportional adjustment. For this we have calculated the relative percent deviations of resistance values with respect to the proportional adjustment. The results are summarized in the following graph:
+Once the calibration level has been recovered by means of the introduction of the $$C _ r$$ coefficient, we must calculate how far apart the (corrected) resistance values measured by the XO1.75 are from the proportional adjustment. For this we have calculated the relative percent deviations of resistance values with respect to the proportional adjustment. The results are summarized in the following graph:
 
 ![e rel % = f (Rfluke)](images/9_3_graph_4.png)
 
@@ -550,7 +589,7 @@ We worked with an XO1.75 with build 161-A (Dextrose 3 uy), Sugar 0.94.1, only me
 
 **It is important to highlight that at the moment of finishing this investigation we detected an important problem with this model: When the TB Activity attempts to measure voltage or resistance in one channel, it randomly obtains the readings belonging to one channel or the other; this problem makes it impossible, for the moment, to use the applications that involve these measurements. In queries made about this issue, we were informed that it is a low level error ("bug") that is being worked on.**
 
-Primary measurements to determine impedance as voltmeter show results in the order of ono kΩ.
+Primary measurements to determine impedance as voltmeter show results in the order of one kΩ.
 
 ### Voltage measurements
 
@@ -558,13 +597,17 @@ Voltages between -0.3 and 3.03 V where measured, obtaining the following graph (
 
 ![Vref = f (Vxo1.75)](images/9_3_graph_5.png)
 
-While linear adjustment is satisfactory and practically coincident with proportional adjustment (y=Ax), the proportionality coefficient **A** is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as **Cv**. In our case, it is **1.011**, so every volt measurement must be corrected with the following expression:
+While linear adjustment is satisfactory and practically coincident with proportional adjustment $$(y=Ax)$$, the proportionality coefficient $$A$$ is not one, therefore measurements are not accurate. To recover accuracy we need to use this factor that we may call (in this case) *accuracy coefficient in voltage measurements*, and that we may abbreviate as $$C _ v$$. In our case, it is **1.011**, so every volt measurement must be corrected with the following expression:
 
-**Vcorrected = Cv * Voltage**
+$$
+V _ \text{corrected} = C _ v \cdot \text{Voltage}
+$$
 
 For our case, it's:
 
-**Vcorrected = (1.011) * Voltage**
+$$
+V _ \text{corrected} = (1.011) \cdot \text{Voltage}
+$$
 
 Where **"Voltage"** is the result of measuring the CHL of the XO1.75.
 
@@ -578,15 +621,19 @@ Resistors of different resistances (between 820Ω and 100kΩ were connected to t
 
 ![Nominal R = Rxo 175](images/9_3_graph_7.png)
 
-To recover accuracy we need to calculate the *accuracy coefficient in resistance measurements*, that we will call **Cr**. Every resistance measurement must be corrected using the following expression:
+To recover accuracy we need to calculate the *accuracy coefficient in resistance measurements*, that we will call $$C _ r$$. Every resistance measurement must be corrected using the following expression:
 
-Rxo1.5 corrected = Cr * Rxo1.75
+$$
+R _ \text{xo1.5} \text{corrected} = C _ r \cdot R _ \text{xo1.75}
+$$
 
 In our example:
 
-Rxo1.5 corrected = (0.9170) * Rxo1.75
+$$
+R _ \text{xo1.5} \text{corrected} = (0.9170) \cdot R _ \text{xo1.75}
+$$
 
-Where "Rxo1.75" is the value directly obtained by the XO1.75's CHL.
+Where $$R _ \text{xo1.75}$$ is the value directly obtained by the XO1.75's CHL.
 
 Having recovered precision, data dispersion with respect to proportional adjustment was studied; large deviations can be observed for smaller resistance values, with a standard deviation of dispersion in the order of 5%:
 
