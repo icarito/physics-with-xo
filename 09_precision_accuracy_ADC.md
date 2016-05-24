@@ -110,7 +110,7 @@ For $$ N \to \infty $$ and the above conditions, 68% of values will be found wit
 Nevertheless the uncertainty associated with dispersion is determined starting from a previous value, calculating standard deviation from the average with the expression:
 
 $$
-\sigma _ \text{est} = \displaystyle \frac { \sigma _ s } { \sqrt {N} }
+\sigma _ \text{est} = \frac { \sigma _ s } { \sqrt {N} }
 $$
 
 Once nominal uncertainty σnom is determined in association with a measurement (which can be considered, in a simplified form and under certain conditions, to be equal to the appreciation of the utilized measuring instrument), we will be able to calculate the optimal number Nop of measurements to make. The criteria used here is to make enough measurement until the condition σest~=σnom allows to obtain the following expression:
