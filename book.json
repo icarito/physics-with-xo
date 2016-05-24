@@ -1,11 +1,15 @@
 {
-    "author": [ "Guzmán Trinidad",
-                "Sebastian Silva (trans.)",
-                "Laura Vargas (trans.)"],
+    "author":  "Guzmán Trinidad, Sebastian Silva (trans.), Laura Vargas (trans.)",
+
     "plugins": [
         "hide-published-with",
-        "katex",
+        "mathjax",
         "-sharing"
     ],
-    "pluginsConfig": {}
+
+    "pluginsConfig": {},
+
+    "pdf": {
+        "fontSize": 16
+    }
 }
