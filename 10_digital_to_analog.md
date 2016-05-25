@@ -64,7 +64,7 @@ The following graph shows the record of Amplitude=f (frequency), obtained with t
 
 The following table shows some of the synthesized frequencies and the frequencies of components that accompany them; the measurement was done with an XO1.5 producing sound, and an XO1 detecting sound with the *Measure Activity*, *Sound*, *Baseline frequency*:
 
-|Frequency (Hz)|Frecuencia de componente (Hz)
+|Frequency (Hz)|Component Frequency (Hz)
 |---|---
 |1000|2000|5000|-|-
 |2000|14000|-|-|-
@@ -92,11 +92,15 @@ In this environment we have a powerful tool, the Audacity application (version 1
 
 ![audacity](images/10_screen_2.png)
 
-With this software on XO1.5 we can synthesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz [FOOTNOTE] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
+With this software on XO1.5 we can synthesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz.[^7] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
+
+
+[^7]: The pursuit of synthesis of frequencies below 20Hz on the XO outside of SUGAR was born from conversations at the Physics Laboratory of the IPA with Marcelo Vachetta and Leonardo Machín, who were looking to design low frequency mechanic oscillators to power mechanical oscillating systems for applications in resonance experiments in courses in secondary schools and IPA. They succeeded.
+
 
 ## 10.3 Synthesis of sound with the XO1.75
 
-![sku photo](images/10_photo_1.png)
+![sku photo](images/10_photo_1.jpg)
 
 Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (stock-keeping unit) that is found within the battery slot of the XO as shown. Once it is known, you may obtain the characteristics of your variety of OLPC SKU.
 

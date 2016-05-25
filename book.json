@@ -10,6 +10,7 @@
     "pluginsConfig": {},
 
     "pdf": {
+        "fontFamily": "Sans",
         "fontSize": 16
     }
 }
