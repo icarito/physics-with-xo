@@ -89,4 +89,90 @@ Applications of any sensor can be classified in:
 
 2. quantitative: In these applications it is desired to make measurement in the corresponding units, using the sensor+XO set as a measurement instrument. For this one must proceed to *calibrating* the sensor.
 
+## 13.3 Mounting a sensor box
+
+## Tha audio cable: Identifying terminals and conducers
+
+For working in this project we must prepare an audio cable that will allow us to connect the signals we want to measure to the micorphone input of the XO. In order to do this, we'll use a mono or stereo audio cable (the latter are more frequent) which, respectively, include TR or TRS connectors of 3.5mm as seen in the picture:
+
+![cable](images/13_photo_1.png)
+
+In the case of a mono cable, the connector has two terminals (connected to the inside cables):
+
+* the tip terminal T *(tip)* and
+* the terminal at the base or sleeve S *(sleeve)*.
+
+If it is a stereo cable, the connector will have three terminals:
+
+* the tip terminal T *(tip)*,
+* the middle ring terminal R *(ring)* and
+* the terminal at the base or sleeve S *(sleeve)*.
+
+![diagram](images/13_diagram_1.png)
+
+The following series of steps will allow identifying which cables are connected to which audio connector terminal. In order to avoid damage to the XO when measuring DC voltages, the following set up must be respected:
+
+|Terminal|Audio channel| Signal   |
+|--------|-------------|----------|
+| T      | CHL (left)  | V+ (CHL) |
+| R      | CHR (right) | V- (CHR) |
+| S      | Common terminal | V- (GND) |
+
+When working with the XO1 measuring resistance or voltage, we will only use the T and S terminals, that correspond to the left audio channel (CHL).
+
+The XO1.5, XO1.75 and later models support reading two signals at the same time, so we'll use the R terminal corresponding (along with S) to the right audio channel (CHR).
+
+### Identifying the cables that correspond to the T and S terminals (CHL).
+
+Cut the stereo cable in half and remove some 6cm of the external insulation. Within it you'll find three isolated conducers: two of them correspond to the CHL; in order to identify them, remove 5mm of insulation off the tip of each conducer and proceed as follows:
+
+1. Connect the cable to the microphone input of the XO
+   Write and run the following program in TB (`monitor de resistencia.ta`),
+
+   ![monitor de resistencia](images/13_blocks_1.png)
+
+   If the cables don't touch each other, the status bar (at the bottom, in orange) will display the maximum resistance that your XO can measure (XO1: 14 000 Ohm, XO1.5 420 000 000 Ohm, XO1.75 999 999 999 Ohm).
+
+2. Put two cables in contact trying every possible combination one by one: When the resistance displayed changes its value to the minimum (XO1: 700 Ohm, XO1.5: 2 600 Ohm, XO1.75: 0 Ohm) it will mean that you have found the cables corresponding to the T and S terminals (CHL). In the case of the example photo, it's the white and yellow cables.
+
+3. With the help of the other end of the original cable, the T terminal (*tip*) can be determined by using a similar procedure. Once it is done, we recommend to weld the ends of each cable to an alligator clip of color corresponding to the polarity (T red, S black). These cables should be cut in different lengths to avoid them connecting to each other in an oversight (more on this later).
+
+| &nbsp; | &nbsp; | &nbsp; |
+|---|---|---|
+|![](images/13_photoset_1.png)|![](images/13_photoset_2.png)|![](images/13_photoset_3.png)|
+|![](images/13_photoset_4.png)|![](images/13_photoset_5.png)|![](images/13_photoset_6.png)|
+|       &nbsp;              |![](images/13_photoset_7.png)|        &nbsp;               |
+
+### Identifying conducers
+
+<font color='red'><u>Extreme care:</u> irresponsible handling of the USB terminals (for example, a short-circuit between 5v and ground) may damange the XO permanently. Don't perform the following manipulations if you are not an experienced user.</font>
+
+In various of the described cases, we'll use voltage sensors (**SV**) that must be powered by the 5V that are provided by any USB port of the XO. This allows us to mount sensors without the need of an external power supply, which is an advantage in terms of costs and practicality.
+
+To do this a USB cables is required, it is cut and the inner cables identified: the one that is colored red (+5V) and black (0V or ground). The rest of the cables are cut and isolated to avoid contact between them.
+
+### Mounting the power strip to integrate the audio cable (signal) and the USB cable (power for voltage sensors). Sensing box:
+
+For any later montage, it is convenient to design a model of *connection terminals* to simplify the sensor testing task; one possible choice is to use a connection strip to integrate the audio cable for connecting the signal coming from the sensors and the USB cable that provides power to the voltage sensors (SV) like the one shown in the following photo set:
+
+| &nbsp; | &nbsp; |
+|---|---|
+| ![](images/13_photoset_11.png) | ![](images/13_photoset_12.png) | 
+| ![](images/13_photoset_13.png) | ![](images/13_photoset_14.png) | 
+
+A more definitive model will integrate terminals, a 200 mA fuse connected in series to the ground cable and a led indicator. A label to identify the terminals is useful to avoid mistakes in the moment of testing sensors. Such a *sensing box* is shown in the following photo series:
+
+| &nbsp; | &nbsp; |
+|---|---|
+| ![](images/13_photoset_21.png) | ![](images/13_photoset_22.png) | 
+| ![](images/13_photoset_23.png) | ![](images/13_photoset_24.png) | 
+| ![](images/13_photoset_25.png) | ![](images/13_photoset_26.png) | 
+
+The resistive sensors (**SR**) have two connectors and don't need power, they are connected between "OV" (black) and "signal" (white): the previous image on the left shows an LDR based light sensor as an example.
+
+The voltage sensors (**SV**) have three terminals and need power, they are connected to the corresponding "OV" (black), "signal" (white) and "5 V" (red): the previous image on the right shows a temperature sensor based on the LM35 integrated circuit.
+
+<img align='right' src='images/13_diagram_2.png'>
+
+The label used above is presented in detail:
 
