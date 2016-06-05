@@ -145,7 +145,7 @@ Cut the stereo cable in half and remove some 6cm of the external insulation. Wit
 
 ### Identifying conducers
 
-<font color='red'><u>Extreme care:</u> irresponsible handling of the USB terminals (for example, a short-circuit between 5v and ground) may damange the XO permanently. Don't perform the following manipulations if you are not an experienced user.</font>
+<font color='red'>**<u>Extreme care:</u> irresponsible handling of the USB terminals (for example, a short-circuit between 5v and ground) may damange the XO permanently. Don't perform the following manipulations if you are not an experienced user.**</font>
 
 In various of the described cases, we'll use voltage sensors (**SV**) that must be powered by the 5V that are provided by any USB port of the XO. This allows us to mount sensors without the need of an external power supply, which is an advantage in terms of costs and practicality.
 
