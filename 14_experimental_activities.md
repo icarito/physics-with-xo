@@ -41,7 +41,7 @@ Following we include a series of ideas to develop Experimental Activities with X
 
 ### Introduction
 
-The external microphone input of the XO allows the reading of very small AC values, in the order of **some mili volts**. In the case of periodic signals, these values may be captured with the Measure Activity; with it you will be able to:
+The external microphone input of the XO allows the reading of very small AC values, in the order of **some millivolts**. In the case of periodic signals, these values may be captured with the Measure Activity; with it you will be able to:
 
 1. Capture the waveform produced from reading a given signal working with *Time Base*. Identify (qualitatively) the type of signal by observing the waveform: sinusoidal signal, square, triangular, "beat" (sum of oscillations of similar frequencies), etc. Determine the period of the measured signal and calculate the frequency of it.
 
@@ -57,3 +57,61 @@ According to its technical specifications, the sampling frequency of the XO for 
 
 This type of signal an also be captured with TB programs and the `sound` sensor block. However, the reading frequency in this case won't reach more than some 20 Hz (XO1) which makes it impractical for this use.
 
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 01<br>The XO as oscilloscope: waveform of a 50 Hz AC signal | <font color='red'>**SV**</font> |
+| --- | --- |
+| **Level:** <br>Higher Secondary School |
+| **Goals:** <br>To measure the voltage of an alternating current (AC) 50 Hz. <br>Analysis in time.
+| **Magnitude to be measured:** <br>Alternating current (AC)
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>Measure version 42 (set to *Time Base*)
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. <br>220/12 V Transformer. 820 kΩ Resistor. 1.5 kΩ Potentiometer.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+We will be measuring alternating current output voltage (secondary winding or just *secondary*) of a 220V/12V transformer connected to a domiciliary power network (220 V AC/50 Hz).
+
+<img align='right' src='images/14_diagram_1.png'>
+
+As the input range of XO for measuring AC voltages is in the order of millivolts, a voltage divider is built with a fixed resistor R (820 kΩ) and a potentiometer P (1.5 kΩ), as can be seen in the circuit schema:
+
+Because we're dealing with alternating voltage, there is no need to consider polarity.
+
+The circuit can be seen in the picture below; connectors joined to the green tweezers are connected to the *secondary* of the transformer (feed), while those connected to the red and black tweezers are from the audio cable connected to the XO:
+
+<img align='right' src='images/14_photo_1.png'>
+
+The procedure consists of building the circuit, placing the potentiometer in such a way that voltage between the bottom and middle terminal is null and connecting the transformer to the power network. Before connecting the audio cable to the XO it, first the T and S terminals should be connected to an AC voltmeter and the potentiometer should be adjusted until voltage reaches 3.0 mV. Once this has been verified, connect the cable to the netbook and run the Measure Activity.
+
+By default the Activity will start in *Time Base* mode. Adjust the "time by division" control until the waveform displays a full alternation; adjust the "gain" control and turn the potentiometer until obtaining an optimal on-screen display as shown in the picture below (negative colors of a screen capture of a measurement):
+
+![measure](images/14_screenshot_1.png)
+
+It can be seen (qualitatively) that the measured signal corresponds (with some alterations) to the sinusoidal function, which was expected.
+
+Considering that a 1.0 ms division was selected, it can be verified that the period of the same corresponds to 20 divisions, that is $$ T = 20 \cdot 10^{-3} \text{s} $$. From there the frequency may be calculated as $$ f = 1/T = 50 \text{Hz} $$.
+
+## <u>AC Voltage</u>
+
+Measurement of DC voltages has been previously documented. Grasping it allows understanding of why *sensors* of other physical magnitudes can be built *based on voltage* which, by means of transducers, produce DC voltage as a function of the value of the physical magnitude that we wish to measure.
+
+| Experimental Activity 02<br>Voltage Monitor| <font color='red'>**SV**</font> |
+| --- | --- |
+| **Level:** <br>Primary, Basic Secondary School |
+| **Goals:** <br>Monitor of DC voltage. Measuring the voltage between terminals in a battery.
+| **Magnitude to be measured:** <br>Direct current (AC)
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. AA Battery.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+You will only need the audio cable, an AA, AAA, C or D common battery (carbon-zinc) or alkaline. In all cases nominal voltage is 1.5 V. Measuring different battery sizes allows for the introduction of the concept of voltage joined by intensity of current and electric potency.
+
+When batteries are new, voltage is slightly higher (above 1.6 V). With use, lower values are obtained. If rechargeable Ni-MH batteries are measured, the nominal voltage value is 1.2 V.
+
+Below you will find the program used (`monitor de voltaje.ta`), the circuit schema and a picture:
+
+| ![program](images/14_blocks_1.png) <br> ![diagram](images/14_diagram_2.png) | ![photo](images/14_photo_2.png)
+| --- | --- |

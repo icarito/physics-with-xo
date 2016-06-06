@@ -137,15 +137,14 @@ Cut the stereo cable in half and remove some 6cm of the external insulation. Wit
 
 3. With the help of the other end of the original cable, the T terminal (*tip*) can be determined by using a similar procedure. Once it is done, we recommend to weld the ends of each cable to an alligator clip of color corresponding to the polarity (T red, S black). These cables should be cut in different lengths to avoid them connecting to each other in an oversight (more on this later).
 
-| &nbsp; | &nbsp; | &nbsp; |
-|---|---|---|
 |![](images/13_photoset_1.png)|![](images/13_photoset_2.png)|![](images/13_photoset_3.png)|
+|---|---|---|
 |![](images/13_photoset_4.png)|![](images/13_photoset_5.png)|![](images/13_photoset_6.png)|
 |       &nbsp;              |![](images/13_photoset_7.png)|        &nbsp;               |
 
 ### Identifying conducers
 
-<font color='red'>**<u>Extreme care:</u> irresponsible handling of the USB terminals (for example, a short-circuit between 5v and ground) may damange the XO permanently. Don't perform the following manipulations if you are not an experienced user.**</font>
+<font color='red'><strong><u>Extreme care:</u> irresponsible handling of the USB terminals (for example, a short-circuit between 5v and ground) may damange the XO permanently. Don't perform the following manipulations if you are not an experienced user.</strong></font>
 
 In various of the described cases, we'll use voltage sensors (**SV**) that must be powered by the 5V that are provided by any USB port of the XO. This allows us to mount sensors without the need of an external power supply, which is an advantage in terms of costs and practicality.
 
@@ -155,16 +154,14 @@ To do this a USB cables is required, it is cut and the inner cables identified: 
 
 For any later montage, it is convenient to design a model of *connection terminals* to simplify the sensor testing task; one possible choice is to use a connection strip to integrate the audio cable for connecting the signal coming from the sensors and the USB cable that provides power to the voltage sensors (SV) like the one shown in the following photo set:
 
-| &nbsp; | &nbsp; |
-|---|---|
 | ![](images/13_photoset_11.png) | ![](images/13_photoset_12.png) | 
+|---|---|
 | ![](images/13_photoset_13.png) | ![](images/13_photoset_14.png) | 
 
 A more definitive model will integrate terminals, a 200 mA fuse connected in series to the ground cable and a led indicator. A label to identify the terminals is useful to avoid mistakes in the moment of testing sensors. Such a *sensing box* is shown in the following photo series:
 
-| &nbsp; | &nbsp; |
-|---|---|
 | ![](images/13_photoset_21.png) | ![](images/13_photoset_22.png) | 
+|---|---|
 | ![](images/13_photoset_23.png) | ![](images/13_photoset_24.png) | 
 | ![](images/13_photoset_25.png) | ![](images/13_photoset_26.png) | 
 
