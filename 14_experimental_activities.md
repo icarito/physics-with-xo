@@ -92,7 +92,7 @@ It can be seen (qualitatively) that the measured signal corresponds (with some a
 
 Considering that a 1.0 ms division was selected, it can be verified that the period of the same corresponds to 20 divisions, that is $$ T = 20 \cdot 10^{-3} \text{s} $$. From there the frequency may be calculated as $$ f = 1/T = 50 \text{Hz} $$.
 
-## <u>AC Voltage</u>
+## <u>DC Voltage</u>
 
 Measurement of DC voltages has been previously documented. Grasping it allows understanding of why *sensors* of other physical magnitudes can be built *based on voltage* which, by means of transducers, produce DC voltage as a function of the value of the physical magnitude that we wish to measure.
 
@@ -100,7 +100,7 @@ Measurement of DC voltages has been previously documented. Grasping it allows un
 | --- | --- |
 | **Level:** <br>Primary, Basic Secondary School |
 | **Goals:** <br>Monitor of DC voltage. Measuring the voltage between terminals in a battery.
-| **Magnitude to be measured:** <br>Direct current (AC)
+| **Magnitude to be measured:** <br>Alternating current (AC)
 | **Type of measurement:** <br>Direct
 | **Sugar Activity:** <br>TB v.109
 | **Model of XO used:** <br>XO1 (SKU5)
@@ -115,3 +115,57 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 
 | ![program](images/14_blocks_1.png) <br> ![diagram](images/14_diagram_2.png) | ![photo](images/14_photo_2.png)
 | --- | --- |
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 03<br>The XO as oscilloscope: waveform of a rectified half wave 50 AC signal | <font color='red'>**SV**</font> |
+| --- | --- |
+| **Level:** <br>Higher Secondary School |
+| **Goals:** <br>Measure voltage of a continuous pulsating (DC) signal resulting from rectifying half a wave of a 50 Hz AC signal. <br>Temporal analysis.
+| **Magnitude to be measured:** <br>Direct current (DC)
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>Measure version 42 (*Base Time* mode)
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 04<br>The XO as oscilloscope: waveform of a fully rectified 50 AC signal | <font color='red'>**SV**</font>|
+| --- | --- |
+| **Level:** <br>Higher Secondary School|
+| **Goals:** <br>Measure voltage of a continuous pulsating (DC) signal resulting from the full rectification of a 50 Hz AC signal.|
+| **Magnitude to be measured:** <br>Direct current (DC)
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>Measure version 42 (*Base Time* mode)
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 4 x 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 03<br>The XO as oscilloscope: waveform of a rectified half wave 50 AC signal | <font color='red'>**SV**</font> |
+| --- | --- |
+| **Level:** <br>Higher Secondary School |
+| **Goals:** <br>Measure voltage of a continuous pulsating (DC) signal resulting from rectifying half a wave of a 50 Hz AC signal. <br>Temporal analysis.
+| **Magnitude to be measured:** <br>Direct current (DC)
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>Measure version 42 (*Base Time* mode)
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 05<br>Discharging a Capacitor thorough a Resistor: Voltage/time table.| <font color='red'>**SV**</font>|
+| --- | --- |
+| **Level:** <br>Higher Secondary School|
+| **Goals:** <br>Tabulating of time/voltage for an RC discharge with trigger level
+| **Magnitude to be measured:** <br>Direct current (DC)
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+
