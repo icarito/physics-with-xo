@@ -168,3 +168,88 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 07<br>The XO as DC ampere-meter| <font color='red'>**SV**</font>|
+| --- | --- |
+| **Level:** <br>Higher Secondary School |
+| **Goals:** <br>To use the XO as a DC current intensity monitor
+| **Magnitude to be measured:** <br>Direct current (DC) intensity
+| **Type of measurement:** <br>Indirect
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1Ω 5W Resistor. 12 V DC (max 2 A) power source. 12V (max 5 W) lamps (4x).
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+<div style="page-break-after: always;"><hr /></div>
+
+# 14.1 Ohmic Resistance
+
+How to measure ohmic resistance has been described previously. Understanding it allows to comprehend why *resistive sensors* can be built, based on how they modify their resistance value as a function of the value of the physical magnitude being measured.
+
+This feature can be applied for using the XO as an ohmmeter and for producing games, entertainment pieces, alarms, etc. as we will show. They will be programmed to monitor variation of resistance between "yes/no" extremes, corresponding to "contact/no contact" between the audio cable terminals.
+
+| Experimental Activity 08<br>Linking N resistors serially or in parallel. $$ R _ \text{eq} = f(N) $$ chart. Equivalent resistance.| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School |
+| **Goals:** <br>To monitor resistance. Graph of equivalent resistance $$ R _ \text{eq} $$ as a function of $$ N $$ resistors (of same value) linked in parallel or series.
+| **Magnitude to be measured:** <br>Resistance
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 10 x 1 kΩ Resistor. 10 x 10 kΩ Resistor.
+| **Precautions to consider:** <br>(none)
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 09<br>Game of coincidences.| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School |
+| **Goals:** <br>To build and program with TB the game consisting of finding pairs of right/wrong answers.
+| **Magnitude to be measured:** <br>Resistance
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Board with internally wired question/answer pairs.
+| **Precautions to consider:** <br>(none)
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 10<br>Electric fire alarm. (hidden cable)| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School |
+| **Goals:** <br>To build and program with TB an alarm that is triggered with an electric fire sensor
+| **Magnitude to be measured:** <br>Resistance
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** Fire sensor<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO.
+| **Precautions to consider:** <br><font color='red'>Battery and connector polarity must be observed when feeding the sensor.</font>
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 11<br>Hoop game (3 versions)| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School |
+| **Goals:** <br>To build and program with TB a game of manual skill
+| **Magnitude to be measured:** <br>Resistance
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** <br>**Versions A and B:**<br>Hoop and wire each connected to an audio cable terminal.<br>**Version C:**<br>Add 2 resistors and a NC switch.
+| **Precautions to consider:** (none)
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 12<br>Oscillating a physical pendulum: Chart of angle in time (qualitative)| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School |
+| **Goals:** <br>To display the graph θ = f(t) corresponding to the angular position θ of an oscillating vertical stick as a function of time.
+| **Magnitude to be measured:** <br>Angular position
+| **Type of measurement:** <br>Indirect
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** <br>Potentiometer of 10 kΩ or 50 kΩ (lineal).<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO.
+| **Precautions to consider:** (none)
+
+<div style="page-break-after: always;"><hr /></div>
