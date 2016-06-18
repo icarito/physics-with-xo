@@ -144,19 +144,6 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 
 <div style="page-break-after: always;"><hr /></div>
 
-| Experimental Activity 03<br>The XO as oscilloscope: waveform of a rectified half wave 50 AC signal | <font color='red'>**SV**</font> |
-| --- | --- |
-| **Level:** <br>Higher Secondary School |
-| **Goals:** <br>Measure voltage of a continuous pulsating (DC) signal resulting from rectifying half a wave of a 50 Hz AC signal. <br>Temporal analysis.
-| **Magnitude to be measured:** <br>Direct current (DC)
-| **Type of measurement:** <br>Direct
-| **Sugar Activity:** <br>Measure version 42 (*Base Time* mode)
-| **Model of XO used:** <br>XO1 (SKU5)
-| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
-| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
-
-<div style="page-break-after: always;"><hr /></div>
-
 | Experimental Activity 05<br>Discharging a Capacitor thorough a Resistor: Voltage/time table.| <font color='red'>**SV**</font>|
 | --- | --- |
 | **Level:** <br>Higher Secondary School|
@@ -168,4 +155,16 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 06<br>Discharging a Capacitor thorough a Resistor: Voltage/time chart.| <font color='red'>**SV**</font>|
+| --- | --- |
+| **Level:** <br>Higher Secondary School |
+| **Goals:** <br>To graph  time/voltage for an RC discharge with trigger level
+| **Magnitude to be measured:** <br>Direct current (DC)
+| **Type of measurement:** <br>Direct
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
