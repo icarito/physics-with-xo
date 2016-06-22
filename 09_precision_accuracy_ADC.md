@@ -215,7 +215,7 @@ Measurements of resistance may be corrected by means of the $$C _ r$$ coefficien
 
 When looking for greater accuracy and precision, a cubic adjustment may be applied (instead of the previous one), as shown by the following code (`CR Python cúbico.ta`):
 
-![cr Python cúbico.ta](images/9_blocks_10.png)
+![CR Python cúbico.ta](images/9_blocks_10.png)
 
 This $$C _ r$$ coefficient depends on each particular XO we are using, so it should be determined for each of them. The following graph displays the result of measuring resistance with 9 different XO1; we have graphed $$ R _ \text{xo1} = f ( R _ \text{ref} )$$ (inverting the axes order to be able to observe the general tendency in the same graph), switching the axis magnitudes, with respect to the previous graph:
 

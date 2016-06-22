@@ -22,7 +22,7 @@ When executing this example program, the speakers will emit a sound of 440 Hz of
 
 The sound card of the XO1 synthesizes sounds between 30 Hz and 5000 Hz. The synthesized sounds correspond to practically pure sinusoidal (sine) signals, although the presence of other frequencies can be detected. En general, these components have much smaller amplitudes than the main signal, but they are measurable. The following graph shows some of them and the frequencies that accompany them; measurement was done on an XO1 emitting and an XO1.5 HS detecting the sound with the Measure Activity / Sound / Baseline Frequency:
 
-|Frequency (Hz)|Component Frequency(Hz)
+|Frequency (Hz)|Component Frequency (Hz)
 |---|---
 |400|-|-|-|-
 |800|1200|1600|1950|-
@@ -48,7 +48,7 @@ The XO1.5 that was (initially) distributed by Plan Ceibal among secondary school
 
 Just like with the XO1, the XO1.5 can synthesize sounds by utilizing the digital to analog converter (DAC) that come integrated to its sound card. Programming this synthesis is done by coding Python in the Pippy Activity development environment that is included with SUGAR (see code at "Sound Synthesis with XO1").
 
-You can also achieve synthesis with the TurtleBlocks Activity (v.130), with the "senoidal" programming block contained in the media block palette.
+You can also achieve synthesis with the TurtleBlocks Activity (v.130), with the "sinewave" programming block contained in the media block palette.
 
 ![ta program](images/10_blocks_2.png)
 

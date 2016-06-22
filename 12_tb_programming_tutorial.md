@@ -27,7 +27,7 @@ We will use these capabilities to draw Cartesian axes and draw charts on the scr
 
 It can also display text on-screen, the value of the magnitude measured by a sensor at a given moment (or combination of both), a photo taken by the built-in digital camera (with the block `show` of the `Media object palette`) or also data being measured may be permanently shown on-screen by displaying the status bar (this is achieved with the block `print` from the `Additional options palette`).
  
-A very interesting feature of this Activity, is the ability to synthesize human voice to output a text message, a numeric value or a combination of both; this is achieved by running a Python programming block called `speak.py` (TB v.109) or by running the `speak` block (TB v.130) from the `Media object palette`. As previously described, TB allows to synthesize a sinusoidal signal of adjustable frequency (and produce an audible sound, for example), this time either by executing the Python programming block called `sinewave.py` (TB v.109) or by executing the `sinewave` block (TB v.130) from the `Media blocks palette` (in this case the duration of the output signal may also be selected).
+A very interesting feature of this Activity, is the ability to synthesize human voice to output a text message, a numeric value or a combination of both; this is achieved by running a Python programming block called `speak.py` (TB v.109) or by running the `speak` block (TB v.130) from the `Media object palette`. As previously described, TB allows to synthesize a sinewave signal of adjustable frequency (and produce an audible sound, for example), this time either by executing the Python programming block called `sinewave.py` (TB v.109) or by executing the `sinewave` block (TB v.130) from the `Media blocks palette` (in this case the duration of the output signal may also be selected).
 
 **Note: the following examples relate to TB v.109 running on XO1 except those that refer to version 130, which are indicated explicitly in brackets (with .ta extension).**
 
@@ -127,7 +127,7 @@ TB's ability to make sounds of adjustable frequency was discussed in **Chapter 1
 
 Another interesting TB feature refers to the possibility of issuing a spoken message using the Python programming block `speak.py` included as a sample in the folder `pysamples`. This code can be included in our TB program by loading the Python block; this procedure is described in **Chapter 11 Turtle Blocks Activity (TB)**.
 
-The following example (`si volumen 100 habla.ta`) is a modification of the previous `si volumen 100 saca foto.ta` which makes the XO "speak" when the volume recorded by the microphone exceeds the (arbitrary) value 100. In this case the message "the sound volume is very high" will be heard:
+The following example (`si volumen 100 habla.ta`) is a modification of the previous `si volumen 100 saca foto.ta` which makes the XO "speak" when the volume recorded by the microphone exceeds the (arbitrary) value 100. In this case the message "the volume is very loud" will be heard:
 
 ![storyboard photo](images/12_blocks_12.png)
 
@@ -163,7 +163,7 @@ The previous program could be constructed by joining blocks of the numeric opera
 
 ## Using actions and storing values in the stack: `empty stack`, `push` and `pop` blocks.
 
-It may be noted that the example program immediately preceding (`Báskara.ta`) is written based on two columns of blocks: the main column is headed by `start` and a secondary column is headed by `action hat` `calculo`. When invoked with `action call` `calculo`, the latter is run from the main body of the program.  
+It may be noted that the example program immediately preceding (`Báskara.ta`) is written based on two columns of blocks: the main column is headed by `start` and a secondary column is headed by `action hat` `calculate`. When invoked with `action call` `calculate`, the latter is run from the main body of the program.  
 
 This way of writing complex programs based on specific modules that perform simple tasks is recommended to gain simplicity, clarity and the ability to reuse actions that are repeated in various programs. In TB these subroutines or sub-programs are called actions and to work with them, the `action1`, `action2`, or `named action` blocks are used, the latter being very useful for making the drafting of the program more readable and intuitive.
 
@@ -171,13 +171,13 @@ After introducing the concept of variable in TB with the use of "boxes", we pres
 
 It should be made clear that any program that makes use of a stack, should begin by erasing its contents with the `empty stack` block. If while testing a program one wishes to know the contents of a stack, the `show stack` block can be used.
 
-We will show here an application program, which monitors the current time, and when it matches any of the values stored in the "stack" (through the action `cargar timbres` (load alarms)), it will emit a sound of 1000 Hz frequency.
+We will show here an application program, which monitors the current time, and when it matches any of the values stored in the "stack" (through the action `load alarms`), it will emit a sound of 1000 Hz frequency.
 
-For getting current time, the functions `localtime().tm_hour` (hour) and `localtime().tm_min` (minutes) are used. The action `cargar timbres` (load alarms) empties the stack and stores the time values for every alarm.  The action `puesta a punto` (setup) stores in the box `timbre` (alarm) the time nearest to the current time. When both values match, a sound is emitted.
+For getting current time, the functions `localtime().tm_hour` (hour) and `localtime().tm_min` (minutes) are used. The action `load alarms` empties the stack and stores the time values for every alarm.  The action `setup` stores in the box `alarm` the time nearest to the current time. When both values match, a sound is emitted.
 
 This example (`timbres solymar1.ta`) can be used for automatically ringing school bells for starting and ending classes at a school. The current time and the time for the next ring are displayed:
 
-**NOTE:** The set of blocks within the action `cargar timbres` may be collapsed into a single block by clicking the "-" sign.
+**NOTE:** The set of blocks within the action `load alarms` may be collapsed into a single block by clicking the "-" sign.
 
 ![schoolbell](images/12_blocks_17.png)
 
@@ -187,7 +187,7 @@ A very common application of any data acquisition software is the generation and
 
 To do this, we must use the block `show` repeatedly (iteration): for each iteration, the variable $$x$$ is incremented by one unit and the value of the chosen function $$f(x)$$ will be calculated.
 
-Initially the screen is cleared, the turtle is located in the upper row, and a header is written (action `cabezal` (header)), and the turtle is positioned in the next row. Then, and repeatedly $$N$$ times, (the amount of values to show), the value of $$x$$ is written, moving on to the next column, the value of $$f(x)$$ is written, and then moving on to the next row to start again writing each pair of values (`tabla fx.ta`):
+Initially the screen is cleared, the turtle is located in the upper row, and a header is written (action `header`), and the turtle is positioned in the next row. Then, and repeatedly $$N$$ times, (the amount of values to show), the value of $$x$$ is written, moving on to the next column, the value of $$f(x)$$ is written, and then moving on to the next row to start again writing each pair of values (`tabla fx.ta`):
 
 ![table](images/12_blocks_18.png)
 
@@ -197,7 +197,7 @@ The following program (`tabla tiempo volumen.ta`) will show a table of values "t
 
 The application that follows the construction and display of tables of values is the construction of charts. To begin, we shall graph a mathematical function of x as a function of the value of the **x** coordinate that is incremented in successive iterations. The direct way of obtaining a drawing of a chart of this kind is by means of the turtle positioning block `set xy`, that will locate it at the given (x, y) coordinates. By default, the turtle will draw a line between its origin and its destination, so if they are close, it will draw the curve that represents the function.
 
-The function $$ f(x)=500e^{\frac{-x}{150}} sin(\frac{x}{10}) $$ for the interval $$[1, 559]$$.
+The function $$ f(x)=400e^{\frac{-x}{150}} sin(\frac{x}{10}) $$ for the interval $$[1, 559]$$.
 
 The variable $$x$$ matches the $$x$$ coordinate of the turtle that will take the initial value 1 and increment an unit for each iteration. The block `Python function` will calculate the value that the function will take and is used to determine the $$y$$ coordinate of the turtle.
 
@@ -214,7 +214,7 @@ In this case (`osc amort.ta`) we used the latter to draw a chart until the turtl
 
 In a similar way as when displaying a table of values for x/f(x) or time/volume, drawing a chart where the **x** coordinate is proportional to time involves using the `Python function` block with `time()` initially stored as "ti" (initial instant) in order to be able to further on calculate the elapsed time from the beginning. Since the canvas **x** coordinate is between -450 and 450, it is likely that we'll have to multiply the time interval by a factor to allow optimally displaying the chart onscreen.
 
-The example (`gráfica volumen=f(t) with axis.ta`) shows a chart of the microphone's volume as a function of time:
+The example (`gráfica volumen= f(t) con ejes.ta`) shows a chart of the microphone's volume as a function of time:
 
 ![osc amort](images/12_blocks_20.png)
 
@@ -224,11 +224,11 @@ The action `ejes` is in charge of drawing a pair of black colored axes with orig
 
 2. **y** coordinate: when using the value as returned by the `volume` block for the usual sound intensity in a room with several people talking, the turtle will move outside the screen (values of y>600), for this reason we used "volume/10" in order to obtain a drawing that will be visible in the entire screen.
 
-Of course the values of coefficients mentioned above must be adjusted to the use that the program will have. The values obtained from the microphone by monitoring `volume` (arbitrary units) must be used qualitatively and will only make sense relative to each other, since the sound subsystems of different XO models will produce very different values.
+Of course the values of coefficients mentioned above must be adjusted to the use that the program will have. The values obtained from the microphone by monitoring `loudness` (arbitrary units) must be used qualitatively and will only make sense relative to each other, since the sound subsystems of different XO models will produce very different values.
 
 ### Note on Recursiveness in TB
 
-Some programming languages have a very particular ability called recursiveness. It consists of the possibility of an action to call itself, producing very potent code that is able to perform a complex action in few lines of code. TB possesses this ability, as can be consulted from FORSTER (blog of Tony Forster).
+Some programming languages have a very particular ability called recursiveness. It consists of the possibility of an action to call itself, producing very potent programs that are able to perform complex actions in few lines of code. TB possesses this ability, as has been reported by FORSTER (blog of Tony Forster).
 
 ## 12.2 Recommendations when programming the reading of sensors in TB and Measure
 
