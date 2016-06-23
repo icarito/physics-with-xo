@@ -241,7 +241,7 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 
 <div style="page-break-after: always;"><hr /></div>
 
-| Experimental Activity 12<br>Oscillating a physical pendulum: Chart of angle in time (qualitative)| <font color='green'>**SR**</font>|
+| Experimental Activity 12<br>Oscillating a physical pendulum: Chart of angle as a function of time (qualitative)| <font color='green'>**SR**</font>|
 | --- | --- |
 | **Level:** <br>Primary / Basic Secondary School |
 | **Goals:** <br>To display the graph θ = f(t) corresponding to the angular position θ of an oscillating vertical stick as a function of time.
@@ -253,3 +253,56 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Precautions to consider:** (none)
 
 <div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 13<br>The XO as oscilloscope: chart of a signal produced by a photovoltaic cell| <font color='red'>**SV**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School / Higher Secondary School |
+| **Goals:** <br>To measure the voltage signal produced by a photovoltaic cell lit by different sources: incandescent bulb powered by DC and AC and fluorescent light powered by AC.<br>Temporal analysis.
+| **Magnitude to be measured:** <br>(Qualitative) amount of light proportional to continuous voltage (DC)
+| **Type of measurement:** <br>Indirect
+| **Sugar Activity:** <br>Measure v31 (set to *Base Time*)
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** <br>Photovoltaic cell<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 12V DC power source. 12V & 10W incandescent lamp. 50 kΩ. Incandescent 220V & 75W lamp. Fluorescent tube 220V (*NT: or 110V*) AC.
+| **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 14<br>"Welcome"| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School / Higher Secondary School
+| **Goals:** <br>To build and program a *hand sensor* that, when covered, will trigger the XO to emit a spoken message and take a picture.
+| **Magnitude to be measured:** <br>(Qualitative) lightness measured by resistance of LDR.
+| **Type of measurement:** <br>Indirect
+| **Sugar Activity:** <br>TB v.109 (and v.130 and beyond)
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** <br>LDR GL12537.<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Trigger switch NA or NO. Portable lamp or laser pointer.
+| **Precautions to consider:** (none)
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 15<br>LDR as light sensor. Loop chart of l=f (t)| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School / Higher Secondary School
+| **Goals:** <br>To build and program a *hand sensor* that, when covered, will trigger the XO to emit a spoken message and take a picture.
+| **Magnitude to be measured:** <br>(Qualitative) lightness measured by resistance of LDR.
+| **Type of measurement:** <br>Indirect
+| **Sugar Activity:** <br>TB v.109 (and v.130 and beyond)
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** <br>LDR GL12537.<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Trigger switch NA or NO. Portable lamp or laser pointer.
+| **Precautions to consider:** (none)
+
+<div style="page-break-after: always;"><hr /></div>
+
+| Experimental Activity 15<br>LDR as light sensor. Loop chart of l=f (t)| <font color='green'>**SR**</font>|
+| --- | --- |
+| **Level:** <br>Primary / Basic Secondary School / Higher Secondary School
+| **Goals:** <br>To build and program an LDR as calibrated *lighting sensor*. The information is displayed on screenas a loop chart l=f(t).
+| **Magnitude to be measured:** <br> Lighting
+| **Type of measurement:** <br>Indirect
+| **Sugar Activity:** <br>TB v.109
+| **Model of XO used:** <br>XO1 (SKU5)
+| **Sensors used:** <br>LDR GL12537.<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Trigger switch NA or NO. Portable lamp or laser pointer.
+| **Precautions to consider:** (none)
+
+
