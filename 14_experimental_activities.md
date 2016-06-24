@@ -129,6 +129,12 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+![diagram](images/14_diagram_1.png)
+
+![photo](images/14_photo_3.png)
+
+![screenshot](images/14_screenshot_2.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 04<br>The XO as oscilloscope: waveform of a fully rectified 50 AC signal | <font color='red'>**SV**</font>|
@@ -141,6 +147,12 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 4 x 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+![diagram](images/14_diagram_4.png)
+
+![photo](images/14_photo_4.png)
+
+![screenshot](images/14_screenshot_3.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -155,6 +167,12 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+![photo](images/14_photo_5.png)
+
+![blocks](images/14_blocks_2_Tabla_RC.png)
+
+![table](images/14_table_1.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 06<br>Discharging a Capacitor thorough a Resistor: Voltage/time chart.| <font color='red'>**SV**</font>|
@@ -168,6 +186,10 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+![blocks](images/14_blocks_3_Grafica_VV_ts.png)
+
+![graph](images/14_graph_1.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 07<br>The XO as DC ampere-meter| <font color='red'>**SV**</font>|
@@ -180,6 +202,12 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1Ω 5W Resistor. 12 V DC (max 2 A) power source. 12V (max 5 W) lamps (4x).
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+![diagram](images/14_diagram_5.png)
+
+![blocks](images/14_blocks_4_Amperimetro_DC.png)
+
+![photo](images/14_photo_6.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -200,6 +228,16 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 10 x 1 kΩ Resistor. 10 x 10 kΩ Resistor.
 | **Precautions to consider:** <br>(none)
 
+![blocks](images/14_blocks_5_asociacion_de_R.png)
+
+![photo](images/14_photo_7.png)
+
+![photo](images/14_photo_8.png)
+
+![graph](images/14_graph_2.png)
+
+![graph](images/14_graph_3.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 09<br>Game of coincidences.| <font color='green'>**SR**</font>|
@@ -212,6 +250,10 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Board with internally wired question/answer pairs.
 | **Precautions to consider:** <br>(none)
+
+![blocks](images/14_blocks_6_Cerebrin.png)
+
+![photo](images/14_photo_9.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -226,6 +268,12 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** Fire sensor<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO.
 | **Precautions to consider:** <br><font color='red'>Battery and connector polarity must be observed when feeding the sensor.</font>
 
+![photo](images/14_photo_10.png)
+
+![blocks](images/14_blocks_7_Alarma_con_foto.png)
+
+![screenshot](images/14_photo_10_intruso.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 11<br>Hoop game (3 versions)| <font color='green'>**SR**</font>|
@@ -239,7 +287,25 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>**Versions A and B:**<br>Hoop and wire each connected to an audio cable terminal.<br>**Version C:**<br>Add 2 resistors and a NC switch.
 | **Precautions to consider:** (none)
 
+![blocks](images/14_blocks_8_juego_del_aro_conteo.png)
+
+![diagram](images/14_diagram_6.png)
+
+![blocks](images/14_blocks_9_juego_del_aro_puntaje.png)
+
+![diagram](images/14_diagram_7.png)
+
+![photo](images/14_photo_11.png)
+
+![blocks](images/14_blocks_10_juego_del_aro_puls.png)
+
+![photo](images/14_photo_12.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
+
+# 14.2 Angular/Linear position
+
+![diagram](images/14_diagram_8.png)
 
 | Experimental Activity 12<br>Oscillating a physical pendulum: Chart of angle as a function of time (qualitative)| <font color='green'>**SR**</font>|
 | --- | --- |
@@ -251,6 +317,42 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** <br>Potentiometer of 10 kΩ or 50 kΩ (lineal).<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO.
 | **Precautions to consider:** (none)
+
+![photo](images/14_photo_13.png)
+
+![graph](images/14_graph_4.png)
+
+![blocks](images/14_blocks_11_grafica_loop_pendulo.png)
+
+## II.- Voltage Sensor (SV)
+
+![photo](images/14_photo_14.png)
+
+![graph](images/14_graph_5.png)
+
+# 14.3 Lighting level
+
+## Photovoltaic cell
+
+![photo](images/14_photo_15.png)
+
+![photo](images/14_photo_16.png)
+
+![photo](images/14_photo_17.png)
+
+![photo](images/14_photo_18.png)
+
+![photo](images/14_photo_19.png)
+
+## II.- LDR (light dependent resistor)
+
+![photo](images/14_photo_20.png)
+
+![photo](images/14_photo_21.png)
+
+![diagram](images/14_diagram_17.png)
+
+![graph](images/14_graph_6.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -265,6 +367,18 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>Photovoltaic cell<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 12V DC power source. 12V & 10W incandescent lamp. 50 kΩ. Incandescent 220V & 75W lamp. Fluorescent tube 220V (*NT: or 110V*) AC.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+![screenshot](images/14_screenshot_4.png)
+
+![photo](images/14_photo_22.png)
+
+![diagram](images/14_diagram_9.png)
+
+![screenshot](images/14_screenshot_5.png)
+
+![photo](images/14_photo_23.png)
+
+![screenshot](images/14_screenshot_6.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 14<br>"Welcome"| <font color='green'>**SR**</font>|
@@ -277,6 +391,18 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** <br>LDR GL12537.<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Trigger switch NA or NO. Portable lamp or laser pointer.
 | **Precautions to consider:** (none)
+
+![photo](images/14_photo_24.png)
+
+![blocks](images/14_blocks_12_bienvenida_sensor_mano.png)
+
+![blocks](images/14_blocks_13_bienvenida_v130.png)
+
+![photo](images/14_photo_25.png)
+
+![diagram](images/14_diagram_10.png)
+
+![photo](images/14_photo_26.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -291,6 +417,10 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>LDR GL12537.<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Trigger switch NA or NO. Portable lamp or laser pointer.
 | **Precautions to consider:** (none)
 
+![blocks](images/14_blocks_14_GL12537_grafica_loop.png)
+
+![photo](images/14_photo_27.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 16<br>XO as pulse monitor| <font color='green'>**SR**</font><br><font color='red'>**USB**</font>|
@@ -303,6 +433,14 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** <br>Pulse sensor (LDR, LED, resistor, support clamp, USB cable, audio cable)
 | **Precautions to consider:** <br><font color="red">The USB port is used for powering the LED light with 5V. Use extreme care when handling connections: A short circuit would damage the XO permanently.</font>
+
+![photo](images/14_photo_28.png)
+
+![blocks](images/14_blocks_15_monitor_de_pulso.png)
+
+![diagram](images/14_diagram_11.png)
+
+![photo](images/14_photo_29.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -317,6 +455,26 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>LDR GL12537<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Lamp of 12V 18W powered by the XO power source. Measuring tape.
 | **Precautions to consider:** (none)
 
+![blocks](images/14_blocks_16_GL12537_monitor_de_lux.png)
+
+![graph](images/14_graph_7.png)
+
+# 14.4 Temperature
+
+![photo](images/14_photo_30.png)
+
+![diagram](images/14_diagram_12.png)
+
+![photo](images/14_photo_31.png)
+
+![graph](images/14_graph_8.png)
+
+![blocks](images/14_blocks_17.png)
+
+![blocks](images/14_blocks_18.png)
+
+![diagram](images/14_diagram_13.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 18<br>Time/temperature table (every 2 seconds)| <font color='red'>**SV**</font>|
@@ -329,6 +487,10 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** <br>LM35<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. USB Cable.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
+
+![blocks](images/14_blocks_19_Tabla_LM35.png)
+
+![table](images/14_table_2.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -343,6 +505,10 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>LM35<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. USB Cable.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+![blocks](images/14_blocks_20_termometro_LM35.png)
+
+![photo](images/14_photo_32.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 20<br>Chart loop for temperature/time and on screen display| <font color='green'>**SR**</font>|
@@ -356,7 +522,39 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>NTC103 Termistor<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO.
 | **Precautions to consider:** (none)
 
+![blocks](images/14_blocks_21_grafica_NTC103_loop.png)
+
+![photo](images/14_photo_33.png)
+
+# 14.5 Magnetic Field
+
+![photo](images/14_photo_34.png)
+
+![photo](images/14_photo_35.png)
+
+![graph](images/14_graph_9.png)
+
+![graph](images/14_graph_10.png)
+
+![photo](images/14_photo_36.png)
+
+# 14.6 Force
+
+![photo](images/14_photo_37.png)
+
+![photo](images/14_photo_38.png)
+
+![graph](images/14_graph_11.png)
+
+![blocks](images/14_blocks_22_grafica_loop_FN_Ts.png)
+
+# 14.7 Acceleration
+
+![blocks](images/14_blocks_23_acelerometro.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
+
+# 14.8 Frequency
 
 | Experimental Activity 21<br>Monitor 440 Hz frequency| **SV**
 | --- | --- |
@@ -368,6 +566,10 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** <br>The built-in microphone
 | **Precautions to consider:** (none)
+
+![photo](images/14_photo_39.png)
+
+![blocks](images/14_blocks_24_Oreja_440.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -382,6 +584,10 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>The built-in microphone
 | **Precautions to consider:** (none)
 
+![screenshot](images/14_screenshot_7.png)
+
+![screenshot](images/14_screenshot_8.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 23<br>Superposition of two sounds of similar frequencies: Beats<br>Waveform: Calculating the period and frequency of the superposition. Charting amplitude as a function of frequency A=f(f).| **SI**|
@@ -394,6 +600,12 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** <br>The built-in microphone
 | **Precautions to consider:** (none)
+
+![screenshot](images/14_screenshot_9.png)
+
+![screenshot](images/14_screenshot_10.png)
+
+![screenshot](images/14_screenshot_11.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -408,6 +620,12 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>The built-in microphone
 | **Precautions to consider:** (none)
 
+![screenshot](images/14_screenshot_12.png)
+
+![screenshot](images/14_screenshot_13.png)
+
+![screenshot](images/14_screenshot_14.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 25<br>Complex musical sounds:<br>Interaction between the strings of a guitar. Resonance. Chart of amplitude as a function of frequency A=f(f).| **SI**|
@@ -421,7 +639,13 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** <br>The built-in microphone
 | **Precautions to consider:** (none)
 
+![photo](images/14_photo_40.png)
+
+![screenshot](images/14_screenshot_15.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
+
+# 14.9 Other applications
 
 | Experimental Activity 26<br>Normal oscillation of a metal plaque: Chladni figures| **X**|
 | --- | --- |
@@ -433,6 +657,14 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1, XO1.5, XO1.75
 | **Sensors used:** None
 | **Precautions to consider:** (none)
+
+![photo](images/14_photo_41.png)
+
+![photo](images/14_photo_42.png)
+
+![photo](images/14_photo_43.png)
+
+![photo](images/14_photo_44.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -447,6 +679,8 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** None
 | **Precautions to consider:** (none)
 
+![photo](images/14_photo_45.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 28<br>XO Gramophone| **Ext. mic.**|
@@ -459,6 +693,8 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1, XO1.5, XO1.75
 | **Sensors used:** None
 | **Precautions to consider:** (none)
+
+![photo](images/14_photo_46.png)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -473,6 +709,24 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** None
 | **Precautions to consider:** <br><font color="red">Take the usual precautions of working with direct current (DC): You must observe polarity and avoid short-circuits.</font>
 
+![graph](images/14_graph_12.png)
+
+![graph](images/14_graph_13.png)
+
+![photo](images/14_photo_47.png)
+
+![diagram](images/14_diagram_14.png)
+
+![photo](images/14_photo_48.png)
+
+![photo](images/14_photo_49.png)
+
+![photo](images/14_photo_50.png)
+
+![photo](images/14_photo_51.png)
+
+![diagram](images/14_diagram_15.png)
+
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 30<br>XO's magnetic spectrum. Setting up an electric motor using the XO's closure magnet| **X**|
@@ -485,128 +739,15 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Model of XO used:** <br>XO1, XO1.5, XO1.75
 | **Sensors used:** None
 | **Precautions to consider:** <br><font color="red">Special care must be taken when working with iron filings to cover the XO completely with a translucent bag and avoid getting them into the laptop and damaging it permanently.</font>
-![photo](images/14_photo_10.png)
-![photo](images/14_photo_11.png)
-![photo](images/14_photo_12.png)
-![photo](images/14_photo_13.png)
-![photo](images/14_photo_14.png)
-![photo](images/14_photo_15.png)
-![photo](images/14_photo_16.png)
-![photo](images/14_photo_17.png)
-![photo](images/14_photo_18.png)
-![photo](images/14_photo_19.png)
-![photo](images/14_photo_1.png)
-![photo](images/14_photo_20.png)
-![photo](images/14_photo_21.png)
-![photo](images/14_photo_22.png)
-![photo](images/14_photo_23.png)
-![photo](images/14_photo_24.png)
-![photo](images/14_photo_25.png)
-![photo](images/14_photo_26.png)
-![photo](images/14_photo_27.png)
-![photo](images/14_photo_28.png)
-![photo](images/14_photo_29.png)
-![photo](images/14_photo_2.png)
-![photo](images/14_photo_30.png)
-![photo](images/14_photo_31.png)
-![photo](images/14_photo_32.png)
-![photo](images/14_photo_33.png)
-![photo](images/14_photo_34.png)
-![photo](images/14_photo_35.png)
-![photo](images/14_photo_36.png)
-![photo](images/14_photo_37.png)
-![photo](images/14_photo_38.png)
-![photo](images/14_photo_39.png)
-![photo](images/14_photo_3.png)
-![photo](images/14_photo_40.png)
-![photo](images/14_photo_41.png)
-![photo](images/14_photo_42.png)
-![photo](images/14_photo_43.png)
-![photo](images/14_photo_44.png)
-![photo](images/14_photo_45.png)
-![photo](images/14_photo_46.png)
-![photo](images/14_photo_47.png)
-![photo](images/14_photo_48.png)
-![photo](images/14_photo_49.png)
-![photo](images/14_photo_4.png)
-![photo](images/14_photo_50.png)
-![photo](images/14_photo_51.png)
+
 ![photo](images/14_photo_52.png)
+
 ![photo](images/14_photo_53.png)
+
 ![photo](images/14_photo_54.png)
+
 ![photo](images/14_photo_55.png)
+
 ![photo](images/14_photo_56.png)
-![photo](images/14_photo_5.png)
-![photo](images/14_photo_6.png)
-![photo](images/14_photo_7.png)
-![photo](images/14_photo_8.png)
-![photo](images/14_photo_9.png)
-![diagram](images/14_diagram_10.png)
-![diagram](images/14_diagram_11.png)
-![diagram](images/14_diagram_12.png)
-![diagram](images/14_diagram_13.png)
-![diagram](images/14_diagram_14.png)
-![diagram](images/14_diagram_15.png)
+
 ![diagram](images/14_diagram_16.png)
-![diagram](images/14_diagram_1.png)
-![diagram](images/14_diagram_2.png)
-![diagram](images/14_diagram_3.png)
-![diagram](images/14_diagram_4.png)
-![diagram](images/14_diagram_5.png)
-![diagram](images/14_diagram_6.png)
-![diagram](images/14_diagram_7.png)
-![diagram](images/14_diagram_8.png)
-![diagram](images/14_diagram_9.png)
-![blocks](images/14_blocks_10.png)
-![blocks](images/14_blocks_11.png)
-![blocks](images/14_blocks_12.png)
-![blocks](images/14_blocks_13.png)
-![blocks](images/14_blocks_14.png)
-![blocks](images/14_blocks_15_monitor_de_pulso.png)
-![blocks](images/14_blocks_16_GL12537_monitor_de_lux.png)
-![blocks](images/14_blocks_17.png)
-![blocks](images/14_blocks_18.png)
-![blocks](images/14_blocks_19_Tabla_LM35.png)
-![blocks](images/14_blocks_1.png)
-![blocks](images/14_blocks_20_termometro_LM35.png)
-![blocks](images/14_blocks_21_grafica_NTC103_loop.png)
-![blocks](images/14_blocks_22_grafica_loop_FN_Ts.png)
-![blocks](images/14_blocks_23_acelerometro.png)
-![blocks](images/14_blocks_24_Oreja_440.png)
-![blocks](images/14_blocks_2.png)
-![blocks](images/14_blocks_3.png)
-![blocks](images/14_blocks_4.png)
-![blocks](images/14_blocks_5.png)
-![blocks](images/14_blocks_6.png)
-![blocks](images/14_blocks_7.png)
-![blocks](images/14_blocks_8.png)
-![blocks](images/14_blocks_9.png)
-![screenshot](images/14_screenshot_10.png)
-![screenshot](images/14_screenshot_11.png)
-![screenshot](images/14_screenshot_12.png)
-![screenshot](images/14_screenshot_13.png)
-![screenshot](images/14_screenshot_14.png)
-![screenshot](images/14_screenshot_15.png)
-![screenshot](images/14_screenshot_1.png)
-![screenshot](images/14_screenshot_2.png)
-![screenshot](images/14_screenshot_3.png)
-![screenshot](images/14_screenshot_4.png)
-![screenshot](images/14_screenshot_5.png)
-![screenshot](images/14_screenshot_6.png)
-![screenshot](images/14_screenshot_7.png)
-![screenshot](images/14_screenshot_8.png)
-![screenshot](images/14_screenshot_9.png)
-![graph](images/14_graph_10.png)
-![graph](images/14_graph_11.png)
-![graph](images/14_graph_12.png)
-![graph](images/14_graph_13.png)
-![graph](images/14_graph_1.png)
-![graph](images/14_graph_2.png)
-![graph](images/14_graph_3.png)
-![graph](images/14_graph_4.png)
-![graph](images/14_graph_5.png)
-![graph](images/14_graph_6.png)
-![graph](images/14_graph_7.png)
-![graph](images/14_graph_8.png)
-![graph](images/14_graph_9.png)
-![table](images/14_table_1.png)
