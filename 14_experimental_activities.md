@@ -37,7 +37,7 @@ Following we include a series of ideas to develop Experimental Activities with X
 
 2. All programs may be downloaded from: <br>[https://sites.google.com/site/solymar1fisica/programas-tb](https://sites.google.com/site/solymar1fisica/programas-tb).
 
-## A) VOLTAGE <br><u>AC Voltage</u>
+## a) VOLTAGE <br><u>AC Voltage</u>
 
 ### Introduction
 
@@ -49,7 +49,7 @@ The external microphone input of the XO allows the reading of very small AC valu
 
 ### Measuring range
 
-**XO1:** According to measurements made, it's possible to measure sinusoidal signals of effective voltage of 4.0 mV, which corresponds with a maximum voltage of 5.6 mV and a $$V _ {\text{pp}}$$ ("peak to peak" voltage) in the order of **13 mV**. Accordingly, only very small signals will be measurable, or voltage dividers will be needed to measure higher voltage signals.
+**XO1:** According to measurements made, it's possible to measure sinusoidal signals of effective voltage of 4.0 mV, which corresponds with a maximum voltage of 5.6 mV and a $$ V _ {\text{pp}} $$ ("peak to peak" voltage) in the order of **13 mV**. Accordingly, only very small signals will be measurable, or voltage dividers will be needed to measure higher voltage signals.
 
 ### Sampling frequency
 
@@ -113,8 +113,9 @@ When batteries are new, voltage is slightly higher (above 1.6 V). With use, lowe
 
 Below you will find the program used (`monitor de voltaje.ta`), the circuit schema and a picture:
 
-| ![program](images/14_blocks_1.png) <br> ![diagram](images/14_diagram_2.png) | ![photo](images/14_photo_2.png)
+| ![program](images/14_blocks_1.png) | ![photo](images/14_photo_2.png)
 | --- | --- |
+| ![diagram](images/14_diagram_2.png) |
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -129,11 +130,23 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
-![diagram](images/14_diagram_1.png)
+<img align='right' src='images/14_diagram_3.png'>
 
-![photo](images/14_photo_3.png)
+Build the circuit described in the diagram, connecting in series a 1N4007 diode D, a fixed resistor R (12 kΩ) and a potentiometer P (1.5 kΩ) to be powered by the secondary of a 220v/12v transformer as shown:
+
+<font color='red'>Polarity must be respected when connecting the audio cable to the potentiometer.</font>
+
+The circuit is shown in the image: the cables attached to the green clamps are connected to the secondary of the transformer (power), while the red and black clamps are connected to the audio cable that will be plugged into the XO:
+
+<img align='right' src='images/14_photo_3.png'>
+
+With positive alternation (upper terminal +, bottom terminal -) the series circuit creates a clockwise current intensity, while with negative alternation (upper terminal -, lower terminal +) there is no current because of the diode D. For verification, run Measure Activity in voltage *sensor* mode, with base time, 1ms per division, to obtain the following waveform:
 
 ![screenshot](images/14_screenshot_2.png)
+
+For optimal on screen display, start by setting the potentiometer P in such a way that its output is 0V and then turn it until obtaining the desired amplitude.
+
+Observing the waveform it can be noticed that, practically speaking, there is tension at the potentiometer for 10 ms, then it is cancelled for the next 10 ms, and so on, demonstrating *half wave rectification* of the original signal with period T=20 ms. It is worth clarifying that the diode is not an ideal rectifier (which would have null resistance with direct connection and infinite resistance with inverse connection), resulting in a certain decrease in potential between extremes.
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -148,15 +161,34 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 220/12 V Transformer. 4 x 1N4007 Diode. 12 kΩ Resistor. 1.5 kΩ Potentiometer.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
-![diagram](images/14_diagram_4.png)
+It's possible to obtain a direct continuous current from an alternating current in stages, where the main stage is known as *full-wave rectification*. For this, a circuit known as full-wave bridge, or Graetz bridge, needs to be constructed, using four diodes mounted as sides of a square; AC signal is connected in two opposite vertices, and the remaining will output a DC signal of variable voltage but single polarity (DC pulse). The setup can be seen in the circuit diagram, where the four 1N4007 diode bridge is connected to the secondary of a 220V/12V transformer ad the remaining vertices of the square are serially connected to a fixed resistor R (12 kΩ) and a potentiometer P (1.5 kΩ):
+
+<img align='right' src='images/14_diagram_4.png'>
+
+<font color='red'>Polarity must be respected when connecting the audio cable to the potentiometer.</font>
+
+The functioning of the bridge formed by the D1, D2, D3 and D4 diodes may be analyzed as follows: 
+
+* When a positive alternation occurs (upper terminal of source +, lower terminal of source -), the circuit establishes a clockwise current intensity *source (upper terminal)* - D2 - R - P - D3 - *source (lower terminal)*,
+* while for a negative alternation (upper source terminal -, lower source terminal +), the circuit establishes a counter-clockwise current *source (lower terminal)* - D1 - R - P - D4 - *source (upper terminal)*.
+
+In both alternations, the polarity of the upper end of the R / P series is positive and the lower end is negative, with current always circulating in one direction (downward in the drawing), constituting a DC signal.
+
+The circuit is shown in the figure: the green clamps are connected to the transformer secondary (power), while the red and black clamps are to the audio that connects to the XO:
 
 ![photo](images/14_photo_4.png)
 
+For verification, run Measure Activity in voltage *sensor* mode with base time / 1 ms per division and the following waveform is obtained:
+
 ![screenshot](images/14_screenshot_3.png)
+
+### Rectification and RC filtering
+
+A capacitor can be connected in parallel to the Resistor/Potentiometer series to obtain a waveform of a full-wave rectification bridge with filtering. By connecting capacitors of different capacitance, the influence of this component feature in resulting filtering level might be studied.
 
 <div style="page-break-after: always;">&nbsp;</div>
 
-| Experimental Activity 05<br>Discharging a Capacitor thorough a Resistor: Voltage/time table.| <font color='red'>**SV**</font>|
+| Experimental Activity 05<br>Discharging a Capacitor through a Resistor: Voltage/time table.| <font color='red'>**SV**</font>|
 | --- | --- |
 | **Level:** <br>Higher Secondary School|
 | **Goals:** <br>Tabulating of time/voltage for an RC discharge with trigger level
@@ -167,18 +199,36 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+This application relates to a classic practical exercise in Physics Laboratory in which the discharge of an electrolytic capacitor through a resistor is studied. The circuit used is a 1000 μF Electrolytic capacitor which is mounted in parallel to a 6800 Ω resistor and the assembly is connected to an AA battery. The negative terminal is fixed and it must be possible to disconnect the positive: the circuit schematics use a Normal Open (NO) button switch to show this.
+
+Below is a diagram and photo:
+
+*(missing diagram)*
+
 ![photo](images/14_photo_5.png)
 
-![blocks](images/14_blocks_2_Tabla_RC.png)
+The TB program (`Tabla RC .ta`) continually monitors voltage and when the same takes values below 1.5 V (trigger threshold) it triggers the construction of the time/voltage table. This is programmed by means of the `trigger` `action`.
 
-![table](images/14_table_1.png)
+We have displayed 15 values:
+
+<img align='left' src='images/14_blocks_2_Tabla_RC.png'>
+
+Since the XO1 measures values between 0.40 and 1.9V, and the time constant of the selected pair is RC=6.8 s, it was decided to make measurements every 0.5 s (approximately), which is selected with the `wait` `0.5` block. For selecting a different sampling frequency this value must be modified.
+
+<img align='right' src='images/14_table_1.png'>
+
+An acquired table is shown as example:
+
+It can be seen in the example that the acquisition is not produced at regular time intervals (it's not isochronous) because TB programs are "graphical masks" of interpreted Python statements. For advanced applications, a "Discharge RC Activity" might be created, as described in the 'Make Your Own Sugar Activities' manual.
+
+It's worth clarifying that for calculating the capacitance of the Capacitor on a first (basic) level, the XO1 can be considered as an ideal voltmeter (of infinite internal resistance) and for deeper analysis consider the real (finite) value.
 
 <div style="page-break-after: always;">&nbsp;</div>
 
 | Experimental Activity 06<br>Discharging a Capacitor thorough a Resistor: Voltage/time chart.| <font color='red'>**SV**</font>|
 | --- | --- |
 | **Level:** <br>Higher Secondary School |
-| **Goals:** <br>To graph  time/voltage for an RC discharge with trigger level
+| **Goals:** <br>To graph time/voltage for an RC discharge with trigger level
 | **Magnitude to be measured:** <br>Direct current (DC)
 | **Type of measurement:** <br>Direct
 | **Sugar Activity:** <br>TB v.109
@@ -186,9 +236,29 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1000 μF Electrolytic capacitor. 6800 Ω Resistor. AA Battery.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
+This TB program complements the previous activity "Discharging a capacitor through a resistor: Time/Voltage table". The same RC circuit is used.
+
+The V=f(t) graph is constructed that corresponds to the RC discharge starting the instant voltage drops below 1.5 V (trigger threshold). The measured voltage is displayed at the bottom of the screen.
+
+The scale of the y axis is chosen in such a way that values are charted between 1.5 V and 0.40 V.
+
 ![blocks](images/14_blocks_3_Grafica_VV_ts.png)
 
 ![graph](images/14_graph_1.png)
+
+### b) Intensity of DC electrical current
+
+According to Ohm's law, to measure electrical current intensity **I** with XO a resistor of resistance **R** can be connected in series in the circuit and measuring the voltage **V** between its terminals, the sought value can be calculated with:
+
+$$ I = V/R $$
+
+The range of measurable intensities will be determined by the voltages range of the XO and the resistance of the chosen resistor.
+
+#### For example:
+
+    If using a 1.0 Ω resistor and working with a XO1 (range: 0.40 - 1.9 V) it will be possible to measure intensities in the range 0.40 A to 1.9 A. The maximal potency that the resistor will be able to dissipate must be taken into account by using: $$ P _ {\text{max}} = (V _ \text{max})^2/R $$, in this case the value is 3.6 W. Consequently a resistor of 1.0 Ω and 5 W or higher potency must be used. Since the intensity is calculated from voltage measurements, attention must be given to the following precaution:
+
+<font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -203,9 +273,15 @@ Below you will find the program used (`monitor de voltaje.ta`), the circuit sche
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 1Ω 5W Resistor. 12 V DC (max 2 A) power source. 12V (max 5 W) lamps (4x).
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range or reverse polarity can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
-![diagram](images/14_diagram_5.png)
+In order to use the XO1 as amp-meter in the range 0.40 to 1.9 A we will use a 1Ω 5W resistor connected in series to the circuit and voltage will be measured between the endpoints; for this reason the intensity is numerically equal to the measured voltage.
+
+In order to run our program (`Amperimetro DC.ta`) we will use a 12V & 2A (max) DC source for powering a set of four 12V lamps that will be set up in parallel; four(4) 12V & 5W (max) car light bulbs can be used. The resistor and the XO1 are connected in series to measure voltage between the endpoints (<font color='red'>Mind polarity!</font>) as shown:
+
+<img align='left' src='images/14_diagram_5.png'>
 
 ![blocks](images/14_blocks_4_Amperimetro_DC.png)
+
+    The photo shows the parallel setup of the 4 bulbs hanging from two wires by means of their terminals, attached to a voltage source (not shown); The circuit has a digital tester attached that has been added as amp-meter to verify accordance between measuring instruments.
 
 ![photo](images/14_photo_6.png)
 
@@ -228,15 +304,17 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. 10 x 1 kΩ Resistor. 10 x 10 kΩ Resistor.
 | **Precautions to consider:** <br>(none)
 
-![blocks](images/14_blocks_5_asociacion_de_R.png)
+<img align='right' src='images/14_blocks_5_asociacion_de_R.png'>
 
-![photo](images/14_photo_7.png)
+This program (`asociacion de R.ta`) introduces the concept of equivalent resistance $$ R _ \text{eq} $$ of a setup where various resistors are connected in series or in parallel for the particular case where all have identical resistance value. The screen will display the amoutn N of associated resistors and the value of the equivalent resistance. The chart $$ R _ \text{eq} = f(N) $$ is displayed. The quantity N of repetitions (with a 5 seconds distance for manipulation) is fixed and so are the scales for both axes for optimal display of the graph.
 
-![photo](images/14_photo_8.png)
+The execution of the program for 10 resistors of 1 kΩ connected in series (lower left chart) and for 10 resistors of 10 kΩ connected in parallel (lower right chart). The values of the axes don't correspond to measurements. They are displayed by default when running the `Cartesian` block. The photos feature a series of 4 resistors and 2 in parallel.
 
-![graph](images/14_graph_2.png)
+|![photo](images/14_photo_7.png)|![photo](images/14_photo_8.png)
+|---|---
+|![graph](images/14_graph_2.png)|![graph](images/14_graph_3.png)
 
-![graph](images/14_graph_3.png)
+**Note:** Optimal programming of this activity would display the value of **R** resistance measured as a function of the quantity **N** entered with the keyboard (not deduced as a function of time as is done here). The exercise is left to the inventiveness of the reader.
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -251,22 +329,41 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. Board with internally wired question/answer pairs.
 | **Precautions to consider:** <br>(none)
 
-![blocks](images/14_blocks_6_Cerebrin.png)
+This is a versions of the classic school game that consists in finding the match between a set of questions and answers, or, finding *name/image* pairs. The application is simple: it's a program that continually monitors the resistance between the audio cable terminals and emits some signal when the value falls below a certain predefined threshold; for the general case it is enough that the measured value exhibits a variation indicating that the sought match has been found.
 
-![photo](images/14_photo_9.png)
+A board with *conducting terminals* must be prepared, located nexto to each question and answer or each *image* and *name*; the matching *terminals* must be connected to each other by a soldered cable that is hidden in the back or inside the body of the board. As *terminals*, one can use screws, nails or pins. Care must be taken to remove any insulating material from them such as grease, dust or rust.
+
+The TB program (`Cerebrin.ta`) displays the message: *"Do you want to play? You must connect the ends of the cable with the correct results. Good luck!"*.
+
+Upon finding the first match, the screen background color changes, displaying the number "1" and uttering the sentence *"Very good: you found the first match"*. Subsequently, it will change the background color randomly, display the number of accumulated matches N and say *"Congratulations: N coincidences"*.
+
+It is very important to clarify that the interest of the kids in the game grows with the challenge of designing the matching pairs and the attractiveness of the graphical presentation.
+
+The setup could be modified to indicate when the wrong options was picked. This variant is left free for the reader's creativity if so inclined.
+
+|![blocks](images/14_blocks_6_Cerebrin.png)|![photo](images/14_photo_9.png)|
+|---|---
 
 <div style="page-break-after: always;">&nbsp;</div>
 
-| Experimental Activity 10<br>Electric fire alarm. (hidden cable)| <font color='green'>**SR**</font>|
+| Experimental Activity 10<br>Pyroelectric alarm.| <font color='green'>**SR**</font>|
 | --- | --- |
 | **Level:** <br>Primary / Basic Secondary School |
-| **Goals:** <br>To build and program with TB an alarm that is triggered with an electric fire sensor
+| **Goals:** <br>To build and program with TB an alarm that is triggered with a pyroelectric sensor
 | **Magnitude to be measured:** <br>Resistance
 | **Type of measurement:** <br>Direct
 | **Sugar Activity:** <br>TB v.109
 | **Model of XO used:** <br>XO1 (SKU5)
 | **Sensors used:** Fire sensor<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO.
 | **Precautions to consider:** <br><font color='red'>Battery and connector polarity must be observed when feeding the sensor.</font>
+
+The TB program (`Alarma con foto JAM.ta`) consists of an alarm system that is activated when resistance between audio cable contacts takes values above a certain predetermined threshold. The system takes 5 seconds to activate, which is displayed on screen as a countdown simulating a real case. Following, resistance between audio cable terminals is continually monitored (in this case it's the minimum value (because they are in contact). When for some reason the contact is opened, the increase in measured resistance triggers the alarm: then a pictures is taken with the built in camera and a sound with frequency of 1000 Hz is emitted. After 5 seconds, the system is armed again.
+
+The particularity of our setup is the mechanism by which the contact between terminals is opened. While flexible contacts might have been used (springs, strips, etc.) that remain in contact when the house door is closed (activated system) and are separated when it is opened, triggering the alarm, we have chosen to introduce a **pyroelectric sensor**: it consists of an electronic circuit based on a sensor that monitors the configuration of infrared radiation that bodies at human temperature (or higher) emit: when the same is altered (for example when the body in front of the sensor moves), the circuit is opened by disconnection of the pair of contacts that trigger the alarm. Although it's a complex circuit, it's functioning is simple: it requires a power source of 9 to 12 V DC (depending on the model), which we'll obtain by connecting a 9V battery to the corresponding terminals (<font color='red'>Mind polarity when connecting!</font>).
+
+We can also feed it with the XO charger (as will be shown further ahead).
+
+The audio cable terminals must be connected to the sensor's activation contacts, which are in Normal Closed (NC) position when it is not activated; some models also exist that offer Normal Open (NO). Below are the sensor with connections, the program and an example photo taken when the alarm has been activated.
 
 ![photo](images/14_photo_10.png)
 
@@ -276,7 +373,7 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 
 <div style="page-break-after: always;">&nbsp;</div>
 
-| Experimental Activity 11<br>Hoop game (3 versions)| <font color='green'>**SR**</font>|
+| Experimental Activity 11<br>Ring game (3 versions)| <font color='green'>**SR**</font>|
 | --- | --- |
 | **Level:** <br>Primary / Basic Secondary School |
 | **Goals:** <br>To build and program with TB a game of manual skill
@@ -284,28 +381,58 @@ This feature can be applied for using the XO as an ohmmeter and for producing ga
 | **Type of measurement:** <br>Direct
 | **Sugar Activity:** <br>TB v.109
 | **Model of XO used:** <br>XO1 (SKU5)
-| **Sensors used:** <br>**Versions A and B:**<br>Hoop and wire each connected to an audio cable terminal.<br>**Version C:**<br>Add 2 resistors and a NC switch.
+| **Sensors used:** <br>**Versions A and B:**<br>Ring and wire each connected to an audio cable terminal.<br>**Version C:**<br>Add 2 resistors and a NC switch.
 | **Precautions to consider:** (none)
+
+It's about a version of a classic manual dexterity game: a metallic ring is placed around a wire and must be moved along it from one end to the other without touching it, or touching it as few times as possible.
+
+Three levels of complexity are presented that have been created as the application was shown at different expositions and workshops: at each one the children demanded to different scores for players that touched the wired as many times but having taken different amounts of time for doing it, to distinguish users who touched the wire from those that didn't, etc. Following is a description of the variants:
+
+#### Variant A:
+
+This is the simplest program (`juego del aro (conteo).ta`): the sensor consists of a ring and a wire connected to the audio cable; the wire plastic insulation at the ends must be kept to avoid constant triggering. The program invites to begin the game by placing the metal parts in touch once, then it monitors resistance and each time there is contact a message is spoken and the screen will display how many times there has been contact. The background color varies randomly with each contact.
 
 ![blocks](images/14_blocks_8_juego_del_aro_conteo.png)
 
 ![diagram](images/14_diagram_6.png)
 
+#### Variant B:
+
+We use the same sensor but this program (`juego del aro (puntaje).ta`) will assign an initial score of 1000 which descends as a function of the time of contact between the metals:
+
 ![blocks](images/14_blocks_9_juego_del_aro_puntaje.png)
+
+#### Variant C:
+
+In this variant the TB program (`juego del aro (puls).ta`) monitors the resistance of the microphone input. To begin playing, the ring must touch the wire once. From then on the program notifies and displays on screen each time it is touched again. When reaching the opposite end of the wire (end of game) the NC button trigger must be pressed: the program will then indicate how many times the player touched the metals and will restart for a new game. If there was no contact between metals, the total time taken is displayed and the player is encouraged to try again to succeed in less time.
+
+If there has been contact the number of times is displayed. For mounting the sensor the following is required:
+
+1. Conductive wire and ring (in this case we used copper, but it is advisable to use metals that don't rust when exposed to the environment).
+2. Two 6800 ohm 1/8 W resistors
+3. Normal Closed (NC) trigger switch. This button maintains contact between terminals while not triggered (as opposed to the usual ones). It can be substituted with a common switch.
+
+Following is the circuit diagram:
 
 ![diagram](images/14_diagram_7.png)
 
-![photo](images/14_photo_11.png)
 
 ![blocks](images/14_blocks_10_juego_del_aro_puls.png)
 
-![photo](images/14_photo_12.png)
+|![photo](images/14_photo_11.png)|![photo](images/14_photo_12.png)
+|---|---
 
 <div style="page-break-after: always;">&nbsp;</div>
 
 # 14.2 Angular/Linear position
 
-![diagram](images/14_diagram_8.png)
+## I- Resistive Sensor (SR):
+
+A resistor whose value of resistance can be adjusted between 0 and a maximum value with the linear or angular placement of a cursor is known as *potentiometer*. It's common to find them in audio equipment, radio receivers and old television sets as volume controls, tone, etc. Generally they are components with three terminals: the sides coincide with the base resistor, while the third, usually located in a position between the others is the contact determined by the adjusted resistance value. This value can be measured between either of the sides and the middle terminal.
+
+Values therefore range between 0 and the maximum resistance nominal value. In the case of *linear potentiometers*, measured resistance between terminals varies proportionally with the location (linear or angular) that the cursor occupies. In this way, the component will allow reading positions by reading ohmic resistance. The calibration factor must be programmed that transforms the value of measured resistance in ohm to the linear position in centimeters or the angular position in degrees.
+
+<img align='right' src='images/14_diagram_8.png'>
 
 | Experimental Activity 12<br>Oscillating a physical pendulum: Chart of angle as a function of time (qualitative)| <font color='green'>**SR**</font>|
 | --- | --- |
