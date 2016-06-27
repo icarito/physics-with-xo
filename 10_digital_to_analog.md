@@ -56,7 +56,7 @@ By executing this example program, a sound with frequency of 440 Hz (adjustable)
 
 ### Frequency range of synthesized sounds
 
-The sound card of the XO1.5 synthesizes sounds of frequencies comprised between **0.1 Hz** and **7999** Hz. Generated sounds correspond to practically pure sinusoidal signals up to 5000Hz. While the presence of other components can be detected, these components grow in amplitude in frequencies between 5000 and 7999 Hz, until they emit a sound with oscillating amplitude (known as *beat*) when reaching the latter value.
+The sound card of the XO1.5 synthesizes sounds of frequencies comprised between **0.1 Hz** and **7999** Hz. Generated sounds correspond to practically pure sine wave signals up to 5000Hz. While the presence of other components can be detected, these components grow in amplitude in frequencies between 5000 and 7999 Hz, until they emit a sound with oscillating amplitude (known as *beat*) when reaching the latter value.
 
 The following graph shows the record of Amplitude=f (frequency), obtained with the Measure Activity, Sound, Baseline frequency, for the emission of 7500 Hz, that we see is accompanied by another of frequency 8500 Hz of comparable amplitude:
 
@@ -80,7 +80,7 @@ The extremely low frequency (**0.1 Hz**) that the XO1.5 can produce is remarkabl
 
 ![frequency range](images/10_graph_2.png)
 
-The graph includes adjustment to the curve (V=f(t)) of the sinusoidal function (expected), showing a high correspondence between them.
+The graph includes adjustment to the curve (V=f(t)) of the sine wave function (expected), showing a high correspondence between them.
 
 ## Strength of generated signal
 
@@ -112,7 +112,7 @@ Below you will find the record of synthesis of 1 Hz and its adjustment to the si
 
 ### Note
 
-During measurementes we were able to verify that the XO1.75 synthesizes from about 0.5Hz but with noticeable deviations with respect to the expected sinusoidal function, so we preferred to set the minimum acceptable value to 1 Hz.
+During measurementes we were able to verify that the XO1.75 synthesizes from about 0.5Hz but with noticeable deviations with respect to the expected sine wave function, so we preferred to set the minimum acceptable value to 1 Hz.
 
 Just like the XO1.5, using the XO1.75 with Audacity, we can synthesize sounds of frequencies in the range between 1.00 Hz and 20.000.00 Hz (at the least), with a resolution of 0.01 Hz.
 
