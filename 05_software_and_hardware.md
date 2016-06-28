@@ -51,7 +51,7 @@ Source: OLPC XO1
 
 In the design process of the netbooks of project OLPC it was decided to use a different kind of hardware and control software in order to expand its features.
 
-According to the hardware specifications of the OLPC XO, it embeds a fixed-lens video camera to the right of the screen, 640x480 resolution, and a maximum frequency of 30 fps (frames per second), Omnivision OV7670. The control parameters for the same may be adjusted in software to allow its use as a photometric sensor for educational applications. Although this functionality was planned, currently it can be used as a fotometric sensor only qualitatively.
+According to the hardware specifications of the OLPC XO, it embeds a fixed-lens video camera to the right of the screen, 640x480 resolution, and a maximum frequency of 30 fps (frames per second), Omnivision OV7670. The control parameters for the same may be adjusted in software to allow its use as a photometric sensor for educational applications. Although this functionality was planned, currently it can be used as a photometric sensor only qualitatively.
 
 A green led positioned above the camera is lit when it is active.
 
