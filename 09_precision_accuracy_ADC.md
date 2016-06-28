@@ -477,7 +477,7 @@ $$
 
 ### Note 1:
 
-The results shown below correspond to measurements taken with the XO1.75 in its SKU 199 variant. This refers to the model CL2A, manufactured by OLPC for developer testing. This model is similar but not identical to the one that will be distributed by Plan Ceibal among children of primary public schools (or other beneficiaries to be defined in the future). For this reason the results of this section need to be compared with new results when the new model reaches the country. No conclusions will be extracted in this section since they won't coincide with the model to be distributed in Uruguay. Since we don't have access to them for measurements, we prefer to inform only the data obtained with the model we do have.
+The results shown below correspond to measurements taken with the XO1.75 in its SKU 199 variant. This refers to the model CL2A, manufactured by OLPC for developer testing. This model is similar but not identical to the one that will be distributed by Plan Ceibal among children of primary public schools (or other beneficiaries to be defined in the future). For this reason the results of this section need to be compared with results when the new model reaches the country. No conclusions will be extracted in this section since they won't coincide with the model to be distributed in Uruguay. Since we don't have access to them for measurements, we prefer to inform only the data obtained with the model we do have.
 
 ### Note 2:
 
