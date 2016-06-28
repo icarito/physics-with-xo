@@ -8,7 +8,7 @@ In general it is recommended to check this periodically; for this an instrument 
 
 ## Precision:
 
-In an ADC the precision of conversion depends on its $resolution or number of bits ($$ n $$) and the *linearity* of the effected conversion. Other factors such as signal displacement $$b$$ (offset) also affect precision. The original analog signal that we'll call $$A$$ is converted into a given digital signal $$D$$ by the following expression: $$\displaystyle D = int[(\frac{2^{n}}{FS}) \cdot A+b] $$ being $$FS$$ (Full Scale) the maximum input voltage, and $$int[...]$$ the integer part of the expression between square brackets.
+In an ADC the precision of conversion depends on its resolution or number of bits ($$ n $$) and the *linearity* of the effected conversion. Other factors such as signal displacement $$b$$ (offset) also affect precision. The original analog signal that we'll call $$A$$ is converted into a given digital signal $$D$$ by the following expression: $$\displaystyle D = int[(\frac{2^{n}}{FS}) \cdot A+b] $$ being $$FS$$ (Full Scale) the maximum input voltage, and $$int[...]$$ the integer part of the expression between square brackets.
 
 For example, the AD conversor integrated to the sound board of the XO1 (Analog Devices 1888) has a 16bit resolution, and a maximum input voltage of 1.85 V (approx) therefore we are able to resolve the value in a series of $$ 2^{16} = 65536 $$ steps of digitization.
 
