@@ -463,7 +463,7 @@ In reality, we have to define the value of appreciation considering a practical 
 
 1. If using the XO1.5 directly as ohmmeter, we will get measurements that may differ in precision with respect to the reference instrument. In order to obtain more accurate results, before you begin measurements, and for each XO in particular, the accuracy coefficient $$ C _ r $$ will need to be calculated. A coefficient must be calculated for each channel (CHL and CHR), since they may not coincide.
 
-This factors must multiply the `resistance` (CHL) and `resistance2` sensor blocks each time that they are used.
+This factors must multiply the `resistance` (CHL) and `resistance2` (CHR) sensor blocks each time that they are used.
 
 2. Once corrected for calibration, the combined uncertainty of the XO1.5 as ohmmeter can be calculated as:
 
