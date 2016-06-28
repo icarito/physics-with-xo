@@ -650,7 +650,7 @@ The value of measured resistance when lit must be below the value that appears i
 
 **Remember:** You must 'load' the *speak.py* example, otherwise the spoken message won't be emitted. This must be done each time you copy the program to another XO.
 
-When working with TB v130 and later, the program can be modified (`bienvenida (sensor mano) v130.ta)`), simplifying the task by using the `speak` block as done in the portion of the program in the picture:
+When working with TB v130 and later, the program can be modified (`bienvenida (sensor mano) v130.ta`), simplifying the task by using the `speak` block as done in the portion of the program in the picture:
 
 ### Option B: A laser light barrier switch
 
@@ -931,7 +931,7 @@ Here we show the TB program that monitors temperature (`termometro LM35.ta`), th
 
 Here we show the TB program that monitors temperature with the NTC103 thermistor (approximate range: 16 to 94°C) and continually renders a chart of measurements as a function of time. The program is designed for charting *temperature=f(time)* of the hand of a person touching the sensor. The trace changes color and restart from t=0 s upon reaching the right hand side of the screen. Vertical scale is dimensioned for optimal display of the skin temperature on a warm day (21 to 31°C).
 
-We show the program (grafica NTC103 loop t(C) t(s).ta) and a photo of the screen rendering.
+We show the program (`grafica NTC103 loop t(C) t(s).ta`) and a photo of the screen rendering.
 
 ![blocks](images/14_blocks_21_grafica_NTC103_loop.png)
 

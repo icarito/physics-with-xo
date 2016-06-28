@@ -133,7 +133,7 @@ The following example (`si volumen 100 habla.ta`) is a modification of the previ
 
 Note: You must remember that every time this program is copied to another XO, the Python block is "empty", so the process "load" and save in the Journal should be repeated. From then it runs correctly each time it is invoked. A `comment` programming block has been added as a reminder of this fact is easily forgotten.
 
-When working with TB version 130 or later, this problem of "emptying" does not exist because the `speak` block is used, as shown below (si volumen 100 habla v130.ta):
+When working with TB version 130 or later, this problem of "emptying" does not exist because the `speak` block is used, as shown below (`si volumen 100 habla v130.ta`):
 
 ![storyboard photo](images/12_blocks_13.png)
 

@@ -131,7 +131,7 @@ The program is as follows:
 
    ![Vpromedio.ta](images/9_blocks_7.png)
 
-This program (*Vpromedio.ta*) is executed 30 times for the same voltage, then calculates the standard deviation σs for the set of measurement if there are differences from each other.
+This program (`Vpromedio.ta`) is executed 30 times for the same voltage, then calculates the standard deviation σs for the set of measurement if there are differences from each other.
 
 The values resulting from the procedure show that there is no dispersion in the order of a hundredth of a volt, so that value will be taken as the uncertainty associated to the precision for statistical dispersion and appreciation combined.
 
