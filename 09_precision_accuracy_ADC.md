@@ -316,7 +316,7 @@ The following results are from measurements taken with XO1.5, SKU 121. This corr
 
 ### Note 2:
 
-Starting with XO1.5, these netbooks include a stereo external microphone socket, so it is possible to measure two voltages (`voltage` and `voltage2`) or resistances (`resistance` and `resistance2`) at the same time; these are known (for its relation with measurements from an double channel oscilloscope or audio work) as measurements from the left channel CHL (for the English abbreviation), and right channel CHR.
+Starting with XO1.5, these netbooks include a stereo external microphone socket, so it is possible to measure two voltages (`voltage` and `voltage2`) or two resistances (`resistance` and `resistance2`) at the same time; these are known (for its relation with measurements from a double channel oscilloscope or audio work) as measurements from the left channel CHL (for the English abbreviation), and right channel CHR.
 
 ## Accuracy and precision in measuring Voltage with XO1.5
 
