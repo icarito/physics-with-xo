@@ -242,7 +242,7 @@ It may be deduced according to our measurements that the values of **Cr** obtain
 
 #### a. Calculating the level of dispersion in measurements of Resistance with respect to proportional adjustment (once the XO1 is calibrated)
 
-Once the level of calibration is retrieved by means of the introduction of the $$C _ r$$ coefficient, the must calculate how far apart from proportional adjustment are the (corrected) resistance values as measured by the XO1. For this we have calculated the relative percentage of deviation of the resistance values with respect to proportional adjustment. The results are summarized in the following graph:
+Once the level of calibration is retrieved by means of the introduction of the $$C _ r$$ coefficient, we must calculate how far apart from proportional adjustment are the (corrected) resistance values as measured by the XO1. For this we have calculated the relative percentage of deviation of the resistance values with respect to proportional adjustment. The results are summarized in the following graph:
 
 ![stdev% vs Rref](images/9_graph_8.png)
 
