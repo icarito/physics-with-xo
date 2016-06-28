@@ -99,7 +99,7 @@ The XO netbook of the OLPC project that has been distributed in Uruguay through 
 
 According to the hardware characteristics of the XO1, one sensor at a time may be connected (to the external mono input) while the XO1.5 and XO1.75 (external stereo input) are capable of connecting two sensors at the same time, multiplying the possible applications that can be designed with them.
 
-The potential of these sensors lies in the simplicity of their construction and low cost, as well as the real posibility of writing diverse programs that interact with the information read and offer the widest range of responses imaginable. Since there is no limit to creativity, they can be applied to a huge range of objectives.
+The potential of these sensors lies in the simplicity of their construction and low cost, as well as the real possibility of writing diverse programs that interact with the information read and offer the widest range of responses imaginable. Since there is no limit to creativity, they can be applied to a huge range of objectives.
 
 By connecting to the external microphone jack, it is possible to read AC, DC voltages, resistance, but this measuring capability can be extended if *transducers* are available: electronic devices that produce voltages or resistance in proportion to a physical magnitude that one wishes to measure. Based on them, sensors can be constructed. Some examples:
   
@@ -115,7 +115,7 @@ By integrating these capabilities and allowing the use of sensor, we are using t
 
 ### Analog to Digital Conversion
 
-When a sound reaches the sensitive mambrane of a microphone, it produces mechanical oscillations. The microphone turns these vibrations into electric oscillations, which consist in a set of voltage values that vary continuously in time usually known as *analog signal*. It consists of alternating voltages (AC for Alternating Current).
+When a sound reaches the sensitive membrane of a microphone, it produces mechanical oscillations. The microphone turns these vibrations into electric oscillations, which consist in a set of voltage values that vary continuously in time usually known as *analog signal*. It consists of alternating voltages (AC for Alternating Current).
 
 If it is desired for a computer to process the analog signal obtained from a microphone, the signal needs to be translated to a format the computer can process, known as *digital signal*. It consist of a discrete set of integer values that are obtained from the original *analog signal*. This translation is necessary because the computer can only process *digital signals*.
 
