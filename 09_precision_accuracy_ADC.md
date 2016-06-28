@@ -306,7 +306,7 @@ $$
 **Note:**
 
 A practical option for working with these concepts quickly when calibrating sensors such as temperature or illumination (lighting), is the following:
-    If a Temperature/Resistance calibration curve is constructed, or Illumination/Resistance, the inaccuracy and imprecision remain hidden within the curve adjustment parameters applied when calibrating the sensor. This has the advantage of simpifying treatment of these concepts and the disadvantage that these parameters are good only for the particular XO1 being used.
+    If a Temperature/Resistance or Illumination/Resistance calibration curve is constructed, the inaccuracy and imprecision remain hidden within the curve adjustment parameters applied when calibrating the sensor. This has the advantage of simpifying treatment of these concepts and the disadvantage that these parameters are good only for the particular XO1 being used.
 
 ## 9.2 Accuracy and precision of measurements with XO1.5.
 
