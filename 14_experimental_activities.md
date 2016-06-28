@@ -211,7 +211,7 @@ The TB program (`Tabla RC .ta`) continually monitors voltage and when the same t
 
 We have displayed 15 values:
 
-<img align='left' src='images/14_blocks_2_Tabla_RC.png'>
+![blocks](images/14_blocks_2_Tabla_RC.png)
 
 Since the XO1 measures values between 0.40 and 1.9V, and the time constant of the selected pair is RC=6.8 s, it was decided to make measurements every 0.5 s (approximately), which is selected with the `wait` `0.5` block. For selecting a different sampling frequency this value must be modified.
 
@@ -1226,7 +1226,7 @@ The study of the quantization of the energy in the Hydrogen atom can be introduc
 > *"Our first step consist of examining the movement of the electron ... in the electric field of a nucleus containing Z elemental charges. We refer to this kind of system as a Hydrogen-like atom. From the point of view of Newtonian mechanics, this kind of atom looks similar to the Earth-Moon system... this is as far as Newtonian mechanics will take us. None of these expressions "* - (Note: it relates to the equations that allow calculating  the total energy of an electron in a Hydrogen atom) - *"suggest that the total energy has any restriction in magnitude and, therefore, they can not explain the discreet lines of the Hydrogen spectrum... We have seen.. that the wave nature of the particles manifests by itself as long as all distances that appear in the experiment are small in comparison to the de Broglie wavelength. In our case we can expect that Newtonian mechanics will be adequate while the circumference of orbit, $$ 2 \pi r >> \lambda $$, the de Broglie wavelength... For the wave diagram to form a stationary wave in this circular channel, its circumference must be a whole number of the wavelength:*
 
 $$
-\frac{2\pir}{\lambda}=n
+\frac{2 \pi r}{\lambda}=n
 $$
 
 > *Where **n** is a large number. If **n** can only take whole numbers, then **E''** (refers to the total energy of the electron) "must be discreet too..."*
@@ -1286,15 +1286,15 @@ Every XO has a charger which can be used as DC voltage source for performing exp
 
 Chargers are integrated tension sources that provide voltages and intensities depending on the XO model for which they are designed:
 
-**XO1:
+**XO1:**
 
-Voltage DC 12V<br>
+**Voltage DC 12V<br>
 Nominal intensity $$I _ {nom}$$ = 1.42 A<br>
-Nominal potency 17 W
+Nominal potency 17 W**
 
-XO1.5 and XO1.75:
+**XO1.5 and XO1.75:**
 
-Voltage DC 12V<br>
+**Voltage DC 12V<br>
 Nominal intensity $$I _ {nom}$$ = 2 A<br>
 Nominal potency 24 W**
 
@@ -1370,7 +1370,7 @@ We will construct a continuous current motor based on this potent magnet, a wind
 
 We propose to construct a continuous current motor of widespread design but constructed based on our XO. To do this we must get a piece of (varnished) wire for winding motors of some 0.80 mm in diameter, that may be obtained from a damaged motor: the wire is coiled 4 to 6 times to the body of a cylindrical pen or pencil (diameter within 8mm).
 
-<img src='images/14_diagram_16.png' align='right'>
+<img src='images/14_diagram_16.png' align='left'>
 
 The coiling, that we'll call *rotor* must be finished with two pieces of wire that will stick out in opposite directions; one of them will have the isolation varnish completely removed and the other one only to the lower half, placing the windings vertically looked from the side as shown:
 
