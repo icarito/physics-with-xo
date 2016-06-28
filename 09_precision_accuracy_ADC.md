@@ -246,7 +246,7 @@ Once the level of calibration is retrieved by means of the introduction of the $
 
 ![stdev% vs Rref](images/9_graph_8.png)
 
-For the measured values a standard deviation in the order of 5% is calculated, which can be considered as a measure of the non-linearity of the $$ R _ \text {ref} = f( R _ \text{xo1}) $$ function.
+For the measured values, a standard deviation in the order of 5% is calculated, which can be considered as a measure of the non-linearity of the $$ R _ \text {ref} = f( R _ \text{xo1}) $$ function.
 
 #### b. Calculating the level of dispersion in measurements of Resistance with respect to cubic adjustment (once the XO1 is calibrated)
 
