@@ -9,11 +9,11 @@ Source: Correa & García (1991)
 Some commercial brands of these microcomputers were the Sinclair Spectrum and the Microdigital TK95.
 The following laboratory guides are evidence of the use of the "Dédalo" system at the mentioned school:
 
-1. "Carga de un condensador", GARCÍA, P., Agosto de 1991. - ("Charging a condensator")
-2. "Momento de Inercia", CORREA, J., GARCÍA, P., Julio de 1992 - ("Moment of inertia")
-3. "Ley de Faraday", CORREA, J., GARCÍA, P., Julio de 1992 - ("Faraday's Law")
-4. "Sistema masa resorte", GARCÍA, P., TERRA, L., Marzo de 1995 - ("Spring mass system")
-5. "Impulso y cantidad de movimiento", GARCÍA, P., TERRA, L., Agosto de 1995 - ("Impulse and quantity of movement")
+1. "Carga de un condensador" ("Charging a condensator"), GARCÍA, P., Agosto de 1991. 
+2. "Momento de Inercia" ("Moment of inertia"), CORREA, J., GARCÍA, P., Julio de 1992.
+3. "Ley de Faraday" ("Faraday's Law"), CORREA, J., GARCÍA, P., Julio de 1992.
+4. "Sistema masa resorte" ("Spring mass system"), GARCÍA, P., TERRA, L., Marzo de 1995.
+5. "Impulso y cantidad de movimiento" ("Impulse and quantity of movement"), GARCÍA, P., TERRA, L., Agosto de 1995.
 
 Between the years 1992 and 1994 at the Physics Laboratory of Liceo Solymar N°1, whose coordinator was teacher Juan Francisco Pannone, and thanks to the help and precise instructions of teacher Pablo García, we built a "Dédalo" that our students used during their practical Physics course.
 
