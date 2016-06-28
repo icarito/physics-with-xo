@@ -113,7 +113,7 @@ $$
 \sigma _ \text{est} = \frac{ \sigma _ s }{ \sqrt {N} }
 $$
 
-Once nominal uncertainty σnom is determined in association with a measurement (which can be considered, in a simplified form and under certain conditions, to be equal to the appreciation of the utilized measuring instrument), we will be able to calculate the optimal number Nop of measurements to make. The criteria used here is to make enough measurement until the condition σest~=σnom allows to obtain the following expression:
+Once nominal uncertainty σnom is determined in association with a measurement (which can be considered, in a simplified form and under certain conditions, to be equal to the appreciation of the utilized measuring instrument), we will be able to calculate the optimal number $$ N _ {op} $$ of measurements to make. The criteria used here is to make enough measurement until the condition σest~=σnom allows to obtain the following expression:
 
 $$
 N _ \text{op} = \left[ \displaystyle \frac { \sigma _ s } { \sigma _ \text{nom} } \right] ^ {2} +1
