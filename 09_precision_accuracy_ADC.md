@@ -32,7 +32,7 @@ In order for the display of the value to become clear, text may be combined at t
 
 ![monitor de voltaje.ta](images/9_blocks_2.png)
 
-Now that we know how to show measured values on-screen, the questions that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
+Now that we know how to show measured values on-screen, the question that we'll attempt to answer is: What is the precision and accuracy of the XO measuring as a voltmeter? The answer involves a series of aspects to take into account:
 
 #### Appreciation:
 
