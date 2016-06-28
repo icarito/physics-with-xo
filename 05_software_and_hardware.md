@@ -24,7 +24,7 @@ A computer may interact with the physical world through devices known as periphe
 * output peripherals (such as the display, or the embedded speakers), as well as
 * input peripherals (such as the keyboard, the Mouse, the camera and the embedded microphone)
 
-The XO netbooks interact with their environment through the embedded input and ouput devices and through it's 3 USB 2.0 ports.
+The XO netbooks interact with their environment through the embedded input and output devices and through it's 3 USB 2.0 ports.
 
 In the case of the XO1 (CL1A) the input devices are:
 
