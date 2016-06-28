@@ -15,3 +15,4 @@
 * [Brief tutorial of introduction to programming using the TurtleBlocks Activity (TB)](12_tb_programming_tutorial.md)
 * [Measuring Voltage and Resistance](13_measuring_voltage_and_resistance_mount.md)
 * [Experimental Activities](14_experimental_activities.md)
+* [Annexes](annexes.md)
