@@ -126,7 +126,7 @@ In sensor mode, the bottom bar shows the value of Resistance or Voltage as read 
 
 Top toolbar, 5th icon (after sensitivity slider): "Freeze the display" button
 Top toolbar, 6th icon: "Capture sample now" button
-Top toolbar, 7h icon: Exit the activity
+Top toolbar, 7th icon: Exit the activity
 
 #### 2. Configuration Toolbar, Sound, Time Base
 
