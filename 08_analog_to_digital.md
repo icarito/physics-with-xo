@@ -5,7 +5,7 @@ The Measure Activity displays an oscillogram of the detected signal from the bui
     Sensors, DC (connect sensor to pink 'Mic In' on left side of XO)
     Bias/Offset Disabled - Volts (-32768)
 
-Current versions of this Activity return the integer value converted to Voltage or Resistance values that is being measured (the picture is an XO1.5 measuring on dual channel with version 36):
+Current versions of this Activity return the integer value converted to Voltage or Resistance values that is being measured (example is an XO1.5 measuring on dual channel with version 36):
 
     Voltage sensor (connect sensor to pink 'Mic In' on left side of XO)
     Voltage - Volts (1.698) (1.693)
@@ -17,7 +17,7 @@ By using the versions of Measure that we have referenced, we were able to obtain
 
 ## Procedure
 
-In order to achieve the goal set you must make a decision with regard to the **tester** that we'll use as reference pattern with respect to which we'll contrast measurements taken by using the XO. This measuring instrument must meet the condition to be of the highest quality possible be in optimum operating conditions and have been calibrated within the maximum time period set by the manufacturer. Before beginning to measure, the operator will have to verify that he is working within the parameters established by the manufacturer in order to consider the values obtained reliable.
+In order to achieve the goal set, you must make a decision with regard to the **tester** that we'll use as reference pattern with respect to which we'll contrast measurements taken by using the XO. This measuring instrument must meet the conditions to be of the highest quality possible, to be in optimum operating conditions and have been calibrated within the maximum time period set by the manufacturer. Before beginning to measure, the operator will have to verify that he is working within the parameters established by the manufacturer in order to consider the values obtained reliable.
 
 In our case, we had two measuring instruments that were judged to be the most adequate:
 
@@ -29,7 +29,6 @@ In our case, we had two measuring instruments that were judged to be the most ad
 2. LabQuest Mini data acquisition interface and the corresponding sensors, of the Vernier brand (VERNIER LQM)
 
 Both instruments belonging to the Physics Laboratory of Liceo Solymar N°1 (Ciudad de la Costa, Canelones). The latter was connected to a **Magalhães** Laptop model **MG10T** (distributed by Plan Ceibal to Secondary School students of Canelones). The software that was used to control the interface is called "Logger Pro for Linux Public Beta" which can be downloaded at no cost from the interface provider (VERNIER LPL).
-
 
 The mentioned instruments were used within the conditions indicated by the manufacturer to take measurements. For example, for the multimeter they read: Operating Temperature: -20°C to 55°C and Relative Humidity between 0% and 90% (0 at 35°C). No correction of temperature coefficient was applied, because it was considered that other sources would be more significant in determining the precision and accuracy of measurements obtained with the XO.
 
