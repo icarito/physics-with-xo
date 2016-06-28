@@ -17,7 +17,7 @@ The following laboratory guides are evidence of the use of the "Dédalo" system 
 
 Between the years 1992 and 1994 at the Physics Laboratory of Liceo Solymar N°1, whose coordinator was teacher Juan Francisco Pannone, and thanks to the help and precise instructions of teacher Pablo García, we built a "Dédalo" that our students used during their practical Physics course.
 
-The picture below shows the complete system: The tape deck (from which the program was loaded), TV (used as display), "Spectrum" microcomputer (in front of the TV) and "Dédalo" interface (to the right). The next photo on the right shows the circuit board and power source of the unit.
+The picture below shows the complete system: The tape deck (from which the program was loaded), TV (used as display), "Spectrum" microcomputer (in front of the TV) and "Dédalo" interface (to the right). The next photo shows the circuit board and power source of the unit.
 
 ![Interfaz Dedalo (ext)](images/dedalo.png)
 ![Interfaz Dedalo (int)](images/dedalo_int.png)
@@ -33,7 +33,7 @@ In the year 1994 Physics equipment including a PC and the data acquisition inter
 7. CÁCERES, J., “Sensor óptico para medir frecuencia de luz Estroboscópica”, Vol. 6, No 5, Diciembre de 2001. - (Optical sensor for measuring frequency in estroboscopic light)
 8. BARNECH, A., DE SOUZA, A., TRINIDAD, G., “Resonancia en sistemas mecánicos”, Vol. 6, No 6, Setiembre de 2002. - (Resonance in mechanical systems)
 
-Since then other interfaces have been added, which goes to show that they have been naturally assimilated to the work at the Physics Laboratory as another measuring instrument, among many.
+Since then, other interfaces have been added, which goes to show that they have been naturally assimilated to the work at the Physics Laboratory as another measuring instrument, among many.
 
 The Association of Physics Teachers of Uruguay (APFU), founded in 1989 has, since it's beginnings, organized and conducted activities for perfecting and promoting topics related to the use of computers, data acquisition interfaces and robotics in Physics teaching.
 
