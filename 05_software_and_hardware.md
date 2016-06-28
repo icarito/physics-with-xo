@@ -36,7 +36,7 @@ In the case of the XO1 (CL1A) the input devices are:
 * The on/off button
 * The embedded camera
 * The embedded microphone and the external microphone jack
-* Embedded magnetic sensors included to detect wether the XO is closed (in which case it can suspend or shutdown) or if the screen is rotated to enable the *ebook* mode (in which case it remains on).
+* Embedded magnetic sensors included to detect whether the XO is closed (in which case it can suspend or shutdown) or if the screen is rotated to enable the *ebook* mode (in which case it remains on).
 
 And the output devices are:
 
