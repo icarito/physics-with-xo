@@ -13,6 +13,6 @@ https://sites.google.com/site/solymar1fisica/fisica-con-xo-investigacion-/videos
 All programming can be downloaded from:
 https://sites.google.com/site/solymar1fisica/programas-tb
 
-3. If you wish to study a topic with a more depth than we have been able to provide, you may begin  reading the work in linear order, taking into account that **Chapter 9 Accuracy and precision of Analog to Digital conversion** is the most technical in the set. You can refer to its conclusions in a first reading.
+3. If you wish to study a topic with a more depth than we have been able to provide, you may begin reading the work in linear order, taking into account that **Chapter 9 Accuracy and precision of Analog to Digital conversion** is the most technical in the set. You can refer to its conclusions in a first reading.
 
 4. If you don't have an XO, you may read **Chapter 14 Experimental Activities** in order to learn how to apply what is described in **Annex 4: "Physics with XO" without XO**.
