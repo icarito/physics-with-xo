@@ -12,7 +12,7 @@ In an ADC the precision of conversion depends on its resolution or number of bit
 
 For example, the AD conversor integrated to the sound board of the XO1 (Analog Devices 1888) has a 16bit resolution, and a maximum input voltage of 1.85 V (approx) therefore we are able to resolve the value in a series of $$ 2^{16} = 65536 $$ steps of digitization.
 
-In an ideal AD conversion, the function $$ D= f(A) $$ represents the direct proportionality. That is, the graph shows a straight line with the ordinal origin zero. In the real case, the measure of separation with respect to this ideal behaviour is measured by the *linearity* of the conversion. Measured deviations will limit the *precision* in the conversion done. Even with high resolution ($$n$$), if the AD conversion is strongly non-linear, precision will be low.
+In an ideal AD conversion, the function $$ D= f(A) $$ represents the direct proportionality. That is, the graph shows a straight line with the ordinal origin zero. In the real case, the measure of separation with respect to this ideal behavior is measured by the *linearity* of the conversion. Measured deviations will limit the *precision* in the conversion done. Even with high resolution ($$n$$), if the AD conversion is strongly non-linear, precision will be low.
 
 Source: Gil & Rodriguez (2001)
 
