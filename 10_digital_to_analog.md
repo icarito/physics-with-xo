@@ -88,7 +88,7 @@ The graph includes adjustment to the curve (V=f(t)) of the sine wave function (e
 
 ## Gnome Desktop, Audacity software
 
-In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, is open source and multi-platform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
+In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, that is open source and multi-platform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
 
 ![audacity](images/10_screen_2.png)
 
