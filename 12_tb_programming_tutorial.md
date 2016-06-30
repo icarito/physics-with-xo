@@ -100,7 +100,7 @@ The `show` block may be used to display text and numeric values at the same time
 
 ![volume](images/12_blocks_7.png)
 
-If we want to continually monitor the volume, we should write a program (`monitor de volumen.ta`) that permanently repeats the above action. For this we will use the block `forever`, but attached to the `print` block which will show it in a status bar that is displayed on the bottom of the screen. We will do this because `show` writes from the initial position of the turtle and, if we don't want to do it over what is already written, we must reposition before repeating the action (we will be use it to generate tables of values further ahead). The following is the volume monitor:
+If we want to continually monitor the volume, we should write a program (`monitor de volumen.ta`) that permanently repeats the above action. For this we will use the block `forever`, but attached to the `print` block which will show it in a status bar that is displayed on the bottom of the screen. We will do this because `show` writes from the initial position of the turtle and, if we don't want to do it over what is already written, we must reposition before repeating the action (we will use it to generate tables of values further ahead). The following is the volume monitor:
 
 ![volume monitor](images/12_blocks_8.png)
 
