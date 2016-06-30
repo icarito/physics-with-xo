@@ -12,7 +12,9 @@ This is why this brief tutorial to programming is included.
 
 1. Before starting it should be made clear that the author is not a programmer nor does he have the specific teaching skills necessary to convey this knowledge. This tutorial is only justified by the desire to convey the project in the hope that very competent people could assist readers to overcome any error committed here.
 
-2. Included content can be supplemented with the TB programming tutorial on the wiki of SUGAR LABS (SUGARLABS TURTLE BLOCKS) (in English). Those wishing to delve deeper in the subject, should consult the tutorial "BUTIÁ TORTUGA" (in Spanish), dramatically expanded with their educational robotics applications by the MINA group, creators of BUTIÁ Robot. [insert footnote here]
+2. Included content can be supplemented with the TB programming tutorial on the wiki of SUGAR LABS (SUGARLABS TURTLE BLOCKS) (in English). Those wishing to delve deeper in the subject, should consult the tutorial "BUTIÁ TORTUGA" (in Spanish), dramatically expanded with their educational robotics applications by the MINA group, creators of BUTIÁ Robot. [^8]
+
+[^8]: The MINA group (Network Management - Artificial Intelligence) is a research group belonging to the Computing Institute of the Engineering School (*Universidad de la República*), that engages in teaching, research and extension in diverse topics related to Network Management and Artificial Intelligence applied to robotics.
 
     PYTHON DOC documentation should also be consulted.
 
@@ -93,7 +95,7 @@ The following program (`polígono cajas.ta`) draws a triangle, a square, a penta
 To do this simply use the block `show` connected to:
 
 1. A `text` block (string of characters) you want to display
-2. A `100` block [insert number block]  (real or integer numeric value) or
+2. A `100` block (real or integer numeric value) or
 3. The contents of a variable "box". This block may be the result of reading a sensor connected to the external microphone input of the XO.
 
 The `show` block may be used to display text and numeric values at the same time using the addition operator in order to clarify the interpretation of the displayed value. The following example (`mostrar volumen.ta`) displays the numeric value corresponding to the volume of sound captured by the microphone of the XO:
