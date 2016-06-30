@@ -56,3 +56,53 @@ The maximum sampling frequency, tested with a program that displayed a table of 
 
 Input impedance as a voltmeter is in the order of 10 MΩ.
 
+# Annex 3 - Bibliography
+
+- **Analog Devices (2003)**	http://www.datasheetcatalog.com/datasheets_pdf/A/D/1/8/AD1888.shtml Last accessed 03/02/13.
+- **APFU** http://apfu.fisica.edu.uy/. Last accessed 03/02/13.
+- **Bender (28/12/2011)** http://walterbender.org/?p=517. Last accessed 03/02/13.
+- **Brito & Trinidad (2006)** BRITO, F. & TRINIDAD, G. (2006). Cronología Histórica de la Asociación de Profesores de Física del Uruguay (A.P.F.U.). Educación en Física (A.P.F.U.), Vol. 7, No 3, Setiembre de 2006.
+- **BUTIÁ TORTUGA** http://www.fing.edu.uy/inco/cursos/fpr/wiki/index.php/Tutorial_Tortuga 
+Last accessed 03/02/13.
+- **ceibalJAM!** http://ceibaljam.org/drupal/?q=chuas Last accessed 03/02/13.
+- **Correa & García (1991)** García, Pablo & Correa, Juan, (1991). DÉDALO: Interface para uso en experimentos de Física. Versión 1.0, Proyecto de apoyo al Laboratorio de Física del I.P.A., Montevideo, Uruguay: PEDECIBA, Documento sujeto a revisión
+- **Chernuschi & Greco (1970)** Chernuschi & Greco (1970).  Teoría de errores de mediciones.  Buenos Aires, Argentina: Ed. EUDEBA.
+- **Díaz & Pecard (1970)** Díaz, J. & Pecard, R. (1970). Física experimental para preparatorios (Tomo I). Montevideo, Uruguay: Ed. Kapelusz.
+- **FLUKE 87** http://www.myflukestore.com/p1393/fluke_87-v.php Last accessed 03/02/13.
+- **FORSTER** http://tonyforster.blogspot.com/2011/01/turtle-recursion.html 
+Last accessed 03/02/13.
+- **French (1974)** A. French (1974). Vibraciones y Onda. MIT, Barcelona: Ed. Reverté,
+- **García (1991)** GARCÍA, P. (1991). Análisis Armónico de un sonido. Resumen Pedagógico, Año III, Nº6, Setiembre de 1991, (pág. 51-58))
+- **Gil & Rodríguez (2001)** Gil, S. & Rodríguez, E. (2001). Física Re- Creativa. Experimentos de Física usando nuevas tecnologías. Bs. As., Argentina: Ed. Pearson Education.
+- **Kay (1972)** http://www.mprove.de/diplom/gui/kay72.html. Last accessed 03/02/13.
+- **Maiztegui & Gleiser (1980)** Maiztegui P. & Gleiser R. (1980). Introducción a las Mediciones de Laboratorio. Buenos Aires, Argentina: Ed. Kapelusz.
+- **Maiztegui y otros (1987)** Maiztegui, A. y otros (1987). Física. Su enseñanza. Buenos Aires, Argentina: CONICET.
+- **OLPC MEASURE** http://wiki.laptop.org/go/Measure/Hardware Last accessed 03/02/13.
+- **OLPC News XO1.75** http://www.olpcnews.com/laptops/xo-175/automatic_backlight_dimming_on_the_xo_175.html Last accessed 03/02/13.
+- **OLPC SKU** http://wiki.laptop.org/go/Manufacturing_data#XO-1.75. Last accessed 03/02/13.
+- **OLPC XO** http://wiki.laptop.org/go/Especificacion_de_hardware Last accessed 03/02/13.
+- **OLPC XO1** http://wiki.laptop.org/images/7/71/CL1A_Hdwe_Design_Spec.pdf) 
+Last accessed 03/02/13.
+- **OLPC XO1.5** http://wiki.laptop.org/images/f/f0/CL1B_Hdwe_Design_Spec.pdf Last accessed 03/02/13.
+- **OLPC XO1.75** http://wiki.laptop.org/images/d/d4/CL2_Hdwe_Design_Spec.pdf 
+Last accessed 03/02/13.
+- **OLPC XO3** http://wiki.laptop.org/go/XO-3 Last accessed 03/02/13.
+- **PSSC (1970)** Física. p. 679, Barcelona, España: Ed. Reverté.
+Python (1990-2012)	http://www.python.org/ Last accessed 03/02/13.
+- **PYTHON DOC** http://docs.python.org/library/ Last accessed 03/02/13.
+- **PYTHON DOC MATH** http://docs.python.org/library/math.html Last accessed 03/02/13.
+- **Roederer (1980)	Roederer,  J.** (1980).Mecánica Elemental. Buenos Aires, Argentina: Ed. Eudeba Manuales.
+Site Google del Laboratorio de Física del Liceo Solymar Nº1 (2009)	http://sites.google.com/site/solymar1fisica/fisica-con-xo-investigacion-
+Last accessed 03/02/13.
+- **SUGARLABS MEASURE** http://wiki.sugarlabs.org/go/Activities/Measure Last accessed 03/02/13.
+- **SUGARLABS SENSORS** http://wiki.sugarlabs.org/go/Activities/TurtleArt/Using_Turtle_Art_Sensors#Voltage_Mode: Last accessed 03/02/13.
+- **SUGARLABS SUGAR** http://wiki.sugarlabs.org/go/What_is_Sugar%3F/lang-es
+Last accessed 03/02/13.
+- **SUGARLABS TURTLE BLOCKS** http://wiki.sugarlabs.org/go/Activities/Turtle_Art
+Last accessed 03/02/13.
+- **VERNIER LPL** http://www.vernier.com/downloads/logger-pro-linux/ Last accessed 03/02/13.  
+- **VERNIER LQM** http://www.vernier.com/products/interfaces/lq-mini/ Last accessed 03/02/13.
+- **Wikipedia Pulsioximetría** http://es.wikipedia.org/wiki/Pulsioximetr%C3%ADa y http://es.wikipedia.org/wiki/Ox%C3%ADmetro_de_pulso). Last accessed 03/02/13.
+- **Wikipedia SUGAR** 	http://es.wikipedia.org/wiki/Sugar_(interfaz_gr%C3%A1fica_de_usuario)
+Last accessed 03/02/13.
+
