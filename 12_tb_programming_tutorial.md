@@ -61,6 +61,7 @@ In this case we have included the block `hide blocks` (in order not display them
 
 This example shows that it is possible to perform the same action in different ways, each of them written more concisely than its predecessor. The idea is not to repeat blocks, by including blocks such as repeat, while, forever, until, etc.
 
+
 ### Example 2 - to draw an equilateral triangle
 
 We will trace this path (`triángulo repetir 3.ta`) recalling that internal angles thereof are 60°. But as our turtle makes use of external angles, we will use the corresponding 120°. We will proceed in a similar way to the programming of previous **case C**:
