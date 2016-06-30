@@ -239,6 +239,6 @@ Our experience in using different versions of Measure and TB indicates a series 
 
 2. A common bug in TB consists of programs failing to run the first time they are executed, so testing should start from the second execution.
 
-3. When working with TB and *sensor blocks* one must take into account that two sensor blocks cannot be used at the same time, or you will get an error. This also happens when one supposedly has erased a block by dragging it back to the palette, but in reality remaining behind it. There are exceptions: for example, `volume` and `frequency` might coexist. An example of this is included in the program `dibuja con tu voz.ta` that allows to draw the scree by placing the turtle in position (x,y), commanded by the values of (frequency, volume) of the captured voice.
+3. When working with TB and *sensor blocks* one must take into account that two sensor blocks cannot be used at the same time, or you will get an error. This also happens when one supposedly has erased a block by dragging it back to the palette, but in reality remaining behind it. There are exceptions: for example, `volume` and `frequency` might coexist. An example of this is included in the program `dibuja con tu voz.ta` that allows to draw the screen by placing the turtle in position (x,y), commanded by the values of (frequency, volume) of the captured voice.
 
 ![drawing](images/12_screenshot_21.png)
