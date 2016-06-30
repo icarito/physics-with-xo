@@ -284,12 +284,13 @@ The following blocks are used to define variables ("boxes") and subroutines ("ac
 
 ## Load Python Block
 
-[insert icon here] Sometimes it may be necessary to execute a chunk of Python code in order to perform a specific task not supported within the TB blocks included in the Turtle Blocks Activity palettes. For this we can proceed in one of the following ways:
+<img src="images/12_icon_3_python.png" align="left">
+Sometimes it may be necessary to execute a chunk of Python code in order to perform a specific task not supported within the TB blocks included in the Turtle Blocks Activity palettes. For this we can proceed in one of the following ways:
 
 1. For users who know how to program in Python: Write the desired code in the Pippy Activity (for example) and save it in the Journal with the name "myblock". Then, within the TB program that is being written, include the Python block (from the additional options toolbar) and "load" it with the "myblock" name from the Sugar Journal.
 2. Often we wish to execute some of the actions included within the example "Python Blocks" (pysamples directory), such as "speak" (speak.py), emit a sound of a specific frequency (sinewave.py), etc. For this, we access the "SAVE toolbar", and within it, the icon "load Python Block" as the screenshot shows, and then select the desired block from the list.
 
-![pyblock toolbar](images/11_screen_14.png)
+![pyblock toolbar](images/11_screen_14_w_arrows.png)
 
 ![pyblock load](images/11_screen_15.png)
 
