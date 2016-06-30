@@ -88,11 +88,11 @@ The graph includes adjustment to the curve (V=f(t)) of the sine wave function (e
 
 ## Gnome Desktop, Audacity software
 
-In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor, that is open source and multi-platform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
+In this environment we have a powerful tool, the Audacity application (version 1.3.11-beta), a free sound editor that is open source and multi-platform. To synthesize sounds with adjustable frequency we must select in the menu bar the option Generate/Tone, and we will be shown a dialog window where we will be able to select desired values for the parameters shown:
 
 ![audacity](images/10_screen_2.png)
 
-With this software on XO1.5 we can synthesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz.[^7] For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
+With this software on XO1.5 we can synthesize sounds of frequencies between 1.00 Hz and 20 000.00 Hz (at least), with a resolution of 0.01 Hz.[^7]. For applications involving mechanical systems of forced oscillation, the synthesis of infrasound (sound with frequencies below 20 Hz) is particularly useful.
 
 
 [^7]: The pursuit of synthesis of frequencies below 20Hz on the XO outside of SUGAR was born from conversations at the Physics Laboratory of the IPA with Marcelo Vachetta and Leonardo Machín, who were looking to design low frequency mechanic oscillators to power mechanical oscillating systems for applications in resonance experiments in courses in secondary schools and IPA. They succeeded.
@@ -102,9 +102,9 @@ With this software on XO1.5 we can synthesize sounds of frequencies between 1.00
 
 ![sku photo](images/10_photo_1.jpg)
 
-Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (stock-keeping unit) that is found within the battery slot of the XO as shown. Once it is known, you may obtain the characteristics of your variety of OLPC SKU.
+Inside each model of XO (XO1, XO1.5, XO1.75), a variety of minor differences can be found, including characteristics that the user might be interested to know. To know which model you have in your hands, you must find out the reference number called SKU (stock-keeping unit) that is found within the battery slot of the XO as shown in the picture. Once it is known, you may obtain the characteristics of your variety of OLPC SKU.
 
-In our case we had an XO1.75 CL2A (also known as B1) SKU 199. Frequency measurements performed no this model indicate a behaviour similar to XO1.5, although they use different audio subsystems. We may consider synthesis performance as acceptable for frequencies starting at 1Hz, a higher value than the minimal obtainable frequency with XO1.5 (amazingly 0.1Hz) up to 5000 Hz, value at which higher frequency components start to appear with increasing intensity up to the higher limit of 7999 Hz where we can clearly hear a beat of 2 Hz.
+In our case we had an XO1.75 CL2A (also known as B1) SKU 199. Frequency measurements performed on this model indicate a behaviour similar to XO1.5, although they use different audio subsystems. We may consider synthesis performance as acceptable for frequencies starting at 1Hz, a higher value than the minimal obtainable frequency with XO1.5 (amazingly 0.1Hz) up to 5000 Hz, value at which higher frequency components start to appear with increasing intensity up to the higher limit of 7999 Hz where we can clearly hear a beat of 2 Hz.
 
 Below you will find the record of synthesis of 1 Hz and its adjustment to the sinusoid function:
 
