@@ -1,5 +1,9 @@
 {
+    "title": "Physics with XO",
+    "author": "Trinidad, Guzmán - Silva, Sebastian (trans) - Vargas, Laura (trans)",
     "plugins": [
-        "mathjax"
+        "mathjax",
+        "-sharing",
+        "autocover"
     ]
 }
