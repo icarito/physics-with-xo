@@ -35,7 +35,7 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
    4. Centimeter coordinates
    5. Rescale coordinates
    6. Grow blocks
-   7. Shrink blocks
+   7. Shrink blocks<br><br>
 
 5. Palette Toolbar:
    ![palette](images/11_screen_5.png)
