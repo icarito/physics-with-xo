@@ -7,15 +7,16 @@
 
 * [Contact Author](mailto:fisicaconxo@gmail.com)
 
-#### This edition is a translation of the work into English
+**This edition is a translation**
 
-**This work is released under the Creative Commons Attribution Share-Alike 3.0 License.**
+**This work is released under the<br>Creative Commons Attribution Share-Alike 3.0 License.**
 
-### Sebastian Silva & Laura Vargas<br>SomosAzucar.Org R&D Team
+#### Sebastian Silva<br>&<br>Laura Vargas<br><br>SomosAzucar.Org R&D Team
 
 * [Contact Translators](mailto:equipo@somosazucar.org)
 
-> [Read online](https://icarito.gitbooks.io/physics-with-xo/content/) - [PDF](https://www.gitbook.com/download/pdf/book/icarito/physics-with-xo)
+* [Read online](https://icarito.gitbooks.io/physics-with-xo/content/)
+* Download [PDF](https://www.gitbook.com/download/pdf/book/icarito/physics-with-xo)
 
 
 

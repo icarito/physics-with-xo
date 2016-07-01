@@ -1,15 +1,5 @@
 {
-    "author":  "Guzmán Trinidad, Sebastian Silva (trans.), Laura Vargas (trans.)",
-
     "plugins": [
-        "mathjax",
-        "-sharing"
-    ],
-
-    "pluginsConfig": {},
-
-    "pdf": {
-        "fontFamily": "Sans",
-        "fontSize": 12
-    }
+        "mathjax"
+    ]
 }
