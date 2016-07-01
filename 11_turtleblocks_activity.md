@@ -50,7 +50,7 @@ Initially called Turtle Art, (or Turtleart) this activity includes, among others
    9. Additional options palette
    10. Presentation templates palette
    11. Trash bin
-   12. Hide blocks
+   12. Hide blocks<br><br>
 
 6. Help toolbar
    ![help](images/11_screen_6.png)
