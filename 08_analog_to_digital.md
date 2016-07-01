@@ -99,7 +99,6 @@ NOTE: in the following graphs, the points are united by straight lines only in o
 
 ![AD conversion XO1.5 (R)](images/8_graph_4.png)
 
-
 ## Analysis of the A-D conversion curves obtained
 
 Starting from the obtained results it can be observed that the Voltage/integer conversion follows a linear function (y=ax+b), therefore the procedure for calibrating  will involve only determining values for **a** and **b** for the linear function and their validity ranges. On the contrary, the conversion Resistance/integer displays a non-linear link, implying a greater complexity since in order to obtain the resistance value that we're looking for, we must in the first place choose the best function that links the variables in order to determine the parameters that define it and find their range of validity. Based on this, we expect a lower precision in determining the resistance values measured by the XO, because of the larger amount of processing involved from the original integer to the final value obtained; we'll analyze this further ahead. 
