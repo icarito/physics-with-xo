@@ -69,7 +69,7 @@ The mentioned limitations (ranges, maximum sampling frequency), in addition to t
 
 ## Physical magnitudes to measure with XO
 
-Considering the previous section and the existence of adequate transducers we will be able to record (among others) the following physical magnitudes:
+Considering the previous section and the existence of adequate transducers, we will be able to record (among others) the following physical magnitudes:
 
 ### Reference
 
@@ -80,19 +80,7 @@ the <font color='green'>**SR**</font> column shows the name of the resistive sen
 
 *<u>Note</u>*: Measure and TB Activities give provide *volume* readings for sounds captured by the microphone - we'll use this data for qualitative applications related to the intensity of the sensed sound.
 
-|Physical Magnitude|TM|SI|<font color="red">SV</font>|<font color="green">SR</font>|Activity/<br>Software
-|---|---|---|---|---|---|---
-|AC voltage and <br>DC voltage|D|--|√|--|Measure/TB
-|Current<br>Intensity|I|--|Resistor|--|TB
-|Ohmic<br>Resistance|D|--|--|√|Measure/TB
-|Angular/Linear<br>Position|I|--|SHARP<br>2YOA21|Linear/Angular<br>Potentiometer|TB
-|Lighting<br>level\*<br>Illuminance|D/I|Camera|--|LDR|TB
-|Temperature|I|--|LM35|thermistor|TB
-|Magnetic<br>Field|I|--|A1302|--|TB
-|Force|I|--|--|FSR402|TB
-|Acceleration<br>(XO1.75 only)|D|Accelerometer|--|--|TB
-|Frequency|D|Microphone|--|--|Measure/TB/Audacity
-
+[[insert table here]]
 [^¤]: Note: this case is an exception because it is a psycho-physical magnitude used in photometry.
 
 Applications of any sensor can be classified in:
