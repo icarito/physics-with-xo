@@ -4,7 +4,7 @@
 
 The XO netbooks (sub-laptops), like most netbooks, include a microphone for recording sounds. With proper software one can measure the volume and frequency (or frequencies) present in obtained sounds; Consequently, it is possible  to read (small) values of alternating voltage (AC) by using the external microphone input.
 
-The built-in camera of the XO will allow us to make (besides photos and videos) qualitative measurements of lighting level as well as color (by their RGB components) of objects captures by it.
+The built-in camera of the XO will allow us to make (besides photos and videos) qualitative measurements of lighting level as well as color (by their RGB components) of objects captured by it.
 
 However in this work we will focus on a unique capability of the XO that consists in reading direct current (DC) voltages and ohmic resistance though the external microphone input.
 
