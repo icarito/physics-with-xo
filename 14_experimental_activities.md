@@ -1087,6 +1087,7 @@ It may also be demonstrated that hitting the tuning fork with a rigid hammer or 
 We will analyze the superposition of two pure sounds of frequencies near to each other. In these cases, the resulting sound is known as *beat* or *pulse* because it has the particularity of being modulated in amplitude. For producing it we will use an XO1.5 choosing the 7800 Hz frequency in TB. As we mentioned earlier, the synthesized sound is the sum of 7800 Hz and 8200 Hz. It may be verified that the sound has a frequency which is the average of both and its amplitude is modulated by a frequency that is the difference between them.
 
 |![screenshot](images/14_screenshot_9.png)|![screenshot](images/14_screenshot_10.png)
+|---|---
 
 <div style="page-break-after: always;">&nbsp;</div>
 
