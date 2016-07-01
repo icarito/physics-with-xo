@@ -60,8 +60,7 @@ Carlos Zamalvide, Pablo García.
 ### IV E.N.P.F and II E.I.E.F
 12 to 16 of December of 1994, Montevideo
 
-Workshops:
-"Robotics and Teaching"
+Workshop:"Robotics and Teaching"
 G. Ghilardi, F. Varsi (ESEEC "F.Arias", UTU)
 
 ### "Applications of CASSY from the didactic and experimental point of view assisted by the INFED 2000 computer"
