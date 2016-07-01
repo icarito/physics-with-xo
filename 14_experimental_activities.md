@@ -67,7 +67,10 @@ This type of signal can also be captured with TB programs and the `sound` sensor
 | **Type of measurement:** <br>Direct
 | **Sugar Activity:** <br>Measure version 42 (set to *Time Base*)
 | **Model of XO used:** <br>XO1 (SKU5)
-| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. <br>220/12 V Transformer. 820 kΩ Resistor. 1.5 kΩ Potentiometer.
+| **Sensors used:** (none)<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO. <br>220/12 V Transformer. 820 kΩ Resistor. 1.5 kΩ
+#  
+
+Potentiometer.
 | **Precautions to consider:** <br><font color='red'>Extreme care: Voltage outside range can damage the XO permanently. Don't work measuring voltage on the XO if you are not an experienced user.</font>
 
 We will be measuring alternating current output voltage (secondary winding or just *secondary*) of a 220V/12V transformer connected to a domiciliary power network (220 V AC/50 Hz).
