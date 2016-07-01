@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="<%= size.w %>" height="<%= size.h %>"
+  viewBox="0 0 <%= size.w %> <%= size.h %>"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <rect width="100%" height="100%" fill="#2FA660"/>
+  <text
+    y="10%"
+    text-anchor="middle"
+    fill="<%= font.color %>"
+    font-family="<%= font.family %>"
+    font-size="<%= size.title %>">
+    <% _.forEach(title, function(part){ %>
+      <tspan x="50%" dy="<%= size.title %>"><%= part %></tspan>
+    <% }); %>
+  </text>
+
+  <text
+    y="50%"
+    text-anchor="middle"
+    fill="<%= font.color %>"
+    font-family="<%= font.family %>"
+    font-size="<%= size.author %>">
+      <tspan x="50%" dy="<%= size.author %>">Guzmán Trinidad</tspan>
+  </text>
+
+  <text
+    y="70%"
+    text-anchor="middle"
+    fill="<%= font.color %>"
+    font-family="<%= font.family %>"
+    font-size="<%= size.author %>">
+      <tspan x="50%" dy="<%= size.author %>">Sebastian Silva (trans)</tspan>
+      <tspan x="50%" dy="<%= size.author %>">Laura Vargas (trans)</tspan>
+  </text>
+
+  <image
+    xlink:href="<%= watermark %>"
+    x="90%" y="90%" width="20%" height="20%"
+    transform="translate(-490,-320)"/>
+
+</svg>

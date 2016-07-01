@@ -7,9 +7,9 @@
 
 * [Contact Author](mailto:fisicaconxo@gmail.com)
 
-**This edition is a translation**
+**This edition is a translation from the original in Spanish**
 
-**This work is released under the<br>Creative Commons Attribution Share-Alike 3.0 License.**
+This work is released under the<br>**Creative Commons Attribution Share-Alike 4.0 License.**
 
 #### Sebastian Silva<br>&<br>Laura Vargas<br><br>SomosAzucar.Org R&D Team
 
