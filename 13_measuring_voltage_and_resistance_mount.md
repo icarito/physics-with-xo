@@ -148,7 +148,7 @@ Cut the stereo cable in half and remove some 6cm of the external insulation. Wit
 
 In various of the described cases, we'll use voltage sensors (**SV**) that must be powered by the 5V that are provided by any USB port of the XO. This allows us to mount sensors without the need of an external power supply, which is an advantage in terms of costs and practicality.
 
-To do this a USB cables is required, it is cut and the inner cables identified: the one that is colored red (+5V) and black (0V or ground). The rest of the cables are cut and isolated to avoid contact between them.
+To do this a USB cable is required, it is cut and the inner cables identified: the one that is colored red (+5V) and black (0V or ground). The rest of the cables are cut and isolated to avoid contact between them.
 
 ### Mounting the power strip to integrate the audio cable (signal) and the USB cable (power for voltage sensors). Sensing box:
 
