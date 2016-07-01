@@ -85,9 +85,9 @@ the <font color='green'>**SR**</font> column shows the name of the resistive sen
 
 Applications of any sensor can be classified in:
 
-1. qualitative: Are the ones in which the information obtained by the sensor will be used to make determinations of **"yes/no"** or **"more/less"**: they require to detect only variations in measuring values and not values themselves
+1. Qualitative: Are the ones in which the information obtained by the sensor will be used to make determinations of **"yes/no"** or **"more/less"**: they require to detect only variations in measuring values and not values themselves
 
-2. quantitative: In these applications it is desired to make measurement in the corresponding units, using the sensor+XO set as a measurement instrument. For this one must proceed to *calibrating* the sensor.
+2. Quantitative: In these applications it is desired to make measurement in the corresponding units, using the sensor+XO set as a measurement instrument. For this one must proceed to *calibrating* the sensor.
 
 ## 13.3 Mounting a sensor box
 
