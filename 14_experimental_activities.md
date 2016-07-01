@@ -19,7 +19,7 @@ Because of this, the Project must be considered and introduction to physical mea
 
 ## Experimental Activities
 
-Following we include a series of ideas to develop Experimental Activities with XO: among them we may find the some using constructed sensors that must be programmed, measurements coming from the built-in sensors or those that make use of built-in elements of the XO such as the lid-close magnet or the charger; there are qualitative as well as quantitative ones; some integrate games (Primary school), elements for discovery of physical phenomena (Primary and basic Secondary) as well as experiments for the level of higher Secondary school. It is the author's intention to make a contribution for those that want to integrate Physics in their courses, Workshops, or to discover it by personal exploration, and so these ideas are presented with the understanding that what's most important is not what has been done but what readers will want to do based on it.
+Following we include a series of ideas to develop Experimental Activities with XO: among them we may find the ones using constructed sensors that must be programmed, measurements coming from the built-in sensors or those that make use of built-in elements of the XO such as the lid-close magnet or the charger; there are qualitative as well as quantitative ones; some integrate games (Primary school), elements for discovery of physical phenomena (Primary and basic Secondary) as well as experiments for the level of higher Secondary school. It is the author's intention to make a contribution for those that want to integrate Physics in their courses, Workshops, or to discover it by personal exploration, and so these ideas are presented with the understanding that what's most important is not what has been done but what readers will want to do based on it.
 
 ### <u>IMPORTANT NOTE:</u>
 
@@ -30,7 +30,7 @@ Following we include a series of ideas to develop Experimental Activities with X
     3. X (no sensor) or
     4. Mic. Ext. (external microphone)
 
-      For a higher level one may work (taking into precautions into account) with the ones identified with the codes:
+      For a higher level one may work (taking precautions into account) with the ones identified with the codes:
 
     5. <font color='red'>SV (voltage sensor)</font>
     6. <font color='green'>SR</font> <font color='red'>USB</font>
