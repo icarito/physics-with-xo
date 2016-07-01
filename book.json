@@ -1,9 +1,26 @@
 {
-    "title": "Physics with XO",
     "author": "Trinidad, Guzmán - Silva, Sebastian (trans) - Vargas, Laura (trans)",
     "plugins": [
         "mathjax",
         "-sharing",
-        "autocover"
-    ]
+        "autocover",
+        "hide-published-with"
+    ],
+    "pluginsConfig": {
+        "autocover": {
+            "font": {
+                "size": null,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "title": "Physics with XO",
+            "author": "Trinidad, Guzmán - Silva, Sebastian (trans) - Vargas, Laura (trans)",
+            "pattern": null,
+            "template": "",
+            "watermark": "",
+            "background": {
+                "color": "#2FA660"
+            }
+        }
+    }
 }
