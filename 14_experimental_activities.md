@@ -5,7 +5,7 @@
 The hardware of the XO was designed with the possibility of connecting low cost and easy to build sensors to it, making it an ideal instrument for **introducing** our students into data acquisition, treatment and storage of measurements that arise from the interaction between the XO and the physical world, allowing us to measure a great 
 variety of physical magnitudes. We can process the information of the sensors with the "Measure" Activity or else writing programs with the "TurtleBlocks" Activity, which includes tools exclusively for processing sensor readings.
 
-For this, elementary knowledge of programming, electronics and Physics are needed. To integrated and in order for every student make these activities for every student, we have settled on a set of basic criteria that must be met to include a given activity as part of the **"Physics with XO" project**:
+For this, elements of programming, electronics and Physics are needed. To be able to integrate them and that really any student can access to this activities, we have settled on a set of basic criteria that must be met to include a given activity as part of the **"Physics with XO" project**:
 
 1. The experimental activities must be able to be carried out with any XO model starting from XO1 (the most basic of them).
 
@@ -13,9 +13,9 @@ For this, elementary knowledge of programming, electronics and Physics are neede
 
 3. Readings of these sensors should be done with Sugar Activities, or else Linux software included in the images (for example, Audacity).
 
-4. Programming must be integrated with a perspective of an introduction to programing.
+4. Programming must be integrated with a perspective of an introduction to programming.
 
-Because of this, the Project must be considered and introduction of physical measurements with a DA interface; under no circumstances is it meant to substitute equipment manufactured for that purpose.
+Because of this, the Project must be considered and introduction to physical measurements with a DA interface; under no circumstances is it meant to substitute equipment manufactured for that purpose.
 
 ## Experimental Activities
 
