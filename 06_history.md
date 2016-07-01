@@ -46,15 +46,13 @@ For illustration purposes, only between 1989 and 1999 the following activities w
 "Days for updating Teachers"
 10 to 15 of December of 1990. "Artigas" Teachers Institute. Montevideo.
 
-*Workshop:*
-"Interface between a microcomputer and the experience in a Physics Laboratory"
+Workshop: "Interface between a microcomputer and the experience in a Physics Laboratory"
 Pablo García, Juan Correa.
 
 ### III E.N.P.F and I E.I.E.F
 21 to 25 of September of 1992, Montevideo.
 
-*Workshop:*
-"The computer as calculation tool for Physics Teaching"
+Workshop: "The computer as calculation tool for Physics Teaching"
 Carlos Zamalvide, Pablo García.
 
 ### IV E.N.P.F and II E.I.E.F
@@ -69,22 +67,19 @@ M. Baudín, M. Vacca, M. Jubín, E. Gómez.
 ### VI E.N.P.F and III E.I.E.F
 16 to 20 of September of 1996, La Paloma, Rocha.
 
-Workshops:
-"The CASSY interface at the Physics laboratories in Secondary Schools"
+Workshop "The CASSY interface at the Physics laboratories in Secondary Schools"
 Juan Pablo Forcheri - Alejandro Villamil.
 
-"Treatment of experimental data with the computer in Physics Teaching"
+Workshop "Treatment of experimental data with the computer in Physics Teaching"
 Pablo García - Lucía Terra.
 
 ### VIII E.N.P.F and IV E.I.E.F
 Colonia del Sacramento, Colonia, 21 to 25 of September, 1998.
 
-Keynote:
-"Educational Robotics: Its importance in the learning of Science"
+Keynote:"Educational Robotics: Its importance in the learning of Science"
 Jose Miguel García.
 
-Workshops:
-"Sound, computers and Fourier"
+Workshop:"Sound, computers and Fourier"
 Carlos Zamalvide, Pablo García, Alejandro Villamil.
 
 Brito & Trinidad (2006)
