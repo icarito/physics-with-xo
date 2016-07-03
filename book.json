@@ -1,23 +1,13 @@
 {
+    "cover": "cover.jpg",
     "plugins": [
         "mathjax",
-        "-sharing",
-        "autocover"
+        "-sharing"
     ],
     "pluginsConfig": {
-        "autocover": {
-            "font": {
-                "size": "60pt",
-                "family": "Impact",
-                "color": "#FFF"
-            },
-            "title": "Physics with XO",
-            "author": "Guzmán Trinidad, Sebastian Silva(trans), Laura Vargas(trans)",
-            "template": "cover.svg"
-        }
     },
     "pdf": {
         "fontFamily": "Sans",
-        "fontSize": 11
+        "fontSize": 10.9
     }
 }

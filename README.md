@@ -18,9 +18,6 @@ This work is released under the<br>**Creative Commons Attribution Share-Alike 4.
 * [Read online](https://icarito.gitbooks.io/physics-with-xo/content/)
 * Download [PDF](https://www.gitbook.com/download/pdf/book/icarito/physics-with-xo)
 
+**Cover adapted from original work by Fernando Lema**
 
-
-
-
-
-
+* This translation has been sponsored by Tony Anderson
