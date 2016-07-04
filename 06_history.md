@@ -19,8 +19,8 @@ Between the years 1992 and 1994 at the Physics Laboratory of Liceo Solymar N°1,
 
 The picture below shows the complete system: The tape deck (from which the program was loaded), TV (used as display), "Spectrum" microcomputer (in front of the TV) and "Dédalo" interface (to the right). The next photo shows the circuit board and power source of the unit.
 
-![Interfaz Dedalo (ext)](images/dedalo.png)
-![Interfaz Dedalo (int)](images/dedalo_int.png)
+![Interfaz Dedalo (ext)](images/dedalo.jpg)
+![Interfaz Dedalo (int)](images/dedalo_int.jpg)
 
 In the year 1994 Physics equipment including a PC and the data acquisition interface "CASSY-E" from the german company "Leybold" were distributed to all secondary schools. This generalization in access to technology was followed by a great number of Physics teachers, who flocked to use it in their secondary school courses and in research. Evidence of this is the great number and variety of articles published in the "Educación en Física" journal of the APFU (Spanish initials for Association of Physics Teachers of Uruguay). See APFU:
 

@@ -95,7 +95,7 @@ Applications of any sensor can be classified in:
 
 For working in this project we must prepare an audio cable that will allow us to connect the signals we want to measure to the micorphone input of the XO. In order to do this, we'll use a mono or stereo audio cable (the latter are more frequent) which, respectively, include TR or TRS connectors of 3.5mm as seen in the picture:
 
-![cable](images/13_photo_1.png)
+![cable](images/13_photo_1.jpg)
 
 In the case of a mono cable, the connector has two terminals (connected to the inside cables):
 
@@ -137,10 +137,10 @@ Cut the stereo cable in half and remove some 6cm of the external insulation. Wit
 
 3. With the help of the other end of the original cable, the T terminal (*tip*) can be determined by using a similar procedure. Once it is done, we recommend to weld the ends of each cable to an alligator clip of color corresponding to the polarity (T red, S black). These cables should be cut in different lengths to avoid them connecting to each other in an oversight (more on this later).
 
-|![](images/13_photoset_1.png)|![](images/13_photoset_2.png)|![](images/13_photoset_3.png)|
+|![](images/13_photoset_1.jpg)|![](images/13_photoset_2.jpg)|![](images/13_photoset_3.jpg)|
 |---|---|---|
-|![](images/13_photoset_4.png)|![](images/13_photoset_5.png)|![](images/13_photoset_6.png)|
-|       &nbsp;              |![](images/13_photoset_7.png)|        &nbsp;               |
+|![](images/13_photoset_4.jpg)|![](images/13_photoset_5.jpg)|![](images/13_photoset_6.jpg)|
+|       &nbsp;              |![](images/13_photoset_7.jpg)|        &nbsp;               |
 
 ### Identifying conducers
 
@@ -154,16 +154,16 @@ To do this a USB cable is required, it is cut and the inner cables identified: t
 
 For any later montage, it is convenient to design a model of *connection terminals* to simplify the sensor testing task; one possible choice is to use a connection strip to integrate the audio cable for connecting the signal coming from the sensors and the USB cable that provides power to the voltage sensors (SV) like the one shown in the following photo set:
 
-| ![](images/13_photoset_11.png) | ![](images/13_photoset_12.png) | 
+| ![](images/13_photoset_11.jpg) | ![](images/13_photoset_12.jpg) | 
 |---|---|
-| ![](images/13_photoset_13.png) | ![](images/13_photoset_14.png) | 
+| ![](images/13_photoset_13.jpg) | ![](images/13_photoset_14.jpg) | 
 
 A more definitive model will integrate terminals, a 200 mA fuse connected in series to the ground cable and a led indicator. A label to identify the terminals is useful to avoid mistakes in the moment of testing sensors. Such a *sensing box* is shown in the following photo series:
 
-| ![](images/13_photoset_21.png) | ![](images/13_photoset_22.png) | 
+| ![](images/13_photoset_21.jpg) | ![](images/13_photoset_22.jpg) | 
 |---|---|
-| ![](images/13_photoset_23.png) | ![](images/13_photoset_24.png) | 
-| ![](images/13_photoset_25.png) | ![](images/13_photoset_26.png) | 
+| ![](images/13_photoset_23.jpg) | ![](images/13_photoset_24.jpg) | 
+| ![](images/13_photoset_25.jpg) | ![](images/13_photoset_26.jpg) | 
 
 The resistive sensors (**SR**) have two connectors and don't need power, they are connected between "OV" (black) and "signal" (white): the previous image on the left shows an LDR based light sensor as an example.
 

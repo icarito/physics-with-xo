@@ -1,13 +1,15 @@
 {
-    "cover": "cover.jpg",
+    "title": "Physics with XO",
+    "author": "Guzman Trinidad",
     "plugins": [
         "mathjax",
-        "-sharing"
+        "-sharing",
+        "autocover"
     ],
     "pluginsConfig": {
     },
     "pdf": {
         "fontFamily": "Sans",
-        "fontSize": 10.9
+        "fontSize": 11
     }
 }

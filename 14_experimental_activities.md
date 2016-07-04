@@ -83,7 +83,7 @@ Because we're dealing with alternating voltage, there is no need to consider pol
 
 The circuit can be seen in the picture below; connectors joined to the green tweezers are connected to the *secondary* of the transformer (feed), while those connected to the red and black tweezers are from the audio cable connected to the XO:
 
-<img align='right' src='images/14_photo_1.png'>
+<img align='right' src='images/14_photo_1.jpg'>
 
 The procedure consists of building the circuit, placing the potentiometer in such a way that voltage between the bottom and middle terminal is null and connecting the transformer to the power network. Before connecting the audio cable to the XO it, first the T and S terminals should be connected to an AC voltmeter and the potentiometer should be adjusted until voltage reaches 3.0 mV. Once this has been verified, connect the cable to the netbook and run the Measure Activity.
 
@@ -116,7 +116,7 @@ When batteries are new, voltage is slightly higher (above 1.6 V). With use, lowe
 
 Below you will find the program used (`monitor de voltaje.ta`), the circuit schema and a picture:
 
-| ![program](images/14_blocks_1.png) | ![photo](images/14_photo_2.png)
+| ![program](images/14_blocks_1.png) | ![photo](images/14_photo_2.jpg)
 | --- | --- |
 | ![diagram](images/14_diagram_2.png) |
 
@@ -141,7 +141,7 @@ Build the circuit described in the diagram, connecting in series a 1N4007 diode 
 
 The circuit is shown in the image: the cables attached to the green clamps are connected to the secondary of the transformer (power), while the red and black clamps are connected to the audio cable that will be plugged into the XO:
 
-<img align='right' src='images/14_photo_3.png'>
+<img align='right' src='images/14_photo_3.jpg'>
 
 With positive alternation (upper terminal +, bottom terminal -) the series circuit creates a clockwise current intensity, while with negative alternation (upper terminal -, lower terminal +) there is no current because of the diode D. For verification, run Measure Activity in voltage *sensor* mode, with base time, 1ms per division, to obtain the following waveform:
 
@@ -179,7 +179,7 @@ In both alternations, the polarity of the upper end of the R / P series is posit
 
 The circuit is shown in the figure: the green clamps are connected to the transformer secondary (power), while the red and black clamps are to the audio that connects to the XO:
 
-![photo](images/14_photo_4.png)
+![photo](images/14_photo_4.jpg)
 
 For verification, run Measure Activity in voltage *sensor* mode with base time / 1 ms per division and the following waveform is obtained:
 
@@ -208,7 +208,7 @@ Below is a diagram and photo:
 
 ![diagram](images/14_diagram_4_RC.png)
 
-![photo](images/14_photo_5.png)
+![photo](images/14_photo_5.jpg)
 
 The TB program (`Tabla RC .ta`) continually monitors voltage and when the same takes values below 1.5 V (trigger threshold) it triggers the construction of the time/voltage table. This is programmed by means of the `trigger` `action`.
 
@@ -286,7 +286,7 @@ In order to run our program (`Amperimetro DC.ta`) we will use a 12V & 2A (max) D
 
 The photo shows the parallel setup of the 4 bulbs hanging from two wires by means of their terminals, attached to a voltage source (not shown); The circuit has a digital tester attached that has been added as amp-meter to verify accordance between measuring instruments.
 
-![photo](images/14_photo_6.png)
+![photo](images/14_photo_6.jpg)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -313,7 +313,7 @@ This program (`asociacion de R.ta`) introduces the concept of equivalent resista
 
 The execution of the program for 10 resistors of 1 kΩ connected in series (lower left chart) and for 10 resistors of 10 kΩ connected in parallel (lower right chart). The values of the axes don't correspond to measurements. They are displayed by default when running the `Cartesian` block. The photos feature a series of 4 resistors and 2 in parallel.
 
-|![photo](images/14_photo_7.png)|![photo](images/14_photo_8.png)
+|![photo](images/14_photo_7.jpg)|![photo](images/14_photo_8.jpg)
 |---|---
 |![graph](images/14_graph_2.png)|![graph](images/14_graph_3.png)
 
@@ -344,7 +344,7 @@ It is very important to clarify that the interest of the kids in the game grows 
 
 The setup could be modified to indicate when the wrong options was picked. This variant is left free for the reader's creativity if so inclined.
 
-|![blocks](images/14_blocks_6_Cerebrin.png)|![photo](images/14_photo_9.png)|
+|![blocks](images/14_blocks_6_Cerebrin.png)|![photo](images/14_photo_9.jpg)|
 |---|---
 
 <div style="page-break-after: always;">&nbsp;</div>
@@ -368,11 +368,11 @@ We can also feed it with the XO charger (as will be shown further ahead).
 
 The audio cable terminals must be connected to the sensor's activation contacts, which are in Normal Closed (NC) position when it is not activated; some models also exist that offer Normal Open (NO). Below are the sensor with connections, the program and an example photo taken when the alarm has been activated.
 
-![photo](images/14_photo_10.png)
+![photo](images/14_photo_10.jpg)
 
 ![blocks](images/14_blocks_7_Alarma_con_foto.png)
 
-![screenshot](images/14_photo_10_intruso.png)
+![screenshot](images/14_photo_10_intruso.jpg)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -422,7 +422,7 @@ Following is the circuit diagram:
 
 ![blocks](images/14_blocks_10_juego_del_aro_puls.png)
 
-|![photo](images/14_photo_11.png)|![photo](images/14_photo_12.png)
+|![photo](images/14_photo_11.jpg)|![photo](images/14_photo_12.jpg)
 |---|---
 
 <div style="page-break-after: always;">&nbsp;</div>
@@ -448,7 +448,7 @@ Values therefore range between 0 and the maximum resistance nominal value. In th
 | **Sensors used:** <br>Potentiometer of 10 kΩ or 50 kΩ (lineal).<br>**Other materials:**<br>Audio cable connected to the external microphone input of the XO.
 | **Precautions to consider:** (none)
 
-<img align='right' src='images/14_photo_13.png'>
+<img align='right' src='images/14_photo_13.jpg'>
 
 Mount a linear 50 kΩ potentiometer in a vertical acrylic board. Drill an aluminium rod at one end with a diameter coincident with the axis of the potentiometer so that its oscillation will cause it to rotate. The center terminal
 and one of the edges are connected to the audio cable and so the device is ready for recording the rod's oscillations by measuring the potentiometer's variation in resistance caused by the variations in the angular position of its axis. Place two screws on both sides of the upper part of the rod so as to limit its angular displacement and protect the potentiometer against mechanical damage.
@@ -469,7 +469,7 @@ Here we have shared an image of the pendulum, the obtained chart (with some nois
 
 ## II.- Voltage Sensor (SV)
 
-<img align='right' src='images/14_photo_14.png'>
+<img align='right' src='images/14_photo_14.jpg'>
 
 It's possible to measure distances by using an infrared distance sensor such as the SHARP 2YOA21: with it distances can be measured in the range of 10 to 80 cm.
 
@@ -503,7 +503,7 @@ There are several ways to detect or measure lighting levels with XO.
 
 ## I.- Photovoltaic cell
 
-<img align='right' src='images/14_photo_15.png'>
+<img align='right' src='images/14_photo_15.jpg'>
 
 A photovoltaic cell is a device that produces continuous voltage in proportion with lighting. It's common to find them in "solar" calculators (they are actually solar and battery powered), toys, or as for charging led lamps (such as we will use in the following applications).
 
@@ -511,20 +511,20 @@ Because of this, before using them, we must identify the electric polarity of th
 
 1. A cell must be lit from a light source of constant illuminance such as the sun or an incandescent lamp powered by DC. In this case we've used a 12V, 10W lamp powered by the XO1 charger (12V and $$ P _ \text{max} $$ = 17W):
 
-  ![photo](images/14_photo_16.png)
+  ![photo](images/14_photo_16.jpg)
 
   Connect the cell terminals to a tester set to measure DC voltage: if the reading shows a positive value, then the terminals match the polarity of the tester (red +, black -, if connected to "V" and "COM") and vice-versa. The picture shows the first case: the green cable is negative and the yellow positive.
 
-  ![photo](images/14_photo_17.png)
+  ![photo](images/14_photo_17.jpg)
 
 2. The cell must be lit from a light source with constant intensity such as the sun or an incandescent lamp powered by DC. In both cases the cell should not be lit directly but using an indirect diffuse reflection. Cover the cell with an opaque, dark cloth; connect the terminals of the same to the audio cable, and connect it to the external microphone input of the XO while running the Measure Activity, set to *voltage sensor* mode. Adjust the gain control slider (that appears at the right hand side of the screen) until the horizontal line (which indicates the measured DC voltage value) is visible and located at the center of the screen. Uncover the cell by slowly removing the cloth that covers it and observing the position of the trace on screen: if it starts to rise, the polarity of the terminals matches that of the audio cable's alligator clamps; if it descends, it's the opposite. The pictures show the cell with dimmed light and then with more light, and the trace rising (voltage increasing): this indicates that the yellow cable is positive and the green negative.
 
-|![photo](images/14_photo_18.png)|![photo](images/14_photo_19.png)
+|![photo](images/14_photo_18.jpg)|![photo](images/14_photo_19.jpg)
 |---|---
 
 ## II.- LDR (light dependent resistor)
 
-<img align='right' src='images/14_photo_20.png'>
+<img align='right' src='images/14_photo_20.jpg'>
 
 An LDR is a component whose resistance depends on illuminance. Its sensitivity depends on the wavelength of the incoming wave, and its *response time* is low, in the order of a tenth of a second; for this reason we'll apply it only for slow changes in illuminance. It could be used for applications such as "photo gate" (for determining mean velocity in kinematics) only in cases where time intervals are measured in the order of seconds.
 
@@ -532,7 +532,7 @@ The functional relationship between lighting **I** and resistance **R** is *inve
 
 The setup of components is direct, joining the terminals to the audio cable: clamps may be used, a connection block, or (preferably) they may be soldered to each other, with caution to avoid heating the component because it may be damaged with excess temperature. As with any resistive sensor, there is no need to observe polarity. Below is a photo and a diagram of the setup: 
 
-![photo](images/14_photo_21.png)
+![photo](images/14_photo_21.jpg)
 
 ![diagram](images/14_diagram_17.png)
 
@@ -585,7 +585,7 @@ It can be seen that this light source produces a constant lighting level which c
 
 An incandescent bulb of 220V and 75W was located to the right of the XO1 as shown in the photo:
 
-![photo](images/14_photo_22.png)
+![photo](images/14_photo_22.jpg)
 
 In this case the lighting causes the cell to produce a higher voltage than what the XO1 admits, so a tension divider must be added by means of a potentiometer; in the example we used one of 50kΩ, connecting the cell terminals to the ends of the same (green and yellow clamps) and the audio cable between one of the ends (black clamp next to the green one, cell negative) and the middle terminal of the potentiometer (red clamp).
 
@@ -605,7 +605,7 @@ In this case we conclude that there is a variable illuminance whose period of 10
 
 The signal that is obtained at the cell in this case is what it produces when lit by a light coming from a fluorescent tube ("lux tube") powered by the domestic network 220V 50Hz. This light source is found above the XO1 as the photo shows:
 
-|![photo](images/14_photo_23.png)|![screenshot](images/14_screenshot_6.png)
+|![photo](images/14_photo_23.jpg)|![screenshot](images/14_screenshot_6.png)
 |---|---
 
 Just like in the previous case, a potentiometer must be used as a tension divider to protect the XO1 input from extreme voltages and for scaling the signal on screen. The waveform that is obtained allows affirming that we are dealing with a variable illumination level with the same period as the previous example but with brusque variations coinciding with the light production means based on an electrical discharge in the low pressure gas contained in the tube.
@@ -627,7 +627,7 @@ Just like in the previous case, a potentiometer must be used as a tension divide
 
 #### Description
 
-<img align='right' src='images/14_photo_24.png'>
+<img align='right' src='images/14_photo_24.jpg'>
 
 The *hand sensor* consists in a wooden block to which the drawing of a hand has been attached. An LDR is located at the center of the image and the set is covered with a (transparent) standard CD box for protecting the LDR and to avoid getting the paper dirty with use.
 
@@ -657,7 +657,7 @@ When working with TB v130 and later, the program can be modified (`bienvenida (s
 
 ### Option B: A laser light barrier switch
 
-<img src='images/14_photo_25.png' align='left'>
+<img src='images/14_photo_25.jpg' align='left'>
 
 A variant that students find fun is lighting the LDR with a laser pointer in such a way that the "welcome" program is triggered when the beam is interrupted. The pointer and the sensor can be separated by a great distance and can be interrupted when a person passes between them.
 
@@ -671,7 +671,7 @@ One possible simplification of the device consists in substituting the LDR with 
 
 The setup is direct as shown by the diagram and picture:
 
-<img src='images/14_photo_26.png' align='right'>
+<img src='images/14_photo_26.jpg' align='right'>
 
 The only modification to the program (`bienvenida (pulsador NO).ta`) consists in substituting the condition `resistance > 10000` with `resistance < 10000` (because when cables come into contact, resistance diminishes, as opposite as to what happens when darkening the LDR).
 
@@ -700,7 +700,7 @@ The python function blocks that can be seen at the bottom of the main stack rela
 
 ### Application: Polarimetry
 
-<img src='images/14_photo_27.png' align='right'>
+<img src='images/14_photo_27.jpg' align='right'>
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -721,7 +721,7 @@ This application would allow to determine an offset angle with greater precision
 
 ### Summary:
 
-<img src='images/14_photo_28.png' align='right'>
+<img src='images/14_photo_28.jpg' align='right'>
 
 Here we present the setup of a *pulse monitor* that, when placed on a person, allows monitoring of their pulse on the XO screen, showing a chart where each peak corresponds with a heartbeat.
 
@@ -746,7 +746,7 @@ For performing this technique, a sensor is placed in a thin body part, allowing 
 
 A white, bright LED connected serially to an appropriate resistor, is lit powered by the 5V DC coming from the USB port. This LED lights an LDR (in this case the GL12537) connected to the external microphone input of an XO1. By placing both components at either end of a laundry clothing clip, and placing between them an area such as earlobes or the skin between the thumb and the index finger, each blood pulsation will produce a change in the light that reaches the LDR, and the corresponding resistance variation. The TurtleBlocks v109 program shows the resistance of the LDR on screen as a function of time, monitoring the "patient's" pulse.
 
-<img src="images/14_photo_29.png" align="left">
+<img src="images/14_photo_29.jpg" align="left">
 
 With the voltage values $$ V _ \text{led} $$ and $$ I _ \text{led} $$ the value of resistance R can be calculated and the potency of the resistor, like:
 
@@ -805,7 +805,7 @@ This is one of the sensors that produce output voltage that depends on temperatu
 
 We use the integrated sensor LM35.
 
-<img src='images/14_photo_30.png' align='right'>
+<img src='images/14_photo_30.jpg' align='right'>
 
 ### Voltage sensor (SV) LM35:
 
@@ -834,7 +834,7 @@ There exist those in which the resistance varies inversely with temperature, kno
 
 ### Description
 
-<img src='images/14_photo_31.png' align='right'>
+<img src='images/14_photo_31.jpg' align='right'>
 
 In this case, as with other resistive sensors, the setup is elementary and direct between the thermistor (a component with two terminals) and the audio cable: clamps may be used, a connection block, or (preferably) they may be soldered to the cable, with caution so as to not submit the component to excess heat because it may become damaged. As with any resistive sensor, there is no need to observe polarity.
 
@@ -917,7 +917,7 @@ Here we show the TB program that monitors temperature (`termometro LM35.ta`), th
 
 ![blocks](images/14_blocks_20_termometro_LM35.png)
 
-![photo](images/14_photo_32.png)
+![photo](images/14_photo_32.jpg)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -938,15 +938,15 @@ We show the program (`grafica NTC103 loop t(C) t(s).ta`) and a photo of the scre
 
 ![blocks](images/14_blocks_21_grafica_NTC103_loop.png)
 
-![photo](images/14_photo_33.png)
+![photo](images/14_photo_33.jpg)
 
 # 14.5 Magnetic Field
 
-<img src="images/14_photo_34.png" align="right">
+<img src="images/14_photo_34.jpg" align="right">
 
 The Hall effect can be introduced using the following situation: consider a rectangular conducting flat sheet transporting an electric current of constant value across its long side. If it is put in a magnetic field $$ B $$ perpendicular to the plane that holds it (edge case), a $$ V _ \text{Hall} $$ voltage is produced between two points of the wider sides of the sheet, which is proportional to it. This allows the construction of magnetic field sensors. Again we are dealing with integrated sensors which produce a voltage linearly linked to the value of the magnetic field to be measured.
 
-<img src="images/14_photo_35.png" align="right">
+<img src="images/14_photo_35.jpg" align="right">
 
 In the market it is possible to acquire the *Allegro 1302*, a sensor that produces 1.3 mV/G, which (in combination with the voltage measuring range of the XO) makes it suitable for measuring only very intense magnetic fields. For this reason we won't use it quantitatively.
 
@@ -964,11 +964,11 @@ We chart the output voltage as a function of the distance **r** next to and adju
 
 For calibrating the sensor we had only a commercial sensor that could not measure such intense fields. Also we found that we needed to correct the distance because the measuring chip is located some 10mm from the edge of the sensor body, as the photo shows. We have included the chart of the magnet field as a function of distance of the commercial sensor:
 
-![photo](images/14_photo_36.png)
+![photo](images/14_photo_36.jpg)
 
 # 14.6 Force
 
-<img src="images/14_photo_37.png" align="right">
+<img src="images/14_photo_37.jpg" align="right">
 
 Recently there have appeared resistive force sensors, known as FSR (Force-Sensing Resistor). They are components whose resistance depends on pressure applied to them. They are of robust construction but also of very low precision so we will use them only qualitatively.
 
@@ -976,7 +976,7 @@ We are using the model FSR402.
 
 Here is a chart (for calibration) F=f(R) of a body's weight placed on top of the sensor as a function of the average resistance value (since great variability was observed in these values):
 
-|![photo](images/14_photo_38.png)|![graph](images/14_graph_11.png)
+|![photo](images/14_photo_38.jpg)|![graph](images/14_graph_11.png)
 |---|---
 
 A TB program (`grafica loop F(N)_t(s).ta`) renders the Force as a function of time chart for a mass-spring system oscillating vertically. The FSR sensor is placed between the upper end of the spring and the support base of the system for sensing applied force:
@@ -1016,7 +1016,7 @@ The TB Activity allows determining the frequency of a given sound by using the `
 | **Sensors used:** <br>The built-in microphone
 | **Precautions to consider:** (none)
 
-<img src='images/14_photo_39.png' align='right'>
+<img src='images/14_photo_39.jpg' align='right'>
 
 A tuning fork is a metallic fork (which may be attached to a resonance box as in the picture) that is used as a reference for tuning musical instruments; to make it sound it must be hit with a rubber head hammer or some other soft material. The picture shows an sample with an adjustment knob: a metallic piece that is placed in one or both branches (in this case the left) and is used for altering (lowering) the natural oscillation frequency.
 
@@ -1142,7 +1142,7 @@ From the waveform we can confirm that it is a complex sound with different chara
 | **Sensors used:** <br>The built-in microphone
 | **Precautions to consider:** (none)
 
-<img src="images/14_photo_40.png" align="right">
+<img src="images/14_photo_40.jpg" align="right">
 
 All six strings of a guitar constitute a complex physical system that interacts with itself, with the rest of the instruments components, with the air mass within it and outside it, etc.; This intimate relationship of components determines the acoustics of the instrument, a subtle art that is mastered by the *Luthiers* that construct them and the musicians that play them. In particular let's consider the interaction between the normal modes of oscillation of each string with the others.
 
@@ -1208,9 +1208,9 @@ Thin, dry sand is sprinkled (for better results it should be previously sifted) 
 
 The following photos show our results for the first three most outstanding modes, corresponding to frequencies 109, 136, 315 and 433 Hz; the last photo shows the speaker used for amplifying the sound that excites the woofer (hidden under the plaque):
 
-|![photo](images/14_photo_41.png)|![photo](images/14_photo_42.png)
+|![photo](images/14_photo_41.jpg)|![photo](images/14_photo_42.jpg)
 |---|---
-|![photo](images/14_photo_43.png)|![photo](images/14_photo_44.png)
+|![photo](images/14_photo_43.jpg)|![photo](images/14_photo_44.jpg)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -1238,7 +1238,7 @@ $$
 
 To do this we will proceed to synthesize pure sounds with the XO, amplifying them by means of common amplified computer speakers, and feeding a speaker that is attached to the ring with some kind of flexible glue. We sweep increasing frequencies until observing a stationary mode of oscillation. At the point of attachment the ring won't be able to oscillate, thus imposing a node at that point (spot of null oscillation). At the first stationary oscillation mode (**n=1**), the perimeter coincides with **λ**, producing a second node at the opposite diameter position. When the frequency increases the mode (**n=2**) will be reached, where the perimeter will have **2 λ**: this mode exhibits 4 nodes and 4 anti-nodes (areas with maximum amplitude located between nodes) as shown in the photo:
 
-![photo](images/14_photo_45.png)
+![photo](images/14_photo_45.jpg)
 
 <div style="page-break-after: always;">&nbsp;</div>
 
@@ -1269,7 +1269,7 @@ The output tube from the stethoscope's bell is connected to rubber tube that has
 
 Start the player tray with the needle resting on the groove. In order to amplify the sounds captured by the microphone and listen to it through the XO speakers (or earphones connected to it), open the Terminal Activity and run the command **arecord|aplay**.
 
-![photo](images/14_photo_46.png)
+![photo](images/14_photo_46.jpg)
 
 If it is desired to listen at higher volume, a pair of amplified speakers can be connected to the XO's earphone socket.
 
@@ -1309,7 +1309,7 @@ In order to describe them the following V=f(i) charts were obtained, which are k
 
 According to available information and tests performed, these chargers have the ability to withstand short-circuits, but for their care we will consider them as sources capable of delivering 12V DC at a maximum intensity equal to nominal.
 
-<img src="images/14_photo_47.png" align="right">
+<img src="images/14_photo_47.jpg" align="right">
 
 One necessary piece for the setup is the board connector for the charger: it is a *coaxial power connector* with external diameter of 6mm and internal pin diameter of 1.65mm, which is not easy to find in the market. The photo shows the connection performed to feed three 12 V & 3 W high luminosity LEDs, that we used for lighting the *hand sensor* of the "Welcome" experimental activity:
 
@@ -1317,17 +1317,17 @@ In order to protect the chargers in a straightforward way, with low cost compone
 
 The output cables are terminated with a pair of alligator clamps of colors that identify polarity. Cut the wires at different lengths to avoid contact between them.
 
-|![diagram](images/14_diagram_14.png)|![photo](images/14_photo_48.png)
+|![diagram](images/14_diagram_14.png)|![photo](images/14_photo_48.jpg)
 |---|---
 
 As an introductory experiment to circuits, identical lamps can be connected serially or in parallel. We'll use a low cost 12V & 3W model. The pictures show possible setups:
 
-|![photo](images/14_photo_49.png)|![photo](images/14_photo_50.png)
+|![photo](images/14_photo_49.jpg)|![photo](images/14_photo_50.jpg)
 |---|---
 
 It is often useful to have an adjustable tension power source for which this absolutely elemental circuit can serve as a first approach; it is based on the integrated LM317T circuit (approximate price U$ 2) mounted on top of a heat sink and attached to a R=240Ω resistor and a P=5kΩ potentiometer. The input voltage is provided by the XO charger (in this case without overcharge protection lamp):
 
-|![photo](images/14_photo_51.png)|![diagram](images/14_diagram_15.png)
+|![photo](images/14_photo_51.jpg)|![diagram](images/14_diagram_15.png)
 |---|---
 
 The LM317 terminals are:
@@ -1360,9 +1360,9 @@ This practical method allows us to explore a flat region to observe the existenc
 
 > *To the left, screen front: speaker magnets are detected; to the right, screen back: the same.*
 
-|![photo](images/14_photo_52.png)|![photo](images/14_photo_53.png)
+|![photo](images/14_photo_52.jpg)|![photo](images/14_photo_53.jpg)
 |---|---
-|![photo](images/14_photo_54.png)|![photo](images/14_photo_55.png)
+|![photo](images/14_photo_54.jpg)|![photo](images/14_photo_55.jpg)
 
 > *To the left, keyboard from above: The potent closure magnet of XO is detected; To the right, from below: the same.*
 
@@ -1370,7 +1370,7 @@ We will construct a continuous current motor based on this potent magnet, a wind
 
 ### Construction of an electric motor:
 
-<img src='images/14_photo_56.png' align='right'>
+<img src='images/14_photo_56.jpg' align='right'>
 
 We propose to construct a continuous current motor of widespread design but constructed based on our XO. To do this we must get a piece of (varnished) wire for winding motors of some 0.80 mm in diameter, that may be obtained from a damaged motor: the wire is coiled 4 to 6 times to the body of a cylindrical pen or pencil (diameter within 8mm).
 
